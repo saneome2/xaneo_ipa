@@ -1,0 +1,523 @@
+{
+  "@@locale": "es",
+  "appTitle": "XaneoMobile",
+  "welcomeTitle": "Bienvenido a Xaneo",
+  "welcomeDescription": "Xaneo - ¡ahora en una aplicación móvil! Xaneo nunca ha sido tan conveniente y rápido.",
+  "getStartedButton": "Ya me interesa",
+  "connectingToServer": "Conectando al servidor...",
+  "version": "Versión: {version}",
+  "httpError": "Error: HTTP {code}",
+  "connectionError": "Error de conexión: {error}",
+  "updateAvailable": "¡Actualización disponible!",
+  "updateDialogTitle": "¡Actualización disponible!",
+  "updateDialogMessage": "Su versión es {currentVersion}, y la nueva es {latestVersion}",
+  "updateDialogDescription": "Puede actualizar a través de Google Play, RuStore o desde el sitio web oficial de Xaneo.",
+  "updateButton": "Actualizar",
+  "cancelButton": "Cancelar",
+  "selectUpdateSource": "Seleccione fuente de actualización:",
+  "settings": "Configuración",
+  "about": "Acerca de",
+  "help": "Ayuda",
+  "notifications": "Notificaciones",
+  "notificationsDescription": "Recibir notificaciones sobre nuevas características",
+  "darkTheme": "Tema oscuro",
+  "darkThemeDescription": "Usar apariencia oscura",
+  "fontSize": "Tamaño de fuente: {size}",
+  "appVersion": "Versión de la aplicación",
+  "messengerDemoMode": "Modo demo del mensajero",
+  "language": "Idioma",
+  "languageDescription": "Elegir idioma de la interfaz",
+  "welcomeMessage": "¡Excelente! ¡Bienvenido!",
+  "privacyTitle": "Todos tus datos están seguros",
+  "privacyDescription": "Todos los mensajes en XaneoConnect están protegidos por cifrado de extremo a extremo. Xaneo nunca conoce su contenido.",
+  "continueButton": "Continuemos",
+  "dataStorageTitle": "Todos los centros de datos de Xaneo están ubicados en Rusia",
+  "dataStorageDescription": "Tus datos nunca salen del país y se almacenan en centros de datos seguros.",
+  "finishButton": "Finalizar",
+  "setupCompleted": "¡Configuración completada!",
+  "loginFormTitle": "Iniciemos sesión",
+  "registerFormTitle": "Comencemos",
+  "registerNameSubtitle": "¿Cómo te llamas?",
+  "nameFieldHint": "Tu nombre",
+  "nextButton": "Siguiente",
+  "registerBirthdateSubtitle": "¿Cuándo naciste?",
+  "selectDate": "Seleccionar fecha",
+  "ageRestrictionsLink": "¿Cuáles son las restricciones de edad?",
+  "ageRestrictionsTitle": "Registro posible desde los 14 años",
+  "ageRestrictionsDescription": "Puedes registrarte en nuestro servicio si tienes 14 años o más",
+  "gotIt": "Entendido",
+  "registerNicknameSubtitle": "Elige un apodo",
+  "nicknameFieldHint": "Tu apodo",
+  "nicknameHelpLink": "¿No puedes pensar en un apodo?",
+  "registerEmailSubtitle": "Ingresa tu correo electrónico",
+  "emailFieldHint": "Tu correo electrónico",
+  "supportedEmailProvidersLink": "¿Qué proveedores de correo electrónico son compatibles?",
+  "supportedEmailProvidersTitle": "Proveedores de correo electrónico compatibles",
+  "supportedEmailProvidersDescription": "Se admiten Gmail, Outlook, Yandex, Mail.ru y otros servicios de correo populares.",
+  "emailFormatError": "Formato de dirección de correo electrónico inválido",
+  "emailUnsupportedError": "Este servicio de correo electrónico no es compatible",
+  "checkingEmail": "Verificando correo...",
+  "emailAvailable": "Correo disponible",
+  "emailTakenError": "Este correo ya está ocupado",
+  "emailServerError": "Error al verificar correo. Inténtelo más tarde",
+  "verifyEmailTitle": "Verifique su correo electrónico",
+  "verifyEmailDescription": "Enviamos un código de 6 dígitos a su correo. Ingréselo para confirmar.",
+  "verificationCodeHint": "Código de verificación",
+  "verifyButton": "Verificar",
+  "registerPasswordSubtitle": "Crea una contraseña",
+  "registerPasswordFieldHint": "Ingresa contraseña",
+  "passwordInvalidCharsError": "La contraseña solo puede contener letras latinas, números y signos de puntuación",
+  "passwordWeakError": "La contraseña es demasiado débil. Usa letras, números y caracteres especiales",
+  "passwordMediumWarning": "Contraseña de fuerza media. Recomendamos fortalecer",
+  "passwordStrongSuccess": "Contraseña fuerte",
+  "nicknameGeneratorTitle": "Tu apodo se generará automáticamente",
+  "nicknameGeneratorDescription": "Podrás cambiar tu apodo en cualquier momento",
+  "closeButton": "Cerrar",
+  "loginFieldHint": "Usuario",
+  "passwordFieldHint": "Contraseña",
+  "loginButton": "Iniciar sesión",
+  "fillAllFields": "Por favor complete todos los campos",
+  "loggingIn": "Iniciando sesión...",
+  "welcomeUser": "¡Bienvenido, {username}!",
+  "invalidCredentials": "Credenciales inválidas. Verifique su nombre de usuario y contraseña.",
+  "serverError": "Error del servidor. Por favor intente más tarde.",
+  "connectionErrorLogin": "Error de conexión. Verifique su conexión a Internet.",
+  "noAccount": "¿No tiene cuenta?",
+  "forgotPassword": "¿Olvidaste la contraseña?",
+  "forgotPasswordDescription": "Introduce tu nombre de usuario y te enviaremos un enlace para acceder a tu cuenta por correo electrónico.",
+  "sendLinkButton": "Enviar Enlace",
+  "checkEmailTitle": "Revisa tu Correo",
+  "checkEmailDescription": "Por favor, revisa tu bandeja de entrada {email} y sigue el enlace para acceder a tu cuenta.",
+  "forgotPasswordCodeDescription": "Ingresa el código de acceso que fue enviado al email vinculado a tu cuenta",
+  "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+  "registrationUnavailable": "El registro no está disponible por el momento",
+  "passwordRecoveryUnavailable": "La recuperación de contraseña no está disponible por el momento",
+  "nicknameMinLengthError": "La longitud del apodo debe ser de al menos cinco caracteres",
+  "nicknameLatinOnlyError": "El apodo solo puede contener letras latinas, números, puntos y guión bajo",
+  "nicknameStartError": "El apodo no puede empezar con guión bajo, número o punto",
+    "nicknameEndError": "El nombre de usuario no puede terminar con guión bajo o punto",
+  "@nicknameEndError": {
+    "description": "Error de validación de final de nombre de usuario"
+  },
+  "checkingNickname": "Verificando nombre de usuario...",
+  "@checkingNickname": {
+    "description": "Mensaje de verificación de nombre de usuario"
+  },
+  "nicknameAvailable": "Nombre de usuario disponible",
+  "@nicknameAvailable": {
+    "description": "Mensaje indicando que el nombre de usuario está disponible"
+  },
+  "nicknameTakenError": "Este nombre de usuario ya está tomado",
+  "@nicknameTakenError": {
+    "description": "Error - el nombre de usuario ya está siendo usado por otro usuario"
+  },
+  "nicknameServerError": "Error al verificar nombre de usuario. Inténtelo más tarde",
+  "@nicknameServerError": {
+    "description": "Error del servidor al verificar el nombre de usuario"
+  },
+  "nicknameMaxLengthError": "Máximo 30 caracteres",
+  "@nicknameMaxLengthError": {
+    "description": "Error de longitud máxima del nombre de usuario"
+  },
+  "nameEmptyError": "El nombre no puede estar vacío",
+  "@nameEmptyError": {
+    "description": "Error cuando el nombre está vacío"
+  },
+  "confirmPasswordTitle": "Confirmar contraseña",
+  "@confirmPasswordTitle": {
+    "description": "Título del modal de confirmación de contraseña"
+  },
+  "confirmPasswordDescription": "Ingrese su contraseña nuevamente para confirmar",
+  "@confirmPasswordDescription": {
+    "description": "Descripción en el modal de confirmación de contraseña"
+  },
+  "confirmPasswordFieldHint": "Repetir contraseña",
+  "@confirmPasswordFieldHint": {
+    "description": "Texto de sugerencia en el campo de confirmación de contraseña"
+  },
+  "passwordMismatchError": "Las contraseñas no coinciden",
+  "@passwordMismatchError": {
+    "description": "Error cuando las contraseñas no coinciden"
+  },
+  "confirmButton": "Confirmar",
+  "@confirmButton": {
+    "description": "Botón de confirmación"
+  },
+  "registerAvatarSubtitle": "Elegir avatar",
+  "@registerAvatarSubtitle": {
+    "description": "Subtítulo para el paso de selección de avatar"
+  },
+  "addAvatarHint": "Toca + para agregar foto",
+  "@addAvatarHint": {
+    "description": "Sugerencia para agregar avatar"
+  },
+  "avatarTapToSelect": "Toca para seleccionar foto",
+  "@avatarTapToSelect": {
+    "description": "Sugerencia para seleccionar avatar"
+  },
+  "photoPermissionTitle": "Permitir acceso a imágenes",
+  "@photoPermissionTitle": {
+    "description": "Título de solicitud de permiso de foto"
+  },
+  "photoPermissionDescription": "Permítenos acceso a tus imágenes para que puedas elegir un avatar para tu perfil",
+  "@photoPermissionDescription": {
+    "description": "Descripción de solicitud de permiso de foto"
+  },
+  "allowAccessButton": "Permitir acceso",
+  "@allowAccessButton": {
+    "description": "Botón permitir acceso"
+  },
+  "notNowButton": "Ahora no",
+  "@notNowButton": {
+    "description": "Botón ahora no"
+  },
+  "skipButton": "Saltar",
+  "@skipButton": {
+    "description": "Botón para saltar el paso actual"
+  },
+  "avatarCropperTitle": "Configuración de Avatar",
+  "@avatarCropperTitle": {
+    "description": "Título de la pantalla de recorte de avatar"
+  },
+  "doneButton": "Hecho",
+  "@doneButton": {
+    "description": "Botón de finalizar"
+  },
+  "cropInstructions": "Arrastra el círculo para seleccionar área • Usa los puntos para redimensionar",
+  "@cropInstructions": {
+    "description": "Instrucciones de uso del recortador de avatar"
+  },
+  "changeAvatar": "Cambiar Avatar",
+  "@changeAvatar": {
+    "description": "Botón cambiar avatar"
+  },
+  "profilePreviewTitle": "Así se verá tu perfil",
+  "@profilePreviewTitle": {
+    "description": "Título de vista previa del perfil"
+  },
+  "goodMorning": "Buenos días",
+  "@goodMorning": {
+    "description": "Saludo matutino"
+  },
+  "goodDay": "Buenas tardes",
+  "@goodDay": {
+    "description": "Saludo de la tarde"
+  },
+  "goodEvening": "Buenas tardes",
+  "@goodEvening": {
+    "description": "Saludo de la noche"
+  },
+  "goodNight": "Buenas noches",
+  "@goodNight": {
+    "description": "Saludo nocturno"
+  },
+  "backButton": "Atrás",
+  "@backButton": {
+    "description": "Botón atrás"
+  },
+  "editName": "Editar nombre",
+  "@editName": {
+    "description": "Título de la ventana de edición del nombre"
+  },
+  "editNickname": "Editar apodo",
+  "@editNickname": {
+    "description": "Título de la ventana de edición del apodo"
+  },
+  "editPhoto": "Editar foto",
+  "@editPhoto": {
+    "description": "Título de la ventana de edición de la foto"
+  },
+  "saveButton": "Guardar",
+  "@saveButton": {
+    "description": "Botón guardar"
+  },
+  "deleteButton": "Eliminar",
+  "@deleteButton": {
+    "description": "Botón eliminar"
+  },
+  "deletePhoto": "Eliminar foto",
+  "@deletePhoto": {
+    "description": "Botón de eliminación de foto"
+  },
+  "selectFromGallery": "Seleccionar de la galería",
+  "@selectFromGallery": {
+    "description": "Botón de selección de foto de la galería"
+  },
+  "enterNameHint": "Ingresa tu nombre",
+  "@enterNameHint": {
+    "description": "Sugerencia del campo de entrada del nombre"
+  },
+  "enterNicknameHint": "Ingresa un apodo",
+  "@enterNicknameHint": {
+    "description": "Sugerencia del campo de entrada del apodo"
+  },
+  "termsAndConditionsTitle": "Términos y Condiciones",
+  "termsOfUse": "Términos de Uso",
+  "userAgreement": "Acuerdo de Usuario",
+  "acceptTermsText": "Para completar el registro y comenzar a usar Xaneo, debe aceptar nuestros {termsOfUse} y {userAgreement}.\n\nEstos documentos contienen información importante sobre las reglas de uso del servicio, protección de datos y obligaciones de ambas partes.\n\nAl aceptar estos términos, confirma que ha leído y acepta cumplir con las reglas de la plataforma.\n\nSin aceptar estos términos, el registro no se puede completar y el acceso al servicio será restringido.",
+  "acceptButton": "Aceptar",
+  "declineButton": "Rechazar",
+  "verificationCodeSent": "Código enviado a {email}. Válido por {seconds} segundos",
+  "codeDeliveryError": "Error al enviar código",
+  "serverErrorCodeDelivery": "Error del servidor al enviar código",
+  "connectionErrorCodeDelivery": "Error de conexión al enviar código",
+  "emailVerificationSuccess": "¡Email verificado exitosamente!",
+  "invalidVerificationCode": "Código de verificación inválido. Verifique el código e intente nuevamente",
+  "emailNotFound": "Email no encontrado. Intente registrarse nuevamente",
+  "verificationCodeExpired": "Código de verificación expirado. Solicite un nuevo código",
+  "serverErrorCodeVerification": "Error del servidor al verificar código. Intente más tarde",
+  "connectionErrorCodeVerification": "Error de conexión al verificar código",
+  "permissionDeniedSettings": "Permiso denegado permanentemente. Actívelo en configuración",
+  "avatarCropped": "¡Avatar recortado y guardado!",
+  "imageSelectionError": "Error al seleccionar imagen",
+  "permissionDeniedOpenSettings": "Permiso denegado permanentemente. Abra configuración para activar",
+  "photoPermissionError": "No se pudo obtener permiso de acceso a fotos",
+  "registrationCompleted": "¡Registro completado!",
+  "officialXaneoWebsite": "Sitio Web Oficial de Xaneo",
+  "twoFactorAuthMessage": "La autenticación de dos factores está habilitada en esta cuenta. Ingrese el código de verificación que fue enviado a {email}",
+  "selectLanguage": "Seleccionar idioma",
+  "messengerDemo": "Demo de mensajería",
+  "messenger": "Mensajería",
+  "messengerDescription": "Mensajero simple, rápido y seguro con diseño moderno e interfaz fácil de usar.",
+  "profileDemo": "Demo de perfil",
+  "profile": "Perfil",
+  "personalInfo": "Información personal",
+  "name": "Nombre",
+  "nameHint": "Nombre",
+  "birthDate": "Fecha de nacimiento",
+  "nickname": "Apodo",
+  "nicknameHint": "Apodo",
+  "phone": "Teléfono",
+  "phoneHint": "Número de teléfono",
+  "settingsSection": "Configuración",
+  "chatSettings": "Configuración de chats",
+  "chatSettingsDescription": "Aquí estarán las configuraciones de chats...",
+  "privacySettings": "Privacidad y confidencialidad",
+  "privacySettingsDescription": "Aquí estarán las configuraciones de privacidad...",
+  "securitySettings": "Seguridad",
+  "securitySettingsDescription": "Aquí estarán las configuraciones de seguridad...",
+  "securityAuthentication": "Autenticación",
+  "securityChangePassword": "Cambiar Contraseña",
+  "securityTwoFactorAuth": "Autenticación de Dos Factores",
+  "twoFactorEnabled": "Habilitada",
+  "twoFactorDisabled": "Deshabilitada",
+  "securityChangeEmail": "Cambiar Correo",
+  "securityPasscode": "Código de Acceso",
+  "passwordEmptyError": "La contraseña no puede estar vacía",
+  "passwordTooShortError": "La contraseña debe contener al menos 5 caracteres",
+  "passwordEnterCurrentHint": "Ingrese la contraseña actual para confirmar",
+  "passwordCurrentHint": "Contraseña actual",
+  "passwordConfirmNewHint": "Confirme la nueva contraseña",
+  "passwordDontMatchError": "Las contraseñas no coinciden",
+  "passwordNewTitle": "Nueva contraseña",
+  "passwordNewHint": "Nueva contraseña",
+  "passwordConfirmHint": "Confirme la contraseña",
+  "passwordChangedSuccess": "Contraseña cambiada exitosamente",
+  "passwordNextButton": "Siguiente",
+  "passwordSaveButton": "Guardar",
+  "powerSettings": "Ahorro de energía",
+  "powerSettingsDescription": "Aquí estarán las configuraciones de ahorro de energía...",
+  "languageSelect": "Idioma",
+  "cancel": "Cancelar",
+  "ready": "Listo",
+  "contentInDevelopment": "El contenido para \"{title}\" está en desarrollo...",
+  "sessions": "Sesiones",
+  "support": "Soporte",
+  "xaneoBenefits": "XaneoBenefits",
+  "messengerFeatures": "Características del modo demo:",
+  "secureEncryption": "Cifrado seguro de mensajes",
+  "instantDelivery": "Entrega instantánea",
+  "deviceSync": "Sincronización entre dispositivos",
+  "mediaSupport": "Soporte de archivos multimedia",
+  "sessionsContent": "Aquí se mostrarán las sesiones activas de tu cuenta...",
+  "activeDevices": "Dispositivos Activos",
+  "currentDevice": "Dispositivo Actual",
+  "terminateSession": "Terminar Sesión",
+  "terminateAllOtherSessions": "Terminar Todas las Otras Sesiones",
+  "sessionLocation": "Ubicación",
+  "sessionLastActive": "Última Actividad",
+  "sessionBrowser": "Navegador",
+  "sessionPlatform": "Plataforma",
+  "confirmTerminateSession": "¿Estás seguro de que quieres terminar esta sesión?",
+  "confirmTerminateAllSessions": "¿Estás seguro de que quieres terminar todas las otras sesiones? Esta acción no se puede deshacer.",
+  "sessionIPAddress": "Dirección IP",
+  "supportContent": "Tenemos una carga muy alta en nuestro servicio de soporte. Nos esforzamos por responder lo más rápido posible, pero actualmente el tiempo de espera puede ser de hasta 24 horas. Por favor, contáctanos y definitivamente te ayudaremos a resolver tu problema.",
+  "contactSupport": "Contactar",
+  "xaneoBenefitsContent": "XaneoBenefits es un programa de fidelización para usuarios de Xaneo. Obtén bonos y características exclusivas...",
+  "more": "Más",
+  "chatPreview": "Vista previa del chat",
+  "textSize": "Tamaño del texto",
+  "textSizeValue": "Tamaño: {size}",
+  "@textSizeValue": {
+    "description": "Visualización del tamaño del texto con valor",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "textExample": "Ejemplo de texto",
+  "useDarkTheme": "Usar apariencia oscura",
+  "chatWallpapers": "Fondos de chat",
+  "messageColors": "Colores de mensajes",
+  "myMessages": "Mis mensajes",
+  "receivedMessages": "Mensajes recibidos",
+  "messageEmojis": "Emojis para mensajes",
+  "selectedEmoji": "Emoji seleccionado:",
+  "chooseWallpaper": "Elegir fondo:",
+  "demoMessage1": "¡Hola! ¿Cómo estás?",
+  "demoMessage2": "¡Todo genial! ¿Y tú?",
+  "demoMessage3": "Yo también estoy bien, gracias 😊",
+  "demoDateSeparator": "Hoy",
+  "onlineStatus": "en línea",
+  "chatTheme": "Tema del chat",
+  "privacySettingsTitle": "Privacidad y seguridad",
+  "privacyCommunications": "Comunicaciones",
+  "privacyProfileVisibility": "Visibilidad del perfil",
+  "privacyWhoCanMessage": "Mensajes",
+  "privacyWhoCanRecordVoice": "Mensajes de voz",
+  "privacyWhoCanCall": "Llamadas",
+  "privacyWhoCanSendVideo": "Mensajes de video",
+  "privacyWhoCanSendLinks": "Enlaces",
+  "privacyWhoCanInvite": "Invitaciones",
+  "privacyWhoSeesNickname": "Nickname",
+  "privacyWhoSeesAvatar": "Avatar",
+  "privacyWhoSeesBirthday": "Cumpleaños",
+  "privacyWhoSeesOnlineTime": "Hora de conexión",
+  "privacyAll": "Todos",
+  "privacyContacts": "Contactos",
+  "privacyNobody": "Nadie",
+  "passwordWeak": "Débil",
+  "passwordMedium": "Medio",
+  "passwordStrong": "Fuerte",
+  "twoFactorEnableDescription": "Para habilitar la autenticación de dos factores, ingrese el código de verificación enviado a {email}",
+  "@twoFactorEnableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoFactorDisableDescription": "Para deshabilitar la autenticación de dos factores, ingrese el código de verificación enviado a {email}",
+  "@twoFactorDisableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "changeEmailVerificationDescription": "Para cambiar su correo electrónico, ingrese el código de verificación enviado a demouser@example.com",
+  "@changeEmailVerificationDescription": {
+    "description": "Descripción para verificación de cambio de correo electrónico"
+  },
+  "newEmailTitle": "Nuevo Correo",
+  "@newEmailTitle": {
+    "description": "Título de la ventana de entrada de nuevo correo"
+  },
+  "newEmailDescription": "Ingrese nueva dirección de correo electrónico",
+  "@newEmailDescription": {
+    "description": "Descripción en la ventana de entrada de nuevo correo"
+  },
+  "changeEmailButton": "Cambiar",
+  "@changeEmailButton": {
+    "description": "Botón de cambio de correo"
+  },
+  "verifyNewEmailTitle": "Verificar Nuevo Correo",
+  "@verifyNewEmailTitle": {
+    "description": "Título de la ventana de verificación del nuevo correo"
+  },
+  "verifyNewEmailDescription": "Para verificar su nuevo correo {email}, ingrese el código de confirmación enviado a esta dirección",
+  "@verifyNewEmailDescription": {
+    "description": "Descripción en la ventana de verificación del nuevo correo",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyNewEmailButton": "Verificar",
+  "@verifyNewEmailButton": {
+    "description": "Botón de verificación del nuevo correo"
+  },
+  "passcodeVerificationTitle": "Habilitar Código de Acceso",
+  "@passcodeVerificationTitle": {
+    "description": "Título de la ventana de habilitación del código de acceso"
+  },
+  "passcodeVerificationDescription": "Para habilitar la protección con código de acceso, ingrese el código de verificación enviado a {email}",
+  "@passcodeVerificationDescription": {
+    "description": "Descripción en la ventana de habilitación del código de acceso",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "passcodeVerificationButton": "Habilitar",
+  "@passcodeVerificationButton": {
+    "description": "Botón de habilitación del código de acceso"
+  },
+  "setPasscodeTitle": "Establecer Código de Acceso",
+  "@setPasscodeTitle": {
+    "description": "Título de la ventana de establecimiento del código de acceso"
+  },
+  "setPasscodeDescription": "Cree un código de acceso de 4 dígitos para protección adicional",
+  "@setPasscodeDescription": {
+    "description": "Descripción en la ventana de establecimiento del código de acceso"
+  },
+  "passcodeHint": "Ingrese 4 dígitos",
+  "@passcodeHint": {
+    "description": "Sugerencia para el campo de entrada del código de acceso"
+  },
+  "setPasscodeButton": "Establecer",
+  "@setPasscodeButton": {
+    "description": "Botón de establecimiento del código de acceso"
+  },
+  "xaneoBenefitsModalTitle": "XaneoBenefits (XB)",
+  "@xaneoBenefitsModalTitle": {
+    "description": "Título del modal de XaneoBenefits"
+  },
+  "xaneoBenefitsModalDescription": "Suscripción Premium de Xaneo",
+  "@xaneoBenefitsModalDescription": {
+    "description": "Descripción del modal de XaneoBenefits"
+  },
+  "xaneoBenefitsSelectPlan": "Elija su plan de suscripción:",
+  "@xaneoBenefitsSelectPlan": {
+    "description": "Texto de selección del plan de suscripción"
+  },
+  "xaneoBenefitsYearlyPlan": "Suscripción anual",
+  "@xaneoBenefitsYearlyPlan": {
+    "description": "Nombre de la suscripción anual"
+  },
+  "xaneoBenefitsMonthlyPlan": "Suscripción mensual",
+  "@xaneoBenefitsMonthlyPlan": {
+    "description": "Nombre de la suscripción mensual"
+  },
+  "xaneoBenefitsYearlyPrice": "€999 al año",
+  "@xaneoBenefitsYearlyPrice": {
+    "description": "Precio de la suscripción anual"
+  },
+  "xaneoBenefitsMonthlyPrice": "€159 al mes",
+  "@xaneoBenefitsMonthlyPrice": {
+    "description": "Precio de la suscripción mensual"
+  },
+  "xaneoBenefitsSavings": "¡Ahorra 25%! Solo €83,25 al mes",
+  "@xaneoBenefitsSavings": {
+    "description": "Texto de ahorro para suscripción anual"
+  },
+  "xaneoBenefitsSubscribeButton": "Suscribirse a XB",
+  "@xaneoBenefitsSubscribeButton": {
+    "description": "Botón de suscripción"
+  },
+  "xaneoBenefitsCloseButton": "Cerrar",
+  "@xaneoBenefitsCloseButton": {
+    "description": "Botón para cerrar el modal"
+  },
+  "xaneoBenefitsYearlySuccess": "¡Suscripción anual XB activada!",
+  "@xaneoBenefitsYearlySuccess": {
+    "description": "Mensaje de éxito de suscripción anual"
+  },
+  "xaneoBenefitsMonthlySuccess": "¡Suscripción mensual XB activada!",
+  "@xaneoBenefitsMonthlySuccess": {
+    "description": "Mensaje de éxito de suscripción mensual"
+  }
+}

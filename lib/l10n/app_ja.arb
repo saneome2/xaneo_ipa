@@ -1,0 +1,523 @@
+{
+  "@@locale": "ja",
+  "appTitle": "XaneoMobile",
+  "welcomeTitle": "Xaneoへようこそ",
+  "welcomeDescription": "Xaneo - モバイルアプリになりました！Xaneoがこれほど便利で高速になったことはありません。",
+  "getStartedButton": "もう興味があります",
+  "connectingToServer": "サーバーに接続中...",
+  "version": "バージョン: {version}",
+  "httpError": "エラー: HTTP {code}",
+  "connectionError": "接続エラー：{error}",
+  "updateAvailable": "アップデートが利用可能です！",
+  "updateDialogTitle": "アップデートが利用可能です！",
+  "updateDialogMessage": "現在のバージョンは {currentVersion} で、新しいバージョンは {latestVersion} です",
+  "updateDialogDescription": "Google Play、RuStore、またはXaneoの公式ウェブサイトからアップデートできます。",
+  "updateButton": "アップデート",
+  "cancelButton": "キャンセル",
+  "selectUpdateSource": "アップデート元を選択してください：",
+  "settings": "設定",
+  "about": "アプリについて",
+  "help": "ヘルプ",
+  "notifications": "通知",
+  "notificationsDescription": "新機能の通知を受け取る",
+  "darkTheme": "ダークテーマ",
+  "darkThemeDescription": "ダークな外観を使用",
+  "fontSize": "フォントサイズ: {size}",
+  "appVersion": "アプリのバージョン",
+  "messengerDemoMode": "メッセンジャーデモモード",
+  "language": "言語",
+  "languageDescription": "インターフェース言語を選択",
+  "welcomeMessage": "素晴らしい！ようこそ！",
+  "privacyTitle": "あなたのデータはすべて安全です",
+  "privacyDescription": "XaneoConnectのすべてのメッセージはエンドツーエンド暗号化で保護されています。Xaneoがその内容を知ることは一切ありません。",
+  "continueButton": "続けましょう",
+  "dataStorageTitle": "すべてのXaneoデータセンターはロシアにあります",
+  "dataStorageDescription": "あなたのデータは国外に出ることなく、安全なデータセンターに保存されます。",
+  "finishButton": "完了",
+  "setupCompleted": "セットアップが完了しました！",
+  "loginFormTitle": "ログインしましょう",
+  "registerFormTitle": "始めましょう",
+  "registerNameSubtitle": "お名前を教えてください",
+  "nameFieldHint": "お名前",
+  "nextButton": "次へ",
+  "registerBirthdateSubtitle": "生年月日を教えてください",
+  "selectDate": "日付を選択",
+  "ageRestrictionsLink": "年齢制限は何ですか？",
+  "ageRestrictionsTitle": "14歳から登録可能",
+  "ageRestrictionsDescription": "14歳以上の方はサービスに登録できます",
+  "gotIt": "了解しました",
+  "registerNicknameSubtitle": "ニックネームを選択",
+  "nicknameFieldHint": "あなたのニックネーム",
+  "nicknameHelpLink": "ニックネームが思い浮かびませんか？",
+  "registerEmailSubtitle": "メールアドレスを入力してください",
+  "emailFieldHint": "あなたのメールアドレス",
+  "supportedEmailProvidersLink": "どのメールプロバイダーがサポートされていますか？",
+  "supportedEmailProvidersTitle": "サポートされているメールプロバイダー",
+  "supportedEmailProvidersDescription": "Gmail、Outlook、Yandex、Mail.ruなどの人気メールサービスがサポートされています。",
+  "emailFormatError": "メールアドレスの形式が無効です",
+  "emailUnsupportedError": "このメールサービスはサポートされていません",
+  "checkingEmail": "メールアドレスを確認中...",
+  "emailAvailable": "メールアドレスが利用可能です",
+  "emailTakenError": "このメールアドレスは既に使用されています",
+  "emailServerError": "メールアドレスの確認エラー。後でもう一度お試しください",
+  "verifyEmailTitle": "メールアドレスを確認",
+  "verifyEmailDescription": "6桁のコードをメールアドレスに送信しました。確認のために入力してください。",
+  "verificationCodeHint": "確認コード",
+  "verifyButton": "確認",
+  "registerPasswordSubtitle": "パスワードを作成",
+  "registerPasswordFieldHint": "パスワードを入力",
+    "passwordInvalidCharsError": "パスワードにはラテン文字、数字、句読点のみを使用できます",
+  "passwordWeakError": "パスワードが弱すぎます。文字、数字、特殊文字を使用してください",
+  "passwordMediumWarning": "中程度の強さのパスワード。強化をお勧めします",
+  "passwordStrongSuccess": "強いパスワード",
+  "nicknameGeneratorTitle": "ニックネームは自動的に生成されます",
+  "nicknameGeneratorDescription": "ニックネームはいつでも変更できます",
+  "closeButton": "閉じる",
+  "loginFieldHint": "ユーザー名",
+  "passwordFieldHint": "パスワード",
+  "loginButton": "ログイン",
+  "fillAllFields": "すべてのフィールドを入力してください",
+  "loggingIn": "ログイン中...",
+  "welcomeUser": "ようこそ、{username}さん！",
+  "invalidCredentials": "認証情報が無効です。ユーザー名とパスワードを確認してください。",
+  "serverError": "サーバーエラーです。後でもう一度お試しください。",
+  "connectionErrorLogin": "接続エラーです。インターネット接続を確認してください。",
+  "noAccount": "アカウントをお持ちでない方",
+    "forgotPassword": "パスワードを忘れましたか？",
+  "forgotPasswordDescription": "ユーザー名を入力していただければ、アカウントアクセス用のリンクをメールでお送りします。",
+  "sendLinkButton": "リンクを送信",
+  "checkEmailTitle": "メールをご確認ください",
+  "checkEmailDescription": "{email} の受信トレイをご確認の上、リンクをクリックしてアカウントにアクセスしてください。",
+  "forgotPasswordCodeDescription": "アカウントにリンクされたメールに送信されたアクセスコードを入力してください",
+  "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
+  "registrationUnavailable": "現在、登録は利用できません",
+  "passwordRecoveryUnavailable": "現在、パスワード復旧は利用できません",
+  "nicknameMinLengthError": "ニックネームyの長さは5文字以上である必要があります",
+  "nicknameLatinOnlyError": "ニックネームにはラテン文字、数字、ドット、アンダースコアのみ使用できます",
+  "nicknameStartError": "ニックネームはアンダースコア、数字、ドットで始めることはできません",
+    "nicknameEndError": "ニックネームはアンダースコアやピリオドで終わることはできません",
+  "@nicknameEndError": {
+    "description": "ニックネーム末尾の検証エラー"
+  },
+  "checkingNickname": "ニックネームを確認中...",
+  "@checkingNickname": {
+    "description": "ニックネーム確認メッセージ"
+  },
+  "nicknameAvailable": "ニックネームは利用可能です",
+  "@nicknameAvailable": {
+    "description": "ニックネームが利用可能であることを示すメッセージ"
+  },
+  "nicknameTakenError": "このニックネームは既に使用されています",
+  "@nicknameTakenError": {
+    "description": "エラー - ニックネームが他のユーザーによって既に使用されている"
+  },
+  "nicknameServerError": "ニックネーム確認エラー。後でもう一度お試しください",
+  "@nicknameServerError": {
+    "description": "ニックネーム確認時のサーバーエラー"
+  },
+  "nicknameMaxLengthError": "最大30文字",
+  "@nicknameMaxLengthError": {
+    "description": "ニックネームの長さが制限を超えた場合のエラーメッセージ"
+  },
+  "nameEmptyError": "名前を入力してください",
+  "@nameEmptyError": {
+    "description": "名前が空の場合のエラーメッセージ"
+  },
+  "confirmPasswordTitle": "パスワードの確認",
+  "@confirmPasswordTitle": {
+    "description": "パスワード確認モーダルのタイトル"
+  },
+  "confirmPasswordDescription": "確認のためにパスワードをもう一度入力してください",
+  "@confirmPasswordDescription": {
+    "description": "パスワード確認モーダルの説明"
+  },
+  "confirmPasswordFieldHint": "パスワードを再入力",
+  "@confirmPasswordFieldHint": {
+    "description": "パスワード確認フィールドのヒントテキスト"
+  },
+  "passwordMismatchError": "パスワードが一致しません",
+  "@passwordMismatchError": {
+    "description": "パスワードが一致しない場合のエラー"
+  },
+  "confirmButton": "確認",
+  "@confirmButton": {
+    "description": "確認ボタン"
+  },
+  "registerAvatarSubtitle": "アバターを選択",
+  "@registerAvatarSubtitle": {
+    "description": "アバター選択ステップのサブタイトル"
+  },
+  "addAvatarHint": "+ をタップして写真を追加",
+  "@addAvatarHint": {
+    "description": "アバター追加のヒント"
+  },
+  "avatarTapToSelect": "タップして写真を選択",
+  "@avatarTapToSelect": {
+    "description": "アバター選択のヒント"
+  },
+  "photoPermissionTitle": "画像へのアクセスを許可",
+  "@photoPermissionTitle": {
+    "description": "写真許可リクエストのタイトル"
+  },
+  "photoPermissionDescription": "プロフィール用のアバターを選択できるよう、画像へのアクセスを許可してください",
+  "@photoPermissionDescription": {
+    "description": "写真許可リクエストの説明"
+  },
+  "allowAccessButton": "アクセスを許可",
+  "@allowAccessButton": {
+    "description": "アクセス許可ボタン"
+  },
+  "notNowButton": "今はしない",
+  "@notNowButton": {
+    "description": "今はしないボタン"
+  },
+  "skipButton": "スキップ",
+  "@skipButton": {
+    "description": "現在のステップをスキップするボタン"
+  },
+  "avatarCropperTitle": "アバター設定",
+  "@avatarCropperTitle": {
+    "description": "アバタークロッパー画面のタイトル"
+  },
+  "doneButton": "完了",
+  "@doneButton": {
+    "description": "完了ボタン"
+  },
+  "cropInstructions": "円をドラッグしてエリアを選択 • ドットを使ってサイズ変更",
+  "@cropInstructions": {
+    "description": "アバタークロッパーの使用方法"
+  },
+  "changeAvatar": "アバターを変更",
+  "@changeAvatar": {
+    "description": "アバター変更ボタン"
+  },
+  "profilePreviewTitle": "あなたのプロフィールはこのように表示されます",
+  "@profilePreviewTitle": {
+    "description": "プロフィールプレビューのタイトル"
+  },
+  "goodMorning": "おはようございます",
+  "@goodMorning": {
+    "description": "朝の挨拶"
+  },
+  "goodDay": "こんにちは",
+  "@goodDay": {
+    "description": "昼の挨拶"
+  },
+  "goodEvening": "こんばんは",
+  "@goodEvening": {
+    "description": "夜の挨拶"
+  },
+  "goodNight": "おやすみなさい",
+  "@goodNight": {
+    "description": "夜の挨拶"
+  },
+  "backButton": "戻る",
+  "@backButton": {
+    "description": "戻るボタン"
+  },
+  "editName": "名前を編集",
+  "@editName": {
+    "description": "名前編集モーダルのタイトル"
+  },
+  "editNickname": "ニックネームを編集",
+  "@editNickname": {
+    "description": "ニックネーム編集モーダルのタイトル"
+  },
+  "editPhoto": "写真を編集",
+  "@editPhoto": {
+    "description": "写真編集モーダルのタイトル"
+  },
+  "saveButton": "保存",
+  "@saveButton": {
+    "description": "保存ボタン"
+  },
+  "deleteButton": "削除",
+  "@deleteButton": {
+    "description": "削除ボタン"
+  },
+  "deletePhoto": "写真を削除",
+  "@deletePhoto": {
+    "description": "写真削除ボタン"
+  },
+  "selectFromGallery": "ギャラリーから選択",
+  "@selectFromGallery": {
+    "description": "ギャラリーから写真を選択するボタン"
+  },
+  "enterNameHint": "お名前を入力",
+  "@enterNameHint": {
+    "description": "名前入力フィールドのヒント"
+  },
+  "enterNicknameHint": "ニックネームを入力",
+  "@enterNicknameHint": {
+    "description": "ニックネーム入力フィールドのヒント"
+  },
+  "termsAndConditionsTitle": "利用規約",
+  "termsOfUse": "利用規約",
+  "userAgreement": "ユーザー契約",
+  "acceptTermsText": "登録を完了してXaneoの使用を開始するには、{termsOfUse}と{userAgreement}に同意する必要があります。\n\nこれらの文書には、サービス利用規則、データ保護、両当事者の義務に関する重要な情報が含まれています。\n\nこれらの条項に同意することで、プラットフォームの規則を読み、遵守することに同意したことを確認します。\n\nこれらの条項に同意しない場合、登録を完了することはできず、サービスへのアクセスが制限されます。",
+  "acceptButton": "同意する",
+  "declineButton": "拒否する",
+  "verificationCodeSent": "{email}に認証コードを送信しました。有効期限は{seconds}秒です",
+  "codeDeliveryError": "認証コード送信エラー",
+  "serverErrorCodeDelivery": "認証コード送信時のサーバーエラー",
+  "connectionErrorCodeDelivery": "認証コード送信時の接続エラー",
+  "emailVerificationSuccess": "メール認証が完了しました！",
+  "invalidVerificationCode": "無効な認証コードです。コードを確認して再試行してください",
+  "emailNotFound": "メールアドレスが見つかりません。再度登録してください",
+  "verificationCodeExpired": "認証コードの有効期限が切れました。新しいコードをリクエストしてください",
+  "serverErrorCodeVerification": "認証コード確認時のサーバーエラー。後で再試行してください",
+  "connectionErrorCodeVerification": "認証コード確認時の接続エラー",
+  "permissionDeniedSettings": "権限が永続的に拒否されました。設定で有効にしてください",
+  "avatarCropped": "アバターがトリミングされ保存されました！",
+  "imageSelectionError": "画像選択エラー",
+  "permissionDeniedOpenSettings": "権限が永続的に拒否されました。設定を開いて有効にしてください",
+  "photoPermissionError": "写真アクセス権限を取得できませんでした",
+  "registrationCompleted": "登録が完了しました！",
+  "officialXaneoWebsite": "Xaneo公式ウェブサイト",
+  "twoFactorAuthMessage": "このアカウントでは二要素認証が有効になっています。{email}に送信された認証コードを入力してください",
+  "selectLanguage": "言語を選択",
+  "messengerDemo": "メッセンジャーデモ",
+  "messenger": "メッセンジャー",
+  "messengerDescription": "モダンなデザインとユーザーフレンドリーなインターフェースを備えたシンプルで高速で安全なメッセンジャー。",
+  "profileDemo": "プロフィールデモ",
+  "profile": "プロフィール",
+  "personalInfo": "個人情報",
+  "name": "名前",
+  "nameHint": "名前",
+  "birthDate": "生年月日",
+  "nickname": "ニックネーム",
+  "nicknameHint": "ニックネーム",
+  "phone": "電話",
+  "phoneHint": "電話番号",
+  "settingsSection": "設定",
+  "chatSettings": "チャット設定",
+  "chatSettingsDescription": "チャット設定はここに表示されます...",
+  "privacySettings": "プライバシーと機密性",
+  "privacySettingsDescription": "プライバシー設定はここに表示されます...",
+  "securitySettings": "セキュリティ",
+  "securitySettingsDescription": "セキュリティ設定はここに表示されます...",
+  "securityAuthentication": "認証",
+  "securityChangePassword": "パスワード変更",
+  "securityTwoFactorAuth": "二要素認証",
+  "twoFactorEnabled": "有効",
+  "twoFactorDisabled": "無効",
+  "securityChangeEmail": "メール変更",
+  "securityPasscode": "パスコード",
+  "passwordEmptyError": "パスワードを空にすることはできません",
+  "passwordTooShortError": "パスワードは少なくとも5文字以上にする必要があります",
+  "passwordEnterCurrentHint": "確認のために現在のパスワードを入力してください",
+  "passwordCurrentHint": "現在のパスワード",
+  "passwordConfirmNewHint": "新しいパスワードを確認してください",
+  "passwordDontMatchError": "パスワードが一致しません",
+  "passwordNewTitle": "新しいパスワード",
+  "passwordNewHint": "新しいパスワード",
+  "passwordConfirmHint": "パスワードを確認",
+  "passwordChangedSuccess": "パスワードが正常に変更されました",
+  "passwordNextButton": "次へ",
+  "passwordSaveButton": "保存",
+  "powerSettings": "省電力",
+  "powerSettingsDescription": "省電力設定はここに表示されます...",
+  "languageSelect": "言語",
+  "cancel": "キャンセル",
+  "ready": "完了",
+  "contentInDevelopment": "\"{title}\"のコンテンツは開発中です...",
+  "sessions": "セッション",
+  "support": "サポート",
+  "xaneoBenefits": "XaneoBenefits",
+  "messengerFeatures": "デモモードの機能:",
+  "secureEncryption": "メッセージの安全な暗号化",
+  "instantDelivery": "即時配信",
+  "deviceSync": "デバイス間同期",
+  "mediaSupport": "メディアファイルサポート",
+  "sessionsContent": "アカウントのアクティブなセッションがここに表示されます...",
+  "activeDevices": "アクティブなデバイス",
+  "currentDevice": "現在のデバイス",
+  "terminateSession": "セッションを終了",
+  "terminateAllOtherSessions": "他のすべてのセッションを終了",
+  "sessionLocation": "場所",
+  "sessionLastActive": "最後のアクティブ",
+  "sessionBrowser": "ブラウザ",
+  "sessionPlatform": "プラットフォーム",
+  "confirmTerminateSession": "このセッションを終了してもよろしいですか？",
+  "confirmTerminateAllSessions": "他のすべてのセッションを終了してもよろしいですか？この操作は元に戻せません。",
+  "sessionIPAddress": "IPアドレス",
+  "supportContent": "サポートサービスに非常に高い負荷がかかっています。できるだけ早く対応するよう努めていますが、現在待ち時間が最大24時間かかる場合があります。ぜひご連絡ください。必ずお手伝いいたします。",
+  "contactSupport": "連絡",
+  "xaneoBenefitsContent": "XaneoBenefitsは、Xaneoユーザー向けのロイヤルティプログラムです。ボーナスと特別な機能を手に入れましょう...",
+  "more": "その他",
+  "chatPreview": "チャットプレビュー",
+  "textSize": "テキストサイズ",
+  "textSizeValue": "サイズ: {size}",
+  "@textSizeValue": {
+    "description": "値付きのテキストサイズ表示",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "textExample": "テキスト例",
+  "useDarkTheme": "ダークテーマを使用",
+  "chatWallpapers": "チャット壁紙",
+  "messageColors": "メッセージの色",
+  "myMessages": "自分のメッセージ",
+  "receivedMessages": "受信メッセージ",
+  "messageEmojis": "メッセージ絵文字",
+  "selectedEmoji": "選択された絵文字:",
+  "chooseWallpaper": "壁紙を選択:",
+  "demoMessage1": "こんにちは！調子はどう？",
+  "demoMessage2": "最高だよ！君は？",
+  "demoMessage3": "僕も元気だよ、ありがとう 😊",
+  "demoDateSeparator": "今日",
+  "onlineStatus": "オンライン",
+  "chatTheme": "チャットのテーマ",
+  "privacySettingsTitle": "プライバシーとセキュリティ",
+  "privacyCommunications": "通信",
+  "privacyProfileVisibility": "プロフィールの表示",
+  "privacyWhoCanMessage": "メッセージ",
+  "privacyWhoCanRecordVoice": "ボイスメッセージ",
+  "privacyWhoCanCall": "通話",
+  "privacyWhoCanSendVideo": "ビデオメッセージ",
+  "privacyWhoCanSendLinks": "リンク",
+  "privacyWhoCanInvite": "招待",
+  "privacyWhoSeesNickname": "ニックネーム",
+  "privacyWhoSeesAvatar": "アバター",
+  "privacyWhoSeesBirthday": "誕生日",
+  "privacyWhoSeesOnlineTime": "オンライ時間",
+  "privacyAll": "全員",
+  "privacyContacts": "連絡先",
+  "privacyNobody": "誰も",
+  "passwordWeak": "弱い",
+  "passwordMedium": "普通",
+  "passwordStrong": "強い",
+  "twoFactorEnableDescription": "2要素認証を有効にするには、{email} に送信された確認コードを入力してください",
+  "@twoFactorEnableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoFactorDisableDescription": "2要素認証を無効にするには、{email} に送信された確認コードを入力してください",
+  "@twoFactorDisableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "changeEmailVerificationDescription": "メールアドレスを変更するには、demouser@example.com に送信された確認コードを入力してください",
+  "@changeEmailVerificationDescription": {
+    "description": "メールアドレス変更確認の説明"
+  },
+  "newEmailTitle": "新しいメール",
+  "@newEmailTitle": {
+    "description": "新しいメール入力ウィンドウのタイトル"
+  },
+  "newEmailDescription": "新しいメールアドレスを入力してください",
+  "@newEmailDescription": {
+    "description": "新しいメール入力ウィンドウの説明"
+  },
+  "changeEmailButton": "変更",
+  "@changeEmailButton": {
+    "description": "メール変更ボタン"
+  },
+  "verifyNewEmailTitle": "新しいメールを確認",
+  "@verifyNewEmailTitle": {
+    "description": "新しいメール確認ウィンドウのタイトル"
+  },
+  "verifyNewEmailDescription": "新しいメールアドレス{email}を確認するには、このアドレスに送信された確認コードを入力してください",
+  "@verifyNewEmailDescription": {
+    "description": "新しいメール確認ウィンドウの説明",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyNewEmailButton": "確認",
+  "@verifyNewEmailButton": {
+    "description": "新しいメール確認ボタン"
+  },
+  "passcodeVerificationTitle": "パスコードを有効にする",
+  "@passcodeVerificationTitle": {
+    "description": "パスコード有効化ウィンドウのタイトル"
+  },
+  "passcodeVerificationDescription": "パスコード保護を有効にするには、{email}に送信された確認コードを入力してください",
+  "@passcodeVerificationDescription": {
+    "description": "パスコード有効化ウィンドウの説明",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "passcodeVerificationButton": "有効にする",
+  "@passcodeVerificationButton": {
+    "description": "パスコード有効化ボタン"
+  },
+  "setPasscodeTitle": "パスコードを設定",
+  "@setPasscodeTitle": {
+    "description": "パスコード設定ウィンドウのタイトル"
+  },
+  "setPasscodeDescription": "追加の保護のために4桁のパスコードを作成してください",
+  "@setPasscodeDescription": {
+    "description": "パスコード設定ウィンドウの説明"
+  },
+  "passcodeHint": "4桁を入力",
+  "@passcodeHint": {
+    "description": "パスコード入力フィールドのヒント"
+  },
+  "setPasscodeButton": "設定",
+  "@setPasscodeButton": {
+    "description": "パスコード設定ボタン"
+  },
+  "xaneoBenefitsModalTitle": "XaneoBenefits (XB)",
+  "@xaneoBenefitsModalTitle": {
+    "description": "XaneoBenefits モーダルタイトル"
+  },
+  "xaneoBenefitsModalDescription": "Xaneo プレミアムサブスクリプション",
+  "@xaneoBenefitsModalDescription": {
+    "description": "XaneoBenefits モーダル説明"
+  },
+  "xaneoBenefitsSelectPlan": "サブスクリプションプランを選択してください：",
+  "@xaneoBenefitsSelectPlan": {
+    "description": "サブスクリプションプラン選択テキスト"
+  },
+  "xaneoBenefitsYearlyPlan": "年間サブスクリプション",
+  "@xaneoBenefitsYearlyPlan": {
+    "description": "年間サブスクリプション名"
+  },
+  "xaneoBenefitsMonthlyPlan": "月間サブスクリプション",
+  "@xaneoBenefitsMonthlyPlan": {
+    "description": "月間サブスクリプション名"
+  },
+  "xaneoBenefitsYearlyPrice": "¥999,000/年",
+  "@xaneoBenefitsYearlyPrice": {
+    "description": "年間サブスクリプション価格"
+  },
+  "xaneoBenefitsMonthlyPrice": "¥159,000/月",
+  "@xaneoBenefitsMonthlyPrice": {
+    "description": "月間サブスクリプション価格"
+  },
+  "xaneoBenefitsSavings": "25% お得！月額 ¥83,250 のみ",
+  "@xaneoBenefitsSavings": {
+    "description": "年間サブスクリプション節約テキスト"
+  },
+  "xaneoBenefitsSubscribeButton": "XB を購読",
+  "@xaneoBenefitsSubscribeButton": {
+    "description": "購読ボタン"
+  },
+  "xaneoBenefitsCloseButton": "閉じる",
+  "@xaneoBenefitsCloseButton": {
+    "description": "モーダルを閉じるボタン"
+  },
+  "xaneoBenefitsYearlySuccess": "年間 XB サブスクリプションが有効化されました！",
+  "@xaneoBenefitsYearlySuccess": {
+    "description": "年間サブスクリプション成功メッセージ"
+  },
+  "xaneoBenefitsMonthlySuccess": "月間 XB サブスクリプションが有効化されました！",
+  "@xaneoBenefitsMonthlySuccess": {
+    "description": "月間サブスクリプション成功メッセージ"
+  }
+}

@@ -1,0 +1,529 @@
+{
+  "@@locale": "zh",
+  "appTitle": "XaneoMobile",
+  "welcomeTitle": "欢迎使用 Xaneo",
+  "welcomeDescription": "Xaneo - 现在有移动应用程序了！Xaneo 从未如此便捷和快速。",
+  "@welcomeDescription": {
+    "description": "欢迎描述"
+  },
+  "getStartedButton": "我很感兴趣",
+  "@getStartedButton": {
+    "description": "开始按钮"
+  },
+  "connectingToServer": "正在连接服务器...",
+  "version": "版本：{version}",
+  "httpError": "错误：HTTP {code}",
+  "connectionError": "连接错误：{error}",
+  "updateAvailable": "有可用更新！",
+  "updateDialogTitle": "有可用更新！",
+  "updateDialogMessage": "您的版本是 {currentVersion}，新版本是 {latestVersion}",
+  "updateDialogDescription": "您可以通过 Google Play、RuStore 或 Xaneo 官方网站进行更新。",
+  "updateButton": "更新",
+  "cancelButton": "取消",
+  "selectUpdateSource": "选择更新来源：",
+  "settings": "设置",
+  "about": "关于",
+  "help": "帮助",
+  "notifications": "通知",
+  "notificationsDescription": "接收新功能通知",
+  "darkTheme": "深色主题",
+  "darkThemeDescription": "使用深色外观",
+  "fontSize": "字体大小：{size}",
+  "appVersion": "应用版本",
+  "messengerDemoMode": "信使演示模式",
+  "language": "语言",
+  "languageDescription": "选择界面语言",
+  "welcomeMessage": "太好了！欢迎！",
+  "privacyTitle": "您的所有数据都是安全的",
+  "privacyDescription": "XaneoConnect 中的所有消息都受到端到端加密保护。Xaneo 绝不会知道其内容。",
+  "continueButton": "让我们继续",
+  "dataStorageTitle": "所有 Xaneo 数据中心都位于俄罗斯",
+  "dataStorageDescription": "您的数据不会离开该国，并存储在安全的数据中心中。",
+  "finishButton": "完成",
+  "setupCompleted": "设置完成！",
+  "loginFormTitle": "让我们登录",
+  "registerFormTitle": "让我们开始",
+  "registerNameSubtitle": "您叫什么名字？",
+  "nameFieldHint": "您的姓名",
+  "nextButton": "下一步",
+  "registerBirthdateSubtitle": "您的出生日期是？",
+  "selectDate": "选择日期",
+  "ageRestrictionsLink": "年龄限制是什么？",
+  "ageRestrictionsTitle": "14岁即可注册",
+  "ageRestrictionsDescription": "如果您年满14岁，即可在我们的服务上注册",
+  "gotIt": "明白了",
+  "registerNicknameSubtitle": "选择昵称",
+  "nicknameFieldHint": "您的昵称",
+  "nicknameHelpLink": "想不出昵称？",
+  "registerEmailSubtitle": "输入电子邮箱",
+  "emailFieldHint": "您的电子邮箱",
+  "supportedEmailProvidersLink": "支持哪些邮箱提供商？",
+  "supportedEmailProvidersTitle": "支持的邮箱提供商",
+  "supportedEmailProvidersDescription": "支持Gmail、Outlook、Yandex、Mail.ru等热门邮箱服务。",
+  "emailFormatError": "电子邮件地址格式无效",
+  "emailUnsupportedError": "不支持此邮箱服务",
+  "checkingEmail": "正在检查邮箱...",
+  "emailAvailable": "邮箱可用",
+  "emailTakenError": "此邮箱已被占用",
+  "emailServerError": "邮箱检查错误。请稍后再试",
+  "verifyEmailTitle": "验证您的邮箱",
+  "verifyEmailDescription": "我们已向您的邮箱发送了6位验证码。请输入以确认。",
+  "verificationCodeHint": "验证码",
+  "verifyButton": "验证",
+  "registerPasswordSubtitle": "创建密码",
+  "registerPasswordFieldHint": "输入密码",
+  "passwordInvalidCharsError": "密码只能包含拉丁字母、数字和标点符号",
+  "passwordWeakError": "密码太弱。使用字母、数字和特殊字符",
+  "passwordMediumWarning": "中等强度密码。建议加强",
+  "passwordStrongSuccess": "强密码",
+  "nicknameGeneratorTitle": "您的昵称将自动生成",
+  "nicknameGeneratorDescription": "您可以随时更改昵称",
+  "closeButton": "关闭",
+  "loginFieldHint": "用户名",
+  "passwordFieldHint": "密码",
+  "loginButton": "登录",
+  "fillAllFields": "请填写所有字段",
+  "loggingIn": "正在登录...",
+  "welcomeUser": "欢迎，{username}！",
+  "invalidCredentials": "凭据无效。请检查您的用户名和密码。",
+  "serverError": "服务器错误。请稍后再试。",
+  "connectionErrorLogin": "连接错误。请检查您的网络连接。",
+  "noAccount": "没有账户？",
+  "forgotPassword": "忘记密码？",
+  "forgotPasswordDescription": "输入您的用户名，我们将通过电子邮件向您发送账户访问链接。",
+  "sendLinkButton": "发送链接",
+  "checkEmailTitle": "检查您的邮箱",
+  "checkEmailDescription": "请检查您的收件箱 {email} 并点击链接访问您的账户。",
+  "forgotPasswordCodeDescription": "输入发送到与您账户关联的邮箱的访问代码",
+  "alreadyHaveAccount": "已经有账户？",
+  "registrationUnavailable": "注册暂时不可用",
+  "passwordRecoveryUnavailable": "密码恢复暂时不可用",
+  "nicknameMinLengthError": "昵称长度必须至少为五个字符",
+  "nicknameLatinOnlyError": "昵称只能包含拉丁字母、数字、点和下划线",
+  "nicknameStartError": "昵称不能以下划线、数字或点开头",
+    "nicknameEndError": "昵称不能以下划线或句号结尾",
+  "@nicknameEndError": {
+    "description": "昵称结尾验证错误"
+  },
+  "checkingNickname": "正在检查昵称...",
+  "@checkingNickname": {
+    "description": "昵称检查消息"
+  },
+  "nicknameAvailable": "昵称可用",
+  "@nicknameAvailable": {
+    "description": "昵称可用的消息"
+  },
+  "nicknameTakenError": "该昵称已被占用",
+  "@nicknameTakenError": {
+    "description": "错误 - 昵称已被其他用户使用"
+  },
+  "nicknameServerError": "昵称检查错误，请稍后再试",
+  "@nicknameServerError": {
+    "description": "检查昵称时的服务器错误"
+  },
+  "nicknameMaxLengthError": "最多30个字符",
+  "@nicknameMaxLengthError": {
+    "description": "昵称长度超出限制时的错误消息"
+  },
+  "nameEmptyError": "姓名不能为空",
+  "@nameEmptyError": {
+    "description": "姓名为空时的错误消息"
+  },
+  "confirmPasswordTitle": "确认密码",
+  "@confirmPasswordTitle": {
+    "description": "密码确认模态框标题"
+  },
+  "confirmPasswordDescription": "请再次输入密码以确认",
+  "@confirmPasswordDescription": {
+    "description": "密码确认模态框描述"
+  },
+  "confirmPasswordFieldHint": "重复输入密码",
+  "@confirmPasswordFieldHint": {
+    "description": "密码确认字段提示文本"
+  },
+  "passwordMismatchError": "密码不匹配",
+  "@passwordMismatchError": {
+    "description": "密码不匹配时的错误"
+  },
+  "confirmButton": "确认",
+  "@confirmButton": {
+    "description": "确认按钮"
+  },
+  "registerAvatarSubtitle": "选择头像",
+  "@registerAvatarSubtitle": {
+    "description": "头像选择步骤的副标题"
+  },
+  "addAvatarHint": "点击 + 添加照片",
+  "@addAvatarHint": {
+    "description": "添加头像的提示"
+  },
+  "avatarTapToSelect": "点击选择照片",
+  "@avatarTapToSelect": {
+    "description": "选择头像的提示"
+  },
+  "photoPermissionTitle": "允许访问图片",
+  "@photoPermissionTitle": {
+    "description": "照片权限请求标题"
+  },
+  "photoPermissionDescription": "请允许我们访问您的图片，以便您可以为您的个人资料选择头像",
+  "@photoPermissionDescription": {
+    "description": "照片权限请求描述"
+  },
+  "allowAccessButton": "允许访问",
+  "@allowAccessButton": {
+    "description": "允许访问按钮"
+  },
+  "notNowButton": "暂不",
+  "@notNowButton": {
+    "description": "暂不按钮"
+  },
+  "skipButton": "跳过",
+  "@skipButton": {
+    "description": "跳过当前步骤的按钮"
+  },
+  "avatarCropperTitle": "头像设置",
+  "@avatarCropperTitle": {
+    "description": "头像裁剪器屏幕标题"
+  },
+  "doneButton": "完成",
+  "@doneButton": {
+    "description": "完成按钮"
+  },
+  "cropInstructions": "拖动圆圈选择区域 • 使用点来调整大小",
+  "@cropInstructions": {
+    "description": "头像裁剪器使用说明"
+  },
+  "changeAvatar": "更换头像",
+  "@changeAvatar": {
+    "description": "更换头像按钮"
+  },
+  "profilePreviewTitle": "您的个人资料将如下所示",
+  "@profilePreviewTitle": {
+    "description": "个人资料预览标题"
+  },
+  "goodMorning": "早上好",
+  "@goodMorning": {
+    "description": "早晨问候"
+  },
+  "goodDay": "下午好",
+  "@goodDay": {
+    "description": "下午问候"
+  },
+  "goodEvening": "晚上好",
+  "@goodEvening": {
+    "description": "晚上问候"
+  },
+  "goodNight": "晚安",
+  "@goodNight": {
+    "description": "夜晚问候"
+  },
+  "backButton": "返回",
+  "@backButton": {
+    "description": "返回按钮"
+  },
+  "editName": "编辑姓名",
+  "@editName": {
+    "description": "编辑姓名模态窗口标题"
+  },
+  "editNickname": "编辑昵称",
+  "@editNickname": {
+    "description": "编辑昵称模态窗口标题"
+  },
+  "editPhoto": "编辑照片",
+  "@editPhoto": {
+    "description": "编辑照片模态窗口标题"
+  },
+  "saveButton": "保存",
+  "@saveButton": {
+    "description": "保存按钮"
+  },
+  "deleteButton": "删除",
+  "@deleteButton": {
+    "description": "删除按钮"
+  },
+  "deletePhoto": "删除照片",
+  "@deletePhoto": {
+    "description": "删除照片按钮"
+  },
+  "selectFromGallery": "从相册选择",
+  "@selectFromGallery": {
+    "description": "从相册选择照片按钮"
+  },
+  "enterNameHint": "输入您的姓名",
+  "@enterNameHint": {
+    "description": "姓名输入字段提示"
+  },
+  "enterNicknameHint": "输入昵称",
+  "@enterNicknameHint": {
+    "description": "昵称输入字段提示"
+  },
+  "termsAndConditionsTitle": "条款和条件",
+  "termsOfUse": "使用条款",
+  "userAgreement": "用户协议",
+  "acceptTermsText": "要完成注册并开始使用 Xaneo，您必须接受我们的{termsOfUse}和{userAgreement}。\n\n这些文档包含有关服务使用规则、数据保护和双方义务的重要信息。\n\n通过接受这些条款，您确认已阅读并同意遵守平台规则。\n\n如果不接受这些条款，注册将无法完成，对服务的访问将受到限制。",
+  "acceptButton": "接受",
+  "declineButton": "拒绝",
+  "verificationCodeSent": "验证码已发送至 {email}。有效期 {seconds} 秒",
+  "codeDeliveryError": "验证码发送错误",
+  "serverErrorCodeDelivery": "发送验证码时服务器错误",
+  "connectionErrorCodeDelivery": "发送验证码时连接错误",
+  "emailVerificationSuccess": "邮箱验证成功！",
+  "invalidVerificationCode": "验证码无效。请检查验证码后重试",
+  "emailNotFound": "邮箱未找到。请重新注册",
+  "verificationCodeExpired": "验证码已过期。请请求新的验证码",
+  "serverErrorCodeVerification": "验证验证码时服务器错误。请稍后重试",
+  "connectionErrorCodeVerification": "验证验证码时连接错误",
+  "permissionDeniedSettings": "权限被永久拒绝。请在设置中启用",
+  "avatarCropped": "头像已裁剪并保存！",
+  "imageSelectionError": "选择图片时出错",
+  "permissionDeniedOpenSettings": "权限被永久拒绝。请打开设置启用",
+  "photoPermissionError": "无法获取照片访问权限",
+  "registrationCompleted": "注册完成！",
+  "officialXaneoWebsite": "Xaneo官方网站",
+  "twoFactorAuthMessage": "此账户已启用双重身份验证。请输入发送到{email}的验证码",
+  "selectLanguage": "选择语言",
+  "messengerDemo": "信使演示",
+  "messenger": "信使",
+  "messengerDescription": "简单、快速、安全的现代设计和用户友好界面的信使。",
+  "profileDemo": "个人资料演示",
+  "profile": "个人资料",
+  "personalInfo": "个人信息",
+  "name": "姓名",
+  "nameHint": "姓名",
+  "birthDate": "出生日期",
+  "nickname": "昵称",
+  "nicknameHint": "昵称",
+  "phone": "电话",
+  "phoneHint": "电话号码",
+  "settingsSection": "设置",
+  "chatSettings": "聊天设置",
+  "chatSettingsDescription": "聊天设置将在这里显示...",
+  "privacySettings": "隐私和保密",
+  "privacySettingsDescription": "隐私设置将在这里显示...",
+  "securitySettings": "安全",
+  "securitySettingsDescription": "安全设置将在这里显示...",
+  "securityAuthentication": "身份验证",
+  "securityChangePassword": "更改密码",
+  "securityTwoFactorAuth": "双因素身份验证",
+  "twoFactorEnabled": "已启用",
+  "twoFactorDisabled": "已禁用",
+  "securityChangeEmail": "更改邮箱",
+  "securityPasscode": "密码",
+  "passwordEmptyError": "密码不能为空",
+  "passwordTooShortError": "密码必须至少包含5个字符",
+  "passwordEnterCurrentHint": "输入当前密码进行确认",
+  "passwordCurrentHint": "当前密码",
+  "passwordConfirmNewHint": "确认新密码",
+  "passwordDontMatchError": "密码不匹配",
+  "passwordNewTitle": "新密码",
+  "passwordNewHint": "新密码",
+  "passwordConfirmHint": "确认密码",
+  "passwordChangedSuccess": "密码修改成功",
+  "passwordNextButton": "下一步",
+  "passwordSaveButton": "保存",
+  "powerSettings": "省电",
+  "powerSettingsDescription": "省电设置将在这里显示...",
+  "languageSelect": "语言",
+  "cancel": "取消",
+  "ready": "完成",
+  "contentInDevelopment": "\"{title}\"的内容正在开发中...",
+  "sessions": "会话",
+  "support": "支持",
+  "xaneoBenefits": "XaneoBenefits",
+  "messengerFeatures": "演示模式功能：",
+  "secureEncryption": "消息安全加密",
+  "instantDelivery": "即时传递",
+  "deviceSync": "设备间同步",
+  "mediaSupport": "媒体文件支持",
+  "sessionsContent": "您账户的活跃会话将在此处显示...",
+  "activeDevices": "活跃设备",
+  "currentDevice": "当前设备",
+  "terminateSession": "终止会话",
+  "terminateAllOtherSessions": "终止所有其他会话",
+  "sessionLocation": "位置",
+  "sessionLastActive": "最后活动",
+  "sessionBrowser": "浏览器",
+  "sessionPlatform": "平台",
+  "confirmTerminateSession": "您确定要终止此会话吗？",
+  "confirmTerminateAllSessions": "您确定要终止所有其他会话吗？此操作无法撤销。",
+  "sessionIPAddress": "IP 地址",
+  "supportContent": "我们的支持服务负载非常大。我们努力尽快回复，但目前等待时间可能长达24小时。请联系我们，我们一定会帮助您解决问题。",
+  "contactSupport": "联系",
+  "xaneoBenefitsContent": "XaneoBenefits是Xaneo用户的忠诚度计划。获得奖励和独家功能...",
+  "more": "更多",
+  "chatPreview": "聊天预览",
+  "textSize": "文字大小",
+  "textSizeValue": "大小: {size}",
+  "@textSizeValue": {
+    "description": "带值的文字大小显示",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "textExample": "文字示例",
+  "useDarkTheme": "使用深色外观",
+  "chatWallpapers": "聊天壁纸",
+  "messageColors": "消息颜色",
+  "myMessages": "我的消息",
+  "receivedMessages": "收到的消息",
+  "messageEmojis": "消息表情符号",
+  "selectedEmoji": "选中的表情符号:",
+  "chooseWallpaper": "选择壁纸:",
+  "demoMessage1": "你好！怎么样？",
+  "demoMessage2": "一切都很好！你呢？",
+  "demoMessage3": "我也很好，谢谢 😊",
+  "demoDateSeparator": "今天",
+  "onlineStatus": "在线",
+  "chatTheme": "聊天主题",
+  "privacySettingsTitle": "隐私与安全",
+  "privacyCommunications": "通讯",
+  "privacyProfileVisibility": "个人资料可见性",
+  "privacyWhoCanMessage": "消息",
+  "privacyWhoCanRecordVoice": "语音消息",
+  "privacyWhoCanCall": "通话",
+  "privacyWhoCanSendVideo": "视频消息",
+  "privacyWhoCanSendLinks": "链接",
+  "privacyWhoCanInvite": "邀请",
+  "privacyWhoSeesNickname": "昵称",
+  "privacyWhoSeesAvatar": "头像",
+  "privacyWhoSeesBirthday": "生日",
+  "privacyWhoSeesOnlineTime": "在线时间",
+  "privacyAll": "所有人",
+  "privacyContacts": "联系人",
+  "privacyNobody": "没有人",
+  "passwordWeak": "弱",
+  "passwordMedium": "中等",
+  "passwordStrong": "强",
+  "twoFactorEnableDescription": "要启用双因素认证，请输入发送到 {email} 的验证码",
+  "@twoFactorEnableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoFactorDisableDescription": "要禁用双因素认证，请输入发送到 {email} 的验证码",
+  "@twoFactorDisableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "changeEmailVerificationDescription": "要更改您的邮箱，请输入发送到 demouser@example.com 的验证码",
+  "@changeEmailVerificationDescription": {
+    "description": "邮箱更改验证说明"
+  },
+  "newEmailTitle": "新邮箱",
+  "@newEmailTitle": {
+    "description": "新邮箱输入窗口标题"
+  },
+  "newEmailDescription": "输入新的邮箱地址",
+  "@newEmailDescription": {
+    "description": "新邮箱输入窗口说明"
+  },
+  "changeEmailButton": "更改",
+  "@changeEmailButton": {
+    "description": "更改邮箱按钮"
+  },
+  "verifyNewEmailTitle": "验证新邮箱",
+  "@verifyNewEmailTitle": {
+    "description": "新邮箱验证窗口标题"
+  },
+  "verifyNewEmailDescription": "要验证您的新邮箱{email}，请输入发送到此地址的确认码",
+  "@verifyNewEmailDescription": {
+    "description": "新邮箱验证窗口说明",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyNewEmailButton": "验证",
+  "@verifyNewEmailButton": {
+    "description": "验证新邮箱按钮"
+  },
+  "passcodeVerificationTitle": "启用密码",
+  "@passcodeVerificationTitle": {
+    "description": "启用密码窗口标题"
+  },
+  "passcodeVerificationDescription": "要启用密码保护，请输入发送到{email}的验证码",
+  "@passcodeVerificationDescription": {
+    "description": "启用密码窗口说明",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "passcodeVerificationButton": "启用",
+  "@passcodeVerificationButton": {
+    "description": "启用密码按钮"
+  },
+  "setPasscodeTitle": "设置密码",
+  "@setPasscodeTitle": {
+    "description": "设置密码窗口标题"
+  },
+  "setPasscodeDescription": "创建4位数字密码以获得额外保护",
+  "@setPasscodeDescription": {
+    "description": "设置密码窗口说明"
+  },
+  "passcodeHint": "输入4位数字",
+  "@passcodeHint": {
+    "description": "密码输入字段提示"
+  },
+  "setPasscodeButton": "设置",
+  "@setPasscodeButton": {
+    "description": "设置密码按钮"
+  },
+  "xaneoBenefitsModalTitle": "XaneoBenefits (XB)",
+  "@xaneoBenefitsModalTitle": {
+    "description": "XaneoBenefits 模态框标题"
+  },
+  "xaneoBenefitsModalDescription": "Xaneo 高级订阅",
+  "@xaneoBenefitsModalDescription": {
+    "description": "XaneoBenefits 模态框描述"
+  },
+  "xaneoBenefitsSelectPlan": "选择您的订阅计划：",
+  "@xaneoBenefitsSelectPlan": {
+    "description": "订阅计划选择文本"
+  },
+  "xaneoBenefitsYearlyPlan": "年度订阅",
+  "@xaneoBenefitsYearlyPlan": {
+    "description": "年度订阅名称"
+  },
+  "xaneoBenefitsMonthlyPlan": "月度订阅",
+  "@xaneoBenefitsMonthlyPlan": {
+    "description": "月度订阅名称"
+  },
+  "xaneoBenefitsYearlyPrice": "¥999/年",
+  "@xaneoBenefitsYearlyPrice": {
+    "description": "年度订阅价格"
+  },
+  "xaneoBenefitsMonthlyPrice": "¥159/月",
+  "@xaneoBenefitsMonthlyPrice": {
+    "description": "月度订阅价格"
+  },
+  "xaneoBenefitsSavings": "节省 25%！每月仅 ¥83.25",
+  "@xaneoBenefitsSavings": {
+    "description": "年度订阅节省文本"
+  },
+  "xaneoBenefitsSubscribeButton": "订阅 XB",
+  "@xaneoBenefitsSubscribeButton": {
+    "description": "订阅按钮"
+  },
+  "xaneoBenefitsCloseButton": "关闭",
+  "@xaneoBenefitsCloseButton": {
+    "description": "关闭模态框按钮"
+  },
+  "xaneoBenefitsYearlySuccess": "年度 XB 订阅已激活！",
+  "@xaneoBenefitsYearlySuccess": {
+    "description": "年度订阅成功消息"
+  },
+  "xaneoBenefitsMonthlySuccess": "月度 XB 订阅已激活！",
+  "@xaneoBenefitsMonthlySuccess": {
+    "description": "月度订阅成功消息"
+  }
+}

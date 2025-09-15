@@ -1,0 +1,523 @@
+{
+  "@@locale": "ko",
+  "appTitle": "XaneoMobile",
+  "welcomeTitle": "Xaneo에 오신 것을 환영합니다",
+  "welcomeDescription": "Xaneo - 이제 모바일 앱으로도 만나보세요! Xaneo가 이렇게 편리하고 빠른 적은 없었습니다.",
+  "getStartedButton": "이미 관심이 있어요",
+  "connectingToServer": "서버에 연결 중...",
+  "version": "버전: {version}",
+  "httpError": "오류: HTTP {code}",
+  "connectionError": "연결 오류: {error}",
+  "updateAvailable": "업데이트가 사용 가능합니다!",
+  "updateDialogTitle": "업데이트가 사용 가능합니다!",
+  "updateDialogMessage": "현재 버전은 {currentVersion}이고, 새 버전은 {latestVersion}입니다",
+  "updateDialogDescription": "Google Play, RuStore 또는 Xaneo 공식 웹사이트를 통해 업데이트할 수 있습니다.",
+  "updateButton": "업데이트",
+  "cancelButton": "취소",
+  "selectUpdateSource": "업데이트 소스 선택:",
+  "settings": "설정",
+  "about": "앱 정보",
+  "help": "도움말",
+  "notifications": "알림",
+  "notificationsDescription": "새로운 기능에 대한 알림 받기",
+  "darkTheme": "다크 테마",
+  "darkThemeDescription": "어두운 화면 사용",
+  "fontSize": "글꼴 크기: {size}",
+  "appVersion": "앱 버전",
+  "messengerDemoMode": "메신저 데모 모드",
+  "language": "언어",
+  "languageDescription": "인터페이스 언어 선택",
+  "welcomeMessage": "훌륭해요! 환영합니다!",
+  "privacyTitle": "모든 데이터가 안전합니다",
+  "privacyDescription": "XaneoConnect의 모든 메시지는 종단간 암호화로 보호됩니다. Xaneo는 그 내용을 결코 알지 못합니다.",
+  "continueButton": "계속 진행하겠습니다",
+  "dataStorageTitle": "모든 Xaneo 데이터 센터는 러시아에 있습니다",
+  "dataStorageDescription": "귀하의 데이터는 국경을 넘지 않으며 안전한 데이터 센터에 저장됩니다.",
+  "finishButton": "완료",
+  "setupCompleted": "설정이 완료되었습니다!",
+  "loginFormTitle": "로그인하겠습니다",
+  "registerFormTitle": "시작해보겠습니다",
+  "registerNameSubtitle": "성함이 어떻게 되시나요?",
+  "nameFieldHint": "성함",
+  "nextButton": "다음",
+  "registerBirthdateSubtitle": "생년월일이 언제인가요?",
+  "selectDate": "날짜 선택",
+  "ageRestrictionsLink": "연령 제한은 무엇인가요?",
+  "ageRestrictionsTitle": "14세부터 가입 가능",
+  "ageRestrictionsDescription": "14세 이상이면 저희 서비스에 가입할 수 있습니다",
+  "gotIt": "알겠습니다",
+  "registerNicknameSubtitle": "닉네임을 선택하세요",
+  "nicknameFieldHint": "닉네임",
+  "nicknameHelpLink": "닉네임을 생각해낼 수 없나요?",
+  "registerEmailSubtitle": "이메일을 입력하세요",
+  "emailFieldHint": "귀하의 이메일",
+  "supportedEmailProvidersLink": "어떤 이메일 제공업체가 지원됩니까?",
+  "supportedEmailProvidersTitle": "지원되는 이메일 제공업체",
+  "supportedEmailProvidersDescription": "Gmail, Outlook, Yandex, Mail.ru 및 기타 인기 이메일 서비스가 지원됩니다.",
+  "emailFormatError": "잘못된 이메일 주소 형식",
+  "emailUnsupportedError": "이 이메일 서비스는 지원되지 않습니다",
+  "checkingEmail": "이메일 확인 중...",
+  "emailAvailable": "이메일을 사용할 수 있습니다",
+  "emailTakenError": "이 이메일은 이미 사용 중입니다",
+  "emailServerError": "이메일 확인 오류. 나중에 다시 시도해 주세요",
+  "verifyEmailTitle": "이메일을 확인하세요",
+  "verifyEmailDescription": "6자리 코드를 이메일로 보냈습니다. 확인을 위해 입력해 주세요.",
+  "verificationCodeHint": "확인 코드",
+  "verifyButton": "확인",
+  "registerPasswordSubtitle": "비밀번호 만들기",
+  "registerPasswordFieldHint": "비밀번호 입력",
+    "passwordInvalidCharsError": "비밀번호에는 라틴 문자, 숫자 및 구두점만 사용할 수 있습니다",
+  "passwordWeakError": "비밀번호가 너무 약합니다. 문자, 숫자 및 특수 문자를 사용하세요",
+  "passwordMediumWarning": "중간 강도 비밀번호입니다. 강화를 권장합니다",
+  "passwordStrongSuccess": "강한 비밀번호",
+  "nicknameGeneratorTitle": "닉네임이 자동으로 생성됩니다",
+  "nicknameGeneratorDescription": "언제든지 닉네임을 변경할 수 있습니다",
+  "closeButton": "닫기",
+  "loginFieldHint": "사용자명",
+  "passwordFieldHint": "비밀번호",
+  "loginButton": "로그인",
+  "fillAllFields": "모든 필드를 입력해 주세요",
+  "loggingIn": "로그인 중...",
+  "welcomeUser": "환영합니다, {username}님!",
+  "invalidCredentials": "잘못된 자격 증명입니다. 사용자명과 비밀번호를 확인해 주세요.",
+  "serverError": "서버 오류입니다. 나중에 다시 시도해 주세요.",
+  "connectionErrorLogin": "연결 오류입니다. 인터넷 연결을 확인해 주세요.",
+  "noAccount": "계정이 없으신가요?",
+  "forgotPassword": "비밀번호를 잊으셨나요?",
+  "forgotPasswordDescription": "사용자명을 입력하시면 계정 접속 링크를 이메일로 보내드립니다.",
+  "sendLinkButton": "링크 보내기",
+  "checkEmailTitle": "이메일을 확인하세요",
+  "checkEmailDescription": "{email} 받은편지함을 확인하고 링크를 따라 계정에 접속하세요.",
+  "forgotPasswordCodeDescription": "계정에 연결된 이메일로 발송된 액세스 코드를 입력하세요",
+  "alreadyHaveAccount": "이미 계정이 있으신가요?",
+  "registrationUnavailable": "현재 회원가입을 이용할 수 없습니다",
+  "passwordRecoveryUnavailable": "현재 비밀번호 복구를 이용할 수 없습니다",
+  "nicknameMinLengthError": "닉네임의 길이는 최소 5자 이상이어야 합니다",
+  "nicknameLatinOnlyError": "닉네임은 라틴 문자, 숫자, 점, 밑줄만 포함할 수 있습니다",
+  "nicknameStartError": "닉네임은 밑줄, 숫자, 점으로 시작할 수 없습니다",
+    "nicknameEndError": "닉네임은 밑줄이나 마침표로 끝날 수 없습니다",
+  "@nicknameEndError": {
+    "description": "닉네임 끝 검증 오류"
+  },
+  "checkingNickname": "닉네임 확인 중...",
+  "@checkingNickname": {
+    "description": "닉네임 확인 메시지"
+  },
+  "nicknameAvailable": "닉네임 사용 가능",
+  "@nicknameAvailable": {
+    "description": "닉네임이 사용 가능함을 나타내는 메시지"
+  },
+  "nicknameTakenError": "이 닉네임은 이미 사용 중입니다",
+  "@nicknameTakenError": {
+    "description": "오류 - 닉네임이 다른 사용자에 의해 이미 사용됨"
+  },
+  "nicknameServerError": "닉네임 확인 오류. 나중에 다시 시도해주세요",
+  "@nicknameServerError": {
+    "description": "닉네임 확인 시 서버 오류"
+  },
+  "nicknameMaxLengthError": "최대 30자",
+  "@nicknameMaxLengthError": {
+    "description": "닉네임 길이가 제한을 초과할 때의 오류 메시지"
+  },
+  "nameEmptyError": "이름은 비워둘 수 없습니다",
+  "@nameEmptyError": {
+    "description": "이름이 비어있을 때의 오류 메시지"
+  },
+  "confirmPasswordTitle": "비밀번호 확인",
+  "@confirmPasswordTitle": {
+    "description": "비밀번호 확인 모달 제목"
+  },
+  "confirmPasswordDescription": "확인을 위해 비밀번호를 다시 입력해주세요",
+  "@confirmPasswordDescription": {
+    "description": "비밀번호 확인 모달 설명"
+  },
+  "confirmPasswordFieldHint": "비밀번호 재입력",
+  "@confirmPasswordFieldHint": {
+    "description": "비밀번호 확인 필드 힌트 텍스트"
+  },
+  "passwordMismatchError": "비밀번호가 일치하지 않습니다",
+  "@passwordMismatchError": {
+    "description": "비밀번호가 일치하지 않을 때의 오류"
+  },
+  "confirmButton": "확인",
+  "@confirmButton": {
+    "description": "확인 버튼"
+  },
+  "registerAvatarSubtitle": "아바타 선택",
+  "@registerAvatarSubtitle": {
+    "description": "아바타 선택 단계의 부제목"
+  },
+  "addAvatarHint": "+ 를 눌러 사진 추가",
+  "@addAvatarHint": {
+    "description": "아바타 추가 힌트"
+  },
+  "avatarTapToSelect": "탭하여 사진 선택",
+  "@avatarTapToSelect": {
+    "description": "아바타 선택 힌트"
+  },
+  "photoPermissionTitle": "이미지 접근 허용",
+  "@photoPermissionTitle": {
+    "description": "사진 권한 요청 제목"
+  },
+  "photoPermissionDescription": "프로필용 아바타를 선택할 수 있도록 이미지에 대한 접근을 허용해 주세요",
+  "@photoPermissionDescription": {
+    "description": "사진 권한 요청 설명"
+  },
+  "allowAccessButton": "접근 허용",
+  "@allowAccessButton": {
+    "description": "접근 허용 버튼"
+  },
+  "notNowButton": "나중에",
+  "@notNowButton": {
+    "description": "나중에 버튼"
+  },
+  "skipButton": "건너뛰기",
+  "@skipButton": {
+    "description": "현재 단계를 건너뛰는 버튼"
+  },
+  "avatarCropperTitle": "아바타 설정",
+  "@avatarCropperTitle": {
+    "description": "아바타 크로퍼 화면 제목"
+  },
+  "doneButton": "완료",
+  "@doneButton": {
+    "description": "완료 버튼"
+  },
+  "cropInstructions": "원을 드래그하여 영역 선택 • 점을 사용하여 크기 조정",
+  "@cropInstructions": {
+    "description": "아바타 크로퍼 사용 방법"
+  },
+  "changeAvatar": "아바타 변경",
+  "@changeAvatar": {
+    "description": "아바타 변경 버튼"
+  },
+  "profilePreviewTitle": "귀하의 프로필이 이렇게 보일 것입니다",
+  "@profilePreviewTitle": {
+    "description": "프로필 미리보기 제목"
+  },
+  "goodMorning": "좋은 아침입니다",
+  "@goodMorning": {
+    "description": "아침 인사"
+  },
+  "goodDay": "안녕하세요",
+  "@goodDay": {
+    "description": "낮 인사"
+  },
+  "goodEvening": "좋은 저녁입니다",
+  "@goodEvening": {
+    "description": "저녁 인사"
+  },
+  "goodNight": "안녕히 주무세요",
+  "@goodNight": {
+    "description": "밤 인사"
+  },
+  "backButton": "뒤로",
+  "@backButton": {
+    "description": "뒤로 버튼"
+  },
+  "editName": "이름 편집",
+  "@editName": {
+    "description": "이름 편집 모달 제목"
+  },
+  "editNickname": "닉네임 편집",
+  "@editNickname": {
+    "description": "닉네임 편집 모달 제목"
+  },
+  "editPhoto": "사진 편집",
+  "@editPhoto": {
+    "description": "사진 편집 모달 제목"
+  },
+  "saveButton": "저장",
+  "@saveButton": {
+    "description": "저장 버튼"
+  },
+  "deleteButton": "삭제",
+  "@deleteButton": {
+    "description": "삭제 버튼"
+  },
+  "deletePhoto": "사진 삭제",
+  "@deletePhoto": {
+    "description": "사진 삭제 버튼"
+  },
+  "selectFromGallery": "갤러리에서 선택",
+  "@selectFromGallery": {
+    "description": "갤러리에서 사진 선택 버튼"
+  },
+  "enterNameHint": "이름을 입력하세요",
+  "@enterNameHint": {
+    "description": "이름 입력 필드 힌트"
+  },
+  "enterNicknameHint": "닉네임을 입력하세요",
+  "@enterNicknameHint": {
+    "description": "닉네임 입력 필드 힌트"
+  },
+  "termsAndConditionsTitle": "이용약관",
+  "termsOfUse": "이용약관",
+  "userAgreement": "사용자 계약",
+  "acceptTermsText": "등록을 완료하고 Xaneo 사용을 시작하려면 {termsOfUse} 및 {userAgreement}에 동의해야 합니다.\n\n이 문서들은 서비스 이용 규칙, 데이터 보호 및 양 당사자의 의무에 대한 중요한 정보를 포함하고 있습니다.\n\n이 약관에 동의함으로써 플랫폼 규칙을 읽고 준수하는 데 동의함을 확인합니다.\n\n이 약관에 동의하지 않으면 등록을 완료할 수 없으며 서비스 이용이 제한됩니다.",
+  "acceptButton": "동의",
+  "declineButton": "거부",
+  "verificationCodeSent": "{email}로 인증코드를 발송했습니다. {seconds}초 동안 유효합니다",
+  "codeDeliveryError": "인증코드 발송 오류",
+  "serverErrorCodeDelivery": "인증코드 발송 중 서버 오류",
+  "connectionErrorCodeDelivery": "인증코드 발송 중 연결 오류",
+  "emailVerificationSuccess": "이메일 인증이 완료되었습니다!",
+  "invalidVerificationCode": "잘못된 인증코드입니다. 코드를 확인하고 다시 시도하세요",
+  "emailNotFound": "이메일을 찾을 수 없습니다. 다시 등록해보세요",
+  "verificationCodeExpired": "인증코드가 만료되었습니다. 새 코드를 요청하세요",
+  "serverErrorCodeVerification": "인증코드 확인 중 서버 오류. 나중에 다시 시도하세요",
+  "connectionErrorCodeVerification": "인증코드 확인 중 연결 오류",
+  "permissionDeniedSettings": "권한이 영구적으로 거부되었습니다. 설정에서 활성화하세요",
+  "avatarCropped": "아바타가 잘리고 저장되었습니다!",
+  "imageSelectionError": "이미지 선택 오류",
+  "permissionDeniedOpenSettings": "권한이 영구적으로 거부되었습니다. 설정을 열어 활성화하세요",
+  "photoPermissionError": "사진 접근 권한을 얻을 수 없습니다",
+  "registrationCompleted": "등록이 완료되었습니다!",
+  "officialXaneoWebsite": "Xaneo 공식 웹사이트",
+  "twoFactorAuthMessage": "이 계정에서 이중 인증이 활성화되어 있습니다. {email}로 전송된 인증코드를 입력하세요",
+  "selectLanguage": "언어 선택",
+  "messengerDemo": "메신저 데모",
+  "messenger": "메신저",
+  "messengerDescription": "현대적인 디자인과 사용자 친화적인 인터페이스를 갖춘 간단하고 빠르고 안전한 메신저.",
+  "profileDemo": "프로필 데모",
+  "profile": "프로필",
+  "personalInfo": "개인 정보",
+  "name": "이름",
+  "nameHint": "이름",
+  "birthDate": "생년월일",
+  "nickname": "닉네임",
+  "nicknameHint": "닉네임",
+  "phone": "전화",
+  "phoneHint": "전화번호",
+  "settingsSection": "설정",
+  "chatSettings": "채팅 설정",
+  "chatSettingsDescription": "채팅 설정이 여기에 표시됩니다...",
+  "privacySettings": "개인정보 보호 및 기밀성",
+  "privacySettingsDescription": "개인정보 설정이 여기에 표시됩니다...",
+  "securitySettings": "보안",
+  "securitySettingsDescription": "보안 설정이 여기에 표시됩니다...",
+  "securityAuthentication": "인증",
+  "securityChangePassword": "비밀번호 변경",
+  "securityTwoFactorAuth": "이중 인증",
+  "twoFactorEnabled": "활성화됨",
+  "twoFactorDisabled": "비활성화됨",
+  "securityChangeEmail": "이메일 변경",
+  "securityPasscode": "패스코드",
+  "passwordEmptyError": "비밀번호를 비워둘 수 없습니다",
+  "passwordTooShortError": "비밀번호는 최소 1자 이상이어야 합니다",
+  "passwordEnterCurrentHint": "확인을 위해 현재 비밀번호를 입력하세요",
+  "passwordCurrentHint": "현재 비밀번호",
+  "passwordConfirmNewHint": "새 비밀번호를 확인하세요",
+  "passwordDontMatchError": "비밀번호가 일치하지 않습니다",
+  "passwordNewTitle": "새 비밀번호",
+  "passwordNewHint": "새 비밀번호",
+  "passwordConfirmHint": "비밀번호 확인",
+  "passwordChangedSuccess": "비밀번호가 성공적으로 변경되었습니다",
+  "passwordNextButton": "다음",
+  "passwordSaveButton": "저장",
+  "powerSettings": "전력 절약",
+  "powerSettingsDescription": "전력 절약 설정이 여기에 표시됩니다...",
+  "languageSelect": "언어",
+  "cancel": "취소",
+  "ready": "완료",
+  "contentInDevelopment": "\"{title}\"의 콘텐츠가 개발 중입니다...",
+  "sessions": "세션",
+  "support": "지원",
+  "xaneoBenefits": "XaneoBenefits",
+  "messengerFeatures": "데모 모드 기능:",
+  "secureEncryption": "메시지 보안 암호화",
+  "instantDelivery": "즉시 전송",
+  "deviceSync": "기기 간 동기화",
+  "mediaSupport": "미디어 파일 지원",
+  "sessionsContent": "계정의 활성 세션이 여기에 표시됩니다...",
+  "activeDevices": "활성 기기",
+  "currentDevice": "현재 기기",
+  "terminateSession": "세션 종료",
+  "terminateAllOtherSessions": "다른 모든 세션 종료",
+  "sessionLocation": "위치",
+  "sessionLastActive": "마지막 활동",
+  "sessionBrowser": "브라우저",
+  "sessionPlatform": "플랫폼",
+  "confirmTerminateSession": "이 세션을 종료하시겠습니까?",
+  "confirmTerminateAllSessions": "다른 모든 세션을 종료하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+  "sessionIPAddress": "IP 주소",
+  "supportContent": "저희 지원 서비스에 매우 높은 부하가 걸려 있습니다. 최대한 빨리 응답하기 위해 노력하고 있지만, 현재 대기 시간이 최대 24시간까지 걸릴 수 있습니다. 연락 주시면 반드시 문제를 해결해 드리겠습니다.",
+  "contactSupport": "연락",
+  "xaneoBenefitsContent": "XaneoBenefits는 Xaneo 사용자를 위한 충성도 프로그램입니다. 보너스와 독점 기능을 받아보세요...",
+  "more": "더보기",
+  "chatPreview": "채팅 미리보기",
+  "textSize": "텍스트 크기",
+  "textSizeValue": "크기: {size}",
+  "@textSizeValue": {
+    "description": "값이 포함된 텍스트 크기 표시",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "textExample": "텍스트 예시",
+  "useDarkTheme": "다크 테마 사용",
+  "chatWallpapers": "채팅 배경화면",
+  "messageColors": "메시지 색상",
+  "myMessages": "내 메시지",
+  "receivedMessages": "받은 메시지",
+  "messageEmojis": "메시지 이모지",
+  "selectedEmoji": "선택된 이모지:",
+  "chooseWallpaper": "배경화면 선택:",
+  "demoMessage1": "안녕! 어떻게 지내?",
+  "demoMessage2": "다 잘돼! 너는?",
+  "demoMessage3": "나도 잘 지내, 고마워 😊",
+  "demoDateSeparator": "오늘",
+  "onlineStatus": "온라인",
+  "chatTheme": "채팅 테마",
+  "privacySettingsTitle": "개인정보 및 보안",
+  "privacyCommunications": "커뮤니케이션",
+  "privacyProfileVisibility": "프로필 표시",
+  "privacyWhoCanMessage": "메시지",
+  "privacyWhoCanRecordVoice": "음성 메시지",
+  "privacyWhoCanCall": "전화",
+  "privacyWhoCanSendVideo": "비디오 메시지",
+  "privacyWhoCanSendLinks": "링크",
+  "privacyWhoCanInvite": "초대",
+  "privacyWhoSeesNickname": "닉네임",
+  "privacyWhoSeesAvatar": "아바타",
+  "privacyWhoSeesBirthday": "생일",
+  "privacyWhoSeesOnlineTime": "온라인 시간",
+  "privacyAll": "모두",
+  "privacyContacts": "연락처",
+  "privacyNobody": "아무도",
+  "passwordWeak": "약함",
+  "passwordMedium": "보통",
+  "passwordStrong": "강함",
+  "twoFactorEnableDescription": "2단계 인증을 활성화하려면 {email}로 전송된 확인 코드를 입력하세요",
+  "@twoFactorEnableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoFactorDisableDescription": "2단계 인증을 비활성화하려면 {email}로 전송된 확인 코드를 입력하세요",
+  "@twoFactorDisableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "changeEmailVerificationDescription": "이메일을 변경하려면 demouser@example.com로 전송된 확인 코드를 입력하세요",
+  "@changeEmailVerificationDescription": {
+    "description": "이메일 변경 확인 설명"
+  },
+  "newEmailTitle": "새 이메일",
+  "@newEmailTitle": {
+    "description": "새 이메일 입력 창 제목"
+  },
+  "newEmailDescription": "새 이메일 주소를 입력하세요",
+  "@newEmailDescription": {
+    "description": "새 이메일 입력 창 설명"
+  },
+  "changeEmailButton": "변경",
+  "@changeEmailButton": {
+    "description": "이메일 변경 버튼"
+  },
+  "verifyNewEmailTitle": "새 이메일 확인",
+  "@verifyNewEmailTitle": {
+    "description": "새 이메일 확인 창 제목"
+  },
+  "verifyNewEmailDescription": "새 이메일 {email}을 확인하려면 이 주소로 전송된 확인 코드를 입력하세요",
+  "@verifyNewEmailDescription": {
+    "description": "새 이메일 확인 창 설명",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyNewEmailButton": "확인",
+  "@verifyNewEmailButton": {
+    "description": "새 이메일 확인 버튼"
+  },
+  "passcodeVerificationTitle": "패스코드 활성화",
+  "@passcodeVerificationTitle": {
+    "description": "패스코드 활성화 창 제목"
+  },
+  "passcodeVerificationDescription": "패스코드 보호를 활성화하려면 {email}로 전송된 확인 코드를 입력하세요",
+  "@passcodeVerificationDescription": {
+    "description": "패스코드 활성화 창 설명",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "passcodeVerificationButton": "활성화",
+  "@passcodeVerificationButton": {
+    "description": "패스코드 활성화 버튼"
+  },
+  "setPasscodeTitle": "패스코드 설정",
+  "@setPasscodeTitle": {
+    "description": "패스코드 설정 창 제목"
+  },
+  "setPasscodeDescription": "추가 보호를 위해 4자리 패스코드를 생성하세요",
+  "@setPasscodeDescription": {
+    "description": "패스코드 설정 창 설명"
+  },
+  "passcodeHint": "4자리 입력",
+  "@passcodeHint": {
+    "description": "패스코드 입력 필드 힌트"
+  },
+  "setPasscodeButton": "설정",
+  "@setPasscodeButton": {
+    "description": "패스코드 설정 버튼"
+  },
+  "xaneoBenefitsModalTitle": "XaneoBenefits (XB)",
+  "@xaneoBenefitsModalTitle": {
+    "description": "XaneoBenefits 모달 제목"
+  },
+  "xaneoBenefitsModalDescription": "Xaneo 프리미엄 구독",
+  "@xaneoBenefitsModalDescription": {
+    "description": "XaneoBenefits 모달 설명"
+  },
+  "xaneoBenefitsSelectPlan": "구독 플랜을 선택하세요:",
+  "@xaneoBenefitsSelectPlan": {
+    "description": "구독 플랜 선택 텍스트"
+  },
+  "xaneoBenefitsYearlyPlan": "연간 구독",
+  "@xaneoBenefitsYearlyPlan": {
+    "description": "연간 구독 이름"
+  },
+  "xaneoBenefitsMonthlyPlan": "월간 구독",
+  "@xaneoBenefitsMonthlyPlan": {
+    "description": "월간 구독 이름"
+  },
+  "xaneoBenefitsYearlyPrice": "₩999,000/년",
+  "@xaneoBenefitsYearlyPrice": {
+    "description": "연간 구독 가격"
+  },
+  "xaneoBenefitsMonthlyPrice": "₩159,000/월",
+  "@xaneoBenefitsMonthlyPrice": {
+    "description": "월간 구독 가격"
+  },
+  "xaneoBenefitsSavings": "25% 절약! 월 ₩83,250만",
+  "@xaneoBenefitsSavings": {
+    "description": "연간 구독 절약 텍스트"
+  },
+  "xaneoBenefitsSubscribeButton": "XB 구독하기",
+  "@xaneoBenefitsSubscribeButton": {
+    "description": "구독 버튼"
+  },
+  "xaneoBenefitsCloseButton": "닫기",
+  "@xaneoBenefitsCloseButton": {
+    "description": "모달 닫기 버튼"
+  },
+  "xaneoBenefitsYearlySuccess": "연간 XB 구독이 활성화되었습니다!",
+  "@xaneoBenefitsYearlySuccess": {
+    "description": "연간 구독 성공 메시지"
+  },
+  "xaneoBenefitsMonthlySuccess": "월간 XB 구독이 활성화되었습니다!",
+  "@xaneoBenefitsMonthlySuccess": {
+    "description": "월간 구독 성공 메시지"
+  }
+}

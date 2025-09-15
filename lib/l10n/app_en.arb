@@ -1,0 +1,535 @@
+{
+  "@@locale": "en",
+  "appTitle": "XaneoMobile",
+  "welcomeTitle": "Welcome to Xaneo",
+  "welcomeDescription": "Xaneo - now in a mobile app! Xaneo has never been so convenient and fast.",
+  "getStartedButton": "I'm already interested",
+  "connectingToServer": "Connecting to server...",
+  "version": "Version: {version}",
+  "httpError": "Error: HTTP {code}",
+  "connectionError": "Connection error: {error}",
+  "updateAvailable": "Update available!",
+  "updateDialogTitle": "Update available!",
+  "updateDialogMessage": "Your version is {currentVersion}, and the new one is {latestVersion}",
+  "updateDialogDescription": "You can update through Google Play, RuStore or from the official Xaneo website.",
+  "updateButton": "Update",
+  "cancelButton": "Cancel",
+  "selectUpdateSource": "Select update source:",
+  "settings": "Settings",
+  "about": "About",
+  "help": "Help",
+  "notifications": "Notifications",
+  "notificationsDescription": "Receive notifications about new features",
+  "darkTheme": "Dark theme",
+  "darkThemeDescription": "Use dark appearance",
+  "fontSize": "Font size: {size}",
+  "appVersion": "App version",
+  "messengerDemoMode": "Messenger demo mode",
+  "language": "Language",
+  "languageDescription": "Choose interface language",
+  "welcomeMessage": "Great! Welcome!",
+  "privacyTitle": "All your data is secure",
+  "privacyDescription": "All messages in XaneoConnect are protected by end-to-end encryption. At no point does Xaneo know their content.",
+  "continueButton": "Let's continue",
+  "dataStorageTitle": "All Xaneo data centers are located in Russia",
+  "dataStorageDescription": "Your data never leaves the country and is stored in secure data centers.",
+  "finishButton": "Finish",
+  "setupCompleted": "Setup completed!",
+  "loginFormTitle": "Let's log in",
+  "registerFormTitle": "Let's get started",
+  "registerNameSubtitle": "What's your name?",
+  "nameFieldHint": "Your name",
+  "nextButton": "Next",
+  "registerBirthdateSubtitle": "When were you born?",
+  "selectDate": "Select date",
+  "ageRestrictionsLink": "What are the age restrictions?",
+  "ageRestrictionsTitle": "Registration from 14 years old",
+  "ageRestrictionsDescription": "You can register on our service if you are 14 years old or older",
+  "gotIt": "Got it",
+  "registerNicknameSubtitle": "Choose a nickname",
+  "nicknameFieldHint": "Your nickname",
+  "nicknameHelpLink": "Can't think of a nickname?",
+  "registerEmailSubtitle": "Enter your email",
+  "emailFieldHint": "Your email",
+  "supportedEmailProvidersLink": "Which email providers are supported?",
+  "supportedEmailProvidersTitle": "Supported Email Providers",
+  "supportedEmailProvidersDescription": "Gmail, Outlook, Yandex, Mail.ru and other popular email services are supported.",
+  "emailFormatError": "Invalid email address format",
+  "emailUnsupportedError": "This email service is not supported",
+  "checkingEmail": "Checking email...",
+  "emailAvailable": "Email is available",
+  "emailTakenError": "This email is already taken",
+  "emailServerError": "Email check error. Please try again later",
+  "verifyEmailTitle": "Verify your email",
+  "verifyEmailDescription": "We sent a 6-digit code to your email. Enter it to confirm.",
+  "verificationCodeHint": "Verification code",
+  "verifyButton": "Verify",
+  "registerPasswordSubtitle": "Create a password",
+  "registerPasswordFieldHint": "Enter password",
+  "passwordInvalidCharsError": "Password can only contain Latin letters, numbers and punctuation marks",
+  "passwordWeakError": "Password is too weak. Use letters, numbers and special characters",
+  "passwordMediumWarning": "Medium strength password. Recommend strengthening",
+  "passwordStrongSuccess": "Strong password",
+  "nicknameGeneratorTitle": "Your nickname will be generated automatically",
+  "nicknameGeneratorDescription": "You can change your nickname at any time",
+  "closeButton": "Close",
+  "loginFieldHint": "Login",
+  "passwordFieldHint": "Password",
+  "loginButton": "Log in",
+  "fillAllFields": "Fill in all fields",
+  "loggingIn": "Logging in...",
+  "welcomeUser": "Welcome, {username}!",
+  "invalidCredentials": "Invalid credentials. Check your username and password.",
+  "serverError": "Server error. Please try again later.",
+  "connectionErrorLogin": "Connection error. Check your internet connection.",
+  "noAccount": "No account?",
+  "forgotPassword": "Forgot password?",
+  "forgotPasswordDescription": "Enter your nickname and we will send you a link to access your account via email.",
+  "sendLinkButton": "Send Link",
+  "checkEmailTitle": "Check Your Email",
+  "checkEmailDescription": "Please check your inbox {email} and follow the link to access your account.",
+  "forgotPasswordCodeDescription": "Enter the access code that was sent to the email linked to your account",
+  "alreadyHaveAccount": "Already have an account?",
+  "registrationUnavailable": "Registration is currently unavailable",
+  "passwordRecoveryUnavailable": "Password recovery is currently unavailable",
+  "nicknameMinLengthError": "Nickname length must be at least five characters",
+  "nicknameLatinOnlyError": "Nickname can only contain latin letters, numbers, dots and underscore",
+  "nicknameStartError": "Nickname cannot start with underscore, number or dot",
+    "nicknameEndError": "Nickname cannot end with underscore or period",
+  "@nicknameEndError": {
+    "description": "Nickname ending validation error"
+  },
+  "checkingNickname": "Checking nickname...",
+  "@checkingNickname": {
+    "description": "Nickname checking message"
+  },
+  "nicknameAvailable": "Nickname available",
+  "@nicknameAvailable": {
+    "description": "Message that nickname is available"
+  },
+  "nicknameTakenError": "This nickname is already taken",
+  "@nicknameTakenError": {
+    "description": "Error - nickname is already used by another user"
+  },
+  "nicknameServerError": "Nickname check error. Please try again later",
+  "@nicknameServerError": {
+    "description": "Server error when checking nickname"
+  },
+  "nicknameMaxLengthError": "Maximum 30 characters",
+  "@nicknameMaxLengthError": {
+    "description": "Nickname maximum length error"
+  },
+  "nameEmptyError": "Name cannot be empty",
+  "@nameEmptyError": {
+    "description": "Error when name is empty"
+  },
+  "confirmPasswordTitle": "Confirm Password",
+  "@confirmPasswordTitle": {
+    "description": "Title of password confirmation modal"
+  },
+  "confirmPasswordDescription": "Enter your password again to confirm",
+  "@confirmPasswordDescription": {
+    "description": "Description in password confirmation modal"
+  },
+  "confirmPasswordFieldHint": "Repeat password",
+  "@confirmPasswordFieldHint": {
+    "description": "Hint text in password confirmation field"
+  },
+  "passwordMismatchError": "Passwords do not match",
+  "@passwordMismatchError": {
+    "description": "Error when passwords don't match"
+  },
+  "confirmButton": "Confirm",
+  "@confirmButton": {
+    "description": "Confirm button"
+  },
+  "registerAvatarSubtitle": "Choose avatar",
+  "@registerAvatarSubtitle": {
+    "description": "Subtitle for avatar selection step"
+  },
+  "addAvatarHint": "Tap + to add photo",
+  "@addAvatarHint": {
+    "description": "Hint for adding avatar"
+  },
+  "avatarTapToSelect": "Tap to select photo",
+  "@avatarTapToSelect": {
+    "description": "Hint for selecting avatar"
+  },
+  "photoPermissionTitle": "Allow access to images",
+  "@photoPermissionTitle": {
+    "description": "Title for photo permission request"
+  },
+  "photoPermissionDescription": "Allow us access to your images so you can choose an avatar for your profile",
+  "@photoPermissionDescription": {
+    "description": "Description for photo permission request"
+  },
+  "allowAccessButton": "Allow access",
+  "@allowAccessButton": {
+    "description": "Allow access button"
+  },
+  "notNowButton": "Not now",
+  "@notNowButton": {
+    "description": "Not now button"
+  },
+  "skipButton": "Skip",
+  "@skipButton": {
+    "description": "Button to skip the current step"
+  },
+  "avatarCropperTitle": "Avatar Setup",
+  "@avatarCropperTitle": {
+    "description": "Avatar cropper screen title"
+  },
+  "doneButton": "Done",
+  "@doneButton": {
+    "description": "Done button"
+  },
+  "cropInstructions": "Drag the circle to select area • Use dots to resize",
+  "@cropInstructions": {
+    "description": "Avatar cropper usage instructions"
+  },
+  "changeAvatar": "Change Avatar",
+  "@changeAvatar": {
+    "description": "Change avatar button"
+  },
+  "profilePreviewTitle": "This is how your profile will look",
+  "@profilePreviewTitle": {
+    "description": "Profile preview title"
+  },
+  "goodMorning": "Good morning",
+  "@goodMorning": {
+    "description": "Morning greeting"
+  },
+  "goodDay": "Good afternoon",
+  "@goodDay": {
+    "description": "Afternoon greeting"
+  },
+  "goodEvening": "Good evening",
+  "@goodEvening": {
+    "description": "Evening greeting"
+  },
+  "goodNight": "Good night",
+  "@goodNight": {
+    "description": "Night greeting"
+  },
+  "backButton": "Back",
+  "@backButton": {
+    "description": "Back button"
+  },
+  "editName": "Edit Name",
+  "@editName": {
+    "description": "Edit name modal title"
+  },
+  "editNickname": "Edit Nickname",
+  "@editNickname": {
+    "description": "Edit nickname modal title"
+  },
+  "editPhoto": "Edit Photo",
+  "@editPhoto": {
+    "description": "Edit photo modal title"
+  },
+  "saveButton": "Save",
+  "@saveButton": {
+    "description": "Save button"
+  },
+  "deleteButton": "Delete",
+  "@deleteButton": {
+    "description": "Delete button"
+  },
+  "deletePhoto": "Delete Photo",
+  "@deletePhoto": {
+    "description": "Delete photo button"
+  },
+  "selectFromGallery": "Select from Gallery",
+  "@selectFromGallery": {
+    "description": "Select photo from gallery button"
+  },
+  "enterNameHint": "Enter your name",
+  "@enterNameHint": {
+    "description": "Name input field hint"
+  },
+  "enterNicknameHint": "Enter nickname",
+  "@enterNicknameHint": {
+    "description": "Nickname input field hint"
+  },
+  "termsAndConditionsTitle": "Terms and Conditions",
+  "termsOfUse": "Terms of Use",
+  "userAgreement": "User Agreement",
+  "acceptTermsText": "To complete registration and start using Xaneo, you must accept our {termsOfUse} and {userAgreement}.\n\nThese documents contain important information about service usage rules, data protection, and obligations of both parties.\n\nBy accepting these terms, you confirm that you have read and agree to comply with the platform's rules.\n\nWithout accepting these terms, registration cannot be completed and access to the service will be restricted.",
+  "acceptButton": "Accept",
+  "declineButton": "Decline",
+  "verificationCodeSent": "Code sent to {email}. Valid for {seconds} seconds",
+  "codeDeliveryError": "Code delivery error",
+  "serverErrorCodeDelivery": "Server error sending code",
+  "connectionErrorCodeDelivery": "Connection error sending code",
+  "emailVerificationSuccess": "Email successfully verified!",
+  "invalidVerificationCode": "Invalid verification code. Check code and try again",
+  "emailNotFound": "Email not found. Try registering again",
+  "verificationCodeExpired": "Verification code expired. Request a new code",
+  "serverErrorCodeVerification": "Server error verifying code. Try later",
+  "connectionErrorCodeVerification": "Connection error verifying code",
+  "permissionDeniedSettings": "Permission permanently denied. Enable it in settings",
+  "avatarCropped": "Avatar cropped and saved!",
+  "imageSelectionError": "Error selecting image",
+  "permissionDeniedOpenSettings": "Permission permanently denied. Open settings to enable",
+  "photoPermissionError": "Failed to get photo access permission",
+  "registrationCompleted": "Registration completed!",
+  "officialXaneoWebsite": "Official Xaneo Website",
+  "twoFactorAuthMessage": "Two-factor authentication is enabled on this account. Enter the verification code that was sent to {email}",
+  "selectLanguage": "Select language",
+  "messengerDemo": "Messenger demo",
+  "messenger": "Messenger",
+  "messengerDescription": "Simple, fast and secure messenger with modern design and user-friendly interface.",
+  "profileDemo": "Profile demo",
+  "profile": "Profile",
+  "personalInfo": "Personal information",
+  "name": "Name",
+  "nameHint": "Name",
+  "birthDate": "Birth date",
+  "nickname": "Nickname",
+  "nicknameHint": "Nickname",
+  "phone": "Phone",
+  "phoneHint": "Phone number",
+  "settingsSection": "Settings",
+  "chatSettings": "Chat settings",
+  "chatSettingsDescription": "Chat settings will be here...",
+  "privacySettings": "Privacy and confidentiality",
+  "privacySettingsDescription": "Privacy settings will be here...",
+  "securitySettings": "Security",
+  "securitySettingsDescription": "Security settings will be here...",
+  "securityAuthentication": "Authentication",
+  "securityChangePassword": "Change Password",
+  "securityTwoFactorAuth": "Two-Factor Authentication",
+  "twoFactorEnabled": "Enabled",
+  "twoFactorDisabled": "Disabled",
+  "securityChangeEmail": "Change Email",
+  "securityPasscode": "Passcode",
+  "passwordEmptyError": "Password cannot be empty",
+  "passwordTooShortError": "Password must contain at least 5 characters",
+  "passwordEnterCurrentHint": "Enter current password for confirmation",
+  "passwordCurrentHint": "Current password",
+  "passwordConfirmNewHint": "Confirm new password",
+  "passwordDontMatchError": "Passwords don't match",
+  "passwordNewTitle": "New password",
+  "passwordNewHint": "New password",
+  "passwordConfirmHint": "Confirm password",
+  "passwordChangedSuccess": "Password changed successfully",
+  "passwordNextButton": "Next",
+  "passwordSaveButton": "Save",
+  "powerSettings": "Power saving",
+  "powerSettingsDescription": "Power saving settings will be here...",
+  "languageSelect": "Language",
+  "cancel": "Cancel",
+  "ready": "Ready",
+  "contentInDevelopment": "Content for \"{title}\" is under development...",
+  "sessions": "Sessions",
+  "support": "Support",
+  "xaneoBenefits": "XaneoBenefits",
+  "messengerFeatures": "Demo mode features:",
+  "secureEncryption": "Secure message encryption",
+  "instantDelivery": "Instant delivery",
+  "deviceSync": "Device synchronization",
+  "mediaSupport": "Media file support",
+  "sessionsContent": "Active account sessions will be displayed here...",
+  "activeDevices": "Active Devices",
+  "currentDevice": "Current Device",
+  "terminateSession": "Terminate Session",
+  "terminateAllOtherSessions": "Terminate All Other Sessions",
+  "sessionLocation": "Location",
+  "sessionLastActive": "Last Active",
+  "sessionBrowser": "Browser",
+  "sessionPlatform": "Platform",
+  "confirmTerminateSession": "Are you sure you want to terminate this session?",
+  "confirmTerminateAllSessions": "Are you sure you want to terminate all other sessions? This action cannot be undone.",
+  "sessionIPAddress": "IP Address",
+  "supportContent": "We have a very high load on our support service. We strive to respond as quickly as possible, but currently the waiting time may be up to 24 hours. Please contact us and we will definitely help you solve your problem.",
+  "contactSupport": "Contact",
+  "xaneoBenefitsContent": "XaneoBenefits is a loyalty program for Xaneo users. Get bonuses and exclusive features...",
+  "more": "More",
+  "chatPreview": "Chat Preview",
+  "textSize": "Text Size",
+  "textSizeValue": "Size: {size}",
+  "@textSizeValue": {
+    "description": "Text size display with value",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "textExample": "Text example",
+  "useDarkTheme": "Use dark appearance",
+  "chatWallpapers": "Chat Wallpapers",
+  "messageColors": "Message Colors",
+  "myMessages": "My Messages",
+  "receivedMessages": "Received Messages",
+  "messageEmojis": "Message Emojis",
+  "selectedEmoji": "Selected emoji:",
+  "chooseWallpaper": "Choose wallpaper:",
+  "demoMessage1": "Hi! How are you?",
+  "@demoMessage1": {
+    "description": "First demo message in chat"
+  },
+  "demoMessage2": "Everything is great! How about you?",
+  "@demoMessage2": {
+    "description": "Second demo message in chat"
+  },
+  "demoMessage3": "I'm good too, thanks 😊",
+  "@demoMessage3": {
+    "description": "Third demo message in chat"
+  },
+  "demoDateSeparator": "Today",
+  "@demoDateSeparator": {
+    "description": "Date separator in demo chat"
+  },
+  "onlineStatus": "online",
+  "chatTheme": "Chat theme",
+  "privacySettingsTitle": "Privacy & Security",
+  "privacyCommunications": "Communications",
+  "privacyProfileVisibility": "Profile Visibility",
+  "privacyWhoCanMessage": "Messages",
+  "privacyWhoCanRecordVoice": "Voice messages",
+  "privacyWhoCanCall": "Calls",
+  "privacyWhoCanSendVideo": "Video messages",
+  "privacyWhoCanSendLinks": "Links",
+  "privacyWhoCanInvite": "Invitations",
+  "privacyWhoSeesNickname": "Nickname",
+  "privacyWhoSeesAvatar": "Avatar",
+  "privacyWhoSeesBirthday": "Birthday",
+  "privacyWhoSeesOnlineTime": "Online time",
+  "privacyAll": "Everyone",
+  "privacyContacts": "Contacts",
+  "privacyNobody": "Nobody",
+  "passwordWeak": "Weak",
+  "passwordMedium": "Medium",
+  "passwordStrong": "Strong",
+  "twoFactorEnableDescription": "To enable two-factor authentication, enter the verification code sent to {email}",
+  "@twoFactorEnableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "twoFactorDisableDescription": "To disable two-factor authentication, enter the verification code sent to {email}",
+  "@twoFactorDisableDescription": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "changeEmailVerificationDescription": "To change your email, enter the verification code sent to demouser@example.com",
+  "@changeEmailVerificationDescription": {
+    "description": "Description for email change verification"
+  },
+  "newEmailTitle": "New Email",
+  "@newEmailTitle": {
+    "description": "Title for new email input window"
+  },
+  "newEmailDescription": "Enter new email address",
+  "@newEmailDescription": {
+    "description": "Description in new email input window"
+  },
+  "changeEmailButton": "Change",
+  "@changeEmailButton": {
+    "description": "Change email button"
+  },
+  "verifyNewEmailTitle": "Verify New Email",
+  "@verifyNewEmailTitle": {
+    "description": "Title for new email verification window"
+  },
+  "verifyNewEmailDescription": "To verify your new email {email}, enter the confirmation code sent to this address",
+  "@verifyNewEmailDescription": {
+    "description": "Description in new email verification window",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyNewEmailButton": "Verify",
+  "@verifyNewEmailButton": {
+    "description": "Verify new email button"
+  },
+  "passcodeVerificationTitle": "Enable Passcode",
+  "@passcodeVerificationTitle": {
+    "description": "Title for passcode enable window"
+  },
+  "passcodeVerificationDescription": "To enable passcode protection, enter the verification code sent to {email}",
+  "@passcodeVerificationDescription": {
+    "description": "Description in passcode enable window",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "passcodeVerificationButton": "Enable",
+  "@passcodeVerificationButton": {
+    "description": "Enable passcode button"
+  },
+  "setPasscodeTitle": "Set Passcode",
+  "@setPasscodeTitle": {
+    "description": "Title for set passcode window"
+  },
+  "setPasscodeDescription": "Create a 4-digit passcode for additional protection",
+  "@setPasscodeDescription": {
+    "description": "Description in set passcode window"
+  },
+  "passcodeHint": "Enter 4 digits",
+  "@passcodeHint": {
+    "description": "Hint for passcode input field"
+  },
+  "setPasscodeButton": "Set",
+  "@setPasscodeButton": {
+    "description": "Set passcode button"
+  },
+  "xaneoBenefitsModalTitle": "XaneoBenefits (XB)",
+  "@xaneoBenefitsModalTitle": {
+    "description": "XaneoBenefits modal title"
+  },
+  "xaneoBenefitsModalDescription": "Xaneo Premium Subscription",
+  "@xaneoBenefitsModalDescription": {
+    "description": "XaneoBenefits modal description"
+  },
+  "xaneoBenefitsSelectPlan": "Choose your subscription plan:",
+  "@xaneoBenefitsSelectPlan": {
+    "description": "Subscription plan selection text"
+  },
+  "xaneoBenefitsYearlyPlan": "Yearly subscription",
+  "@xaneoBenefitsYearlyPlan": {
+    "description": "Yearly subscription name"
+  },
+  "xaneoBenefitsMonthlyPlan": "Monthly subscription",
+  "@xaneoBenefitsMonthlyPlan": {
+    "description": "Monthly subscription name"
+  },
+  "xaneoBenefitsYearlyPrice": "£999 per year",
+  "@xaneoBenefitsYearlyPrice": {
+    "description": "Yearly subscription price"
+  },
+  "xaneoBenefitsMonthlyPrice": "£159 per month",
+  "@xaneoBenefitsMonthlyPrice": {
+    "description": "Monthly subscription price"
+  },
+  "xaneoBenefitsSavings": "Save 25%! Only £83.25 per month",
+  "@xaneoBenefitsSavings": {
+    "description": "Savings text for yearly subscription"
+  },
+  "xaneoBenefitsSubscribeButton": "Subscribe to XB",
+  "@xaneoBenefitsSubscribeButton": {
+    "description": "Subscribe button"
+  },
+  "xaneoBenefitsCloseButton": "Close",
+  "@xaneoBenefitsCloseButton": {
+    "description": "Close modal button"
+  },
+  "xaneoBenefitsYearlySuccess": "Yearly XB subscription activated!",
+  "@xaneoBenefitsYearlySuccess": {
+    "description": "Yearly subscription success message"
+  },
+  "xaneoBenefitsMonthlySuccess": "Monthly XB subscription activated!",
+  "@xaneoBenefitsMonthlySuccess": {
+    "description": "Monthly subscription success message"
+  }
+}

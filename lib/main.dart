@@ -1117,7 +1117,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
     
     try {
       final response = await http.post(
-        Uri.parse('http://10.192.212.18/api/v1/auth/mobile-auth-data/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/mobile-auth-data/'),
         headers: {
           'Content-Type': 'application/json',
           'User-Agent': 'XaneoMobileApp/1.0',
@@ -1321,7 +1321,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
   Future<void> _checkNicknameAvailability(String nickname) async {
     try {
       final response = await http.get(
-        Uri.parse('http://10.192.212.18/api/v1/auth/check-username/?username=${Uri.encodeComponent(nickname)}'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/check-username/?username=${Uri.encodeComponent(nickname)}'),
         headers: {
           'User-Agent': 'XaneoMobile Flutter App',
           'Accept': 'application/json',
@@ -1399,7 +1399,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
       
       
       final response = await http.post(
-        Uri.parse('http://10.192.212.18/api/v1/auth/send-verification-code/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/send-verification-code/'),
         headers: {
           'User-Agent': 'XaneoMobileApp/1.0',
           'Accept': 'application/json',
@@ -1441,7 +1441,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
     
     try {
       final response = await http.post(
-        Uri.parse('http://10.192.212.18/api/v1/auth/send-tfa-code/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/send-tfa-code/'),
         headers: {
           'User-Agent': 'XaneoMobileApp/1.0',
           'Accept': 'application/json',
@@ -1492,7 +1492,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
     try {
       
       final response = await http.post(
-        Uri.parse('http://10.192.212.18/api/v1/auth/verify-email-code/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/verify-email-code/'),
         headers: {
           'User-Agent': 'XaneoMobile Flutter App',
           'Accept': 'application/json',
@@ -1562,7 +1562,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
     
     try {
       final response = await http.post(
-        Uri.parse('http://10.192.212.18/api/v1/auth/verify-tfa-code/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/verify-tfa-code/'),
         headers: {
           'Content-Type': 'application/json',
           'User-Agent': 'XaneoMobileApp/1.0',
@@ -1628,7 +1628,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
     
     try {
       final response = await http.post(
-        Uri.parse('http://10.192.212.18/api/v1/auth/send-login-code/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/send-login-code/'),
         headers: {
           'Content-Type': 'application/json',
           'User-Agent': 'XaneoMobileApp/1.0',
@@ -1703,7 +1703,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
   Future<void> _checkEmailAvailability(String email) async {
     try {
       final response = await http.get(
-        Uri.parse('http://10.192.212.18/api/v1/auth/check-email/?email=${Uri.encodeComponent(email)}'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/check-email/?email=${Uri.encodeComponent(email)}'),
         headers: {
           'User-Agent': 'XaneoMobile Flutter App',
           'Accept': 'application/json',
@@ -1759,7 +1759,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
   Future<String?> _getNextUserId() async {
     try {
       final response = await http.get(
-        Uri.parse('http://10.192.212.18/api/v1/auth/next-user-id/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/next-user-id/'),
         headers: {
           'User-Agent': 'XaneoMobile Flutter App',
           'Accept': 'application/json',
@@ -4723,7 +4723,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
       final currentVersion = packageInfo.version;
       
       final response = await http.get(
-        Uri.parse('http://10.192.212.18/api/v1/app/version/'),
+        Uri.parse('http://10.192.222.215/api/v1/app/version/'),
         headers: {
           'User-Agent': 'XaneoMobile Flutter App',
           'Accept': 'application/json',
@@ -5143,7 +5143,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
     
     try {
       final response = await http.post(
-        Uri.parse('http://10.192.212.18/api/v1/auth/mobile-login/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/mobile-login/'),
         headers: {
           'User-Agent': 'XaneoMobile Flutter App',
           'Accept': 'application/json',
@@ -5248,7 +5248,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
       // Создаем multipart request для отправки данных с возможным файлом
       var request = http.MultipartRequest(
         'POST',
-        Uri.parse('http://10.192.212.18/api/v1/auth/mobile-register/'),
+        Uri.parse('http://10.192.222.215/api/v1/auth/mobile-register/'),
       );
       
       // Добавляем заголовки
@@ -5848,7 +5848,7 @@ class _BlackScreenState extends State<BlackScreen> with TickerProviderStateMixin
             Future<void> checkNicknameOnServer(String nickname) async {
               try {
                 final response = await http.get(
-                  Uri.parse('http://10.192.212.18/api/v1/auth/check-username/?username=${Uri.encodeComponent(nickname)}'),
+                  Uri.parse('http://10.192.222.215/api/v1/auth/check-username/?username=${Uri.encodeComponent(nickname)}'),
                   headers: {
                     'User-Agent': 'XaneoMobile Flutter App',
                     'Accept': 'application/json',

@@ -6,7 +6,7 @@ import '../providers/chat_settings_provider.dart';
 import '../providers/theme_provider.dart';
 import '../widgets/wallpaper_templates.dart';
 import '../utils/text_parser.dart';
-import '../widgets/custom_smiley_picker.dart';
+import '../widgets/custom_emoji_picker.dart';
 import '../utils/apple_emoji_utils.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -593,7 +593,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
 
           // Пикер эмодзи (показывается вместо клавиатуры)
           if (_isEmojiPickerVisible)
-            CustomSmileyPicker(
+            CustomEmojiPicker(
               onEmojiSelected: _onEmojiSelected,
               onBackToKeyboard: _onBackToKeyboard,
             ),

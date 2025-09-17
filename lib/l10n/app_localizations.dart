@@ -6,11 +6,14 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'app_localizations_ar.dart';
+import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
 import 'app_localizations_fr.dart';
+import 'app_localizations_it.dart';
 import 'app_localizations_ja.dart';
 import 'app_localizations_ko.dart';
+import 'app_localizations_pt.dart';
 import 'app_localizations_ru.dart';
 import 'app_localizations_zh.dart';
 
@@ -101,6 +104,9 @@ abstract class AppLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('ru'),
+    Locale('de'),
+    Locale('it'),
+    Locale('pt'),
     Locale('ar'),
     Locale('en'),
     Locale('es'),
@@ -1867,6 +1873,78 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Оформлена ежемесячная подписка XB!'**
   String get xaneoBenefitsMonthlySuccess;
+
+  /// Название избранного чата
+  ///
+  /// In ru, this message translates to:
+  /// **'Избранное'**
+  String get favoritesChat;
+
+  /// Описание избранного чата
+  ///
+  /// In ru, this message translates to:
+  /// **'Важные сообщения и файлы'**
+  String get favoritesChatDescription;
+
+  /// Сообщение о контенте в разработке
+  ///
+  /// In ru, this message translates to:
+  /// **'Контент для \"{title}\" находится в разработке...'**
+  String contentInDevelopmentMessage(String title);
+
+  /// Название русского языка
+  ///
+  /// In ru, this message translates to:
+  /// **'Русский'**
+  String get russianLanguage;
+
+  /// Приветственное сообщение в чате
+  ///
+  /// In ru, this message translates to:
+  /// **'Привет! Это чат \"{chatName}\" 🎉'**
+  String chatWelcomeMessage(String chatName);
+
+  /// Пример форматирования текста 1
+  ///
+  /// In ru, this message translates to:
+  /// **'Здесь можно использовать **жирный** и *курсив* и __подчёркнутый__ текст!'**
+  String get formattingExample1;
+
+  /// Пример форматирования текста 2
+  ///
+  /// In ru, this message translates to:
+  /// **'А также ~~зачёркнутый~~ и `код` 💻'**
+  String get formattingExample2;
+
+  /// Триггер для приветственного ответа
+  ///
+  /// In ru, this message translates to:
+  /// **'привет'**
+  String get greetingTrigger;
+
+  /// Ответ на приветствие
+  ///
+  /// In ru, this message translates to:
+  /// **'Привет! Как дела?'**
+  String get greetingResponse;
+
+  /// Сообщение о нереализованной отправке файлов
+  ///
+  /// In ru, this message translates to:
+  /// **'Отправка файлов пока не реализована'**
+  String get fileSendingNotImplemented;
+
+  /// Статус был онлайн недавно
+  ///
+  /// In ru, this message translates to:
+  /// **'был(а) недавно'**
+  String get wasOnlineRecently;
+
+  /// Подсказка для поля ввода сообщения
+  ///
+  /// In ru, this message translates to:
+  /// **'Сообщение'**
+  String get messageHint;
 }
 
 class _AppLocalizationsDelegate
@@ -1881,11 +1959,14 @@ class _AppLocalizationsDelegate
   @override
   bool isSupported(Locale locale) => <String>[
     'ar',
+    'de',
     'en',
     'es',
     'fr',
+    'it',
     'ja',
     'ko',
+    'pt',
     'ru',
     'zh',
   ].contains(locale.languageCode);
@@ -1899,16 +1980,22 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'ar':
       return AppLocalizationsAr();
+    case 'de':
+      return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
     case 'es':
       return AppLocalizationsEs();
     case 'fr':
       return AppLocalizationsFr();
+    case 'it':
+      return AppLocalizationsIt();
     case 'ja':
       return AppLocalizationsJa();
     case 'ko':
       return AppLocalizationsKo();
+    case 'pt':
+      return AppLocalizationsPt();
     case 'ru':
       return AppLocalizationsRu();
     case 'zh':

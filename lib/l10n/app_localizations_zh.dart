@@ -923,4 +923,44 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get xaneoBenefitsMonthlySuccess => '月度 XB 订阅已激活！';
+
+  @override
+  String get favoritesChat => '收藏夹';
+
+  @override
+  String get favoritesChatDescription => '重要消息和文件';
+
+  @override
+  String contentInDevelopmentMessage(String title) {
+    return '\"$title\" 的内容正在开发中...';
+  }
+
+  @override
+  String get russianLanguage => '俄语';
+
+  @override
+  String chatWelcomeMessage(String chatName) {
+    return '你好！这是 \"$chatName\" 聊天 🎉';
+  }
+
+  @override
+  String get formattingExample1 => '这里可以使用 **粗体** 和 *斜体* 以及 __下划线__ 文本！';
+
+  @override
+  String get formattingExample2 => '还有 ~~删除线~~ 和 `代码` 💻';
+
+  @override
+  String get greetingTrigger => '你好';
+
+  @override
+  String get greetingResponse => '你好！你好吗？';
+
+  @override
+  String get fileSendingNotImplemented => '文件发送尚未实现';
+
+  @override
+  String get wasOnlineRecently => '最近在线';
+
+  @override
+  String get messageHint => '消息';
 }

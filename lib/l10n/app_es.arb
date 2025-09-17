@@ -519,5 +519,63 @@
   "xaneoBenefitsMonthlySuccess": "¡Suscripción mensual XB activada!",
   "@xaneoBenefitsMonthlySuccess": {
     "description": "Mensaje de éxito de suscripción mensual"
+  },
+  "chatWelcomeMessage": "¡Hola! Este es el chat \"{chatName}\" 🎉",
+  "@chatWelcomeMessage": {
+    "description": "Mensaje de bienvenida en el chat",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "¡Aquí puedes usar texto en **negrita** y *cursiva* y __subrayado__!",
+  "@formattingExample1": {
+    "description": "Ejemplo de formato de texto 1"
+  },
+  "formattingExample2": "Y también ~~tachado~~ y `código` 💻",
+  "@formattingExample2": {
+    "description": "Ejemplo de formato de texto 2"
+  },
+  "greetingTrigger": "hola",
+  "@greetingTrigger": {
+    "description": "Activador para respuesta de saludo"
+  },
+  "greetingResponse": "¡Hola! ¿Cómo estás?",
+  "@greetingResponse": {
+    "description": "Respuesta al saludo"
+  },
+  "fileSendingNotImplemented": "El envío de archivos aún no está implementado",
+  "@fileSendingNotImplemented": {
+    "description": "Mensaje sobre envío de archivos no implementado"
+  },
+  "wasOnlineRecently": "estuvo en línea recientemente",
+  "@wasOnlineRecently": {
+    "description": "Estado estuvo en línea recientemente"
+  },
+  "messageHint": "Mensaje",
+  "@messageHint": {
+    "description": "Sugerencia para el campo de entrada de mensaje"
+  },
+  "favoritesChat": "Favoritos",
+  "@favoritesChat": {
+    "description": "Nombre del chat de favoritos"
+  },
+  "favoritesChatDescription": "Mensajes y archivos importantes",
+  "@favoritesChatDescription": {
+    "description": "Descripción del chat de favoritos"
+  },
+  "contentInDevelopmentMessage": "El contenido para \"{title}\" está en desarrollo...",
+  "@contentInDevelopmentMessage": {
+    "description": "Mensaje de contenido en desarrollo",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "Ruso",
+  "@russianLanguage": {
+    "description": "Nombre del idioma ruso"
   }
 }

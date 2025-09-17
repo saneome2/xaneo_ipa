@@ -72,10 +72,10 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
   DisplayMode? _currentDisplayMode;
 
   // Список чатов (один чат "Избранное")
-  final List<Map<String, dynamic>> _favoriteChats = [
+  List<Map<String, dynamic>> _getFavoriteChats(AppLocalizations l10n) => [
     {
-      'name': 'Избранное',
-      'lastMessage': 'Важные сообщения и файлы',
+      'name': l10n.favoritesChat,
+      'lastMessage': l10n.favoritesChatDescription,
       'time': '14:30',
       'unread': 0,
       'avatar': '🔖',
@@ -481,9 +481,9 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
           // Список чатов
           Expanded(
             child: ListView.builder(
-              itemCount: _favoriteChats.length,
+              itemCount: _getFavoriteChats(AppLocalizations.of(context)).length,
               itemBuilder: (context, index) {
-                final chat = _favoriteChats[index];
+                final chat = _getFavoriteChats(AppLocalizations.of(context))[index];
                 return _buildChatItem(chat);
               },
             ),
@@ -811,7 +811,7 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
                 const SizedBox(height: 8),
                 _buildSettingsItem(l10n.support, Icons.support_agent),
                 _buildSettingsItem(l10n.xaneoBenefits, Icons.star_outline),
-                _buildLanguageItem(l10n.languageSelect, _getLanguageNameFromLocale(localeProvider.locale)),
+                _buildLanguageItem(l10n.languageSelect, _getLanguageNameFromLocale(localeProvider.locale, l10n)),
               ],
             ),
           ),
@@ -1410,6 +1410,8 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
   }
 
   Widget _buildDefaultContent(String title) {
+    final l10n = AppLocalizations.of(context);
+    
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -1424,7 +1426,7 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
         ),
         const SizedBox(height: 16),
         Text(
-          'Контент для "$title" находится в разработке...',
+          l10n.contentInDevelopmentMessage(title),
           style: TextStyle(
             color: Provider.of<ThemeProvider>(context).isDarkMode ? Colors.grey.shade400 : Colors.grey.shade700,
             fontSize: 14,
@@ -1495,8 +1497,8 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
   }
 
   // Метод для получения названия языка по коду локали
-  String _getLanguageNameFromLocale(Locale? locale) {
-    if (locale == null) return 'Русский'; // По умолчанию
+  String _getLanguageNameFromLocale(Locale? locale, AppLocalizations l10n) {
+    if (locale == null) return l10n.russianLanguage; // По умолчанию
     
     switch (locale.languageCode) {
       case 'en':
@@ -1510,13 +1512,19 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
       case 'ko':
         return '한국어';
       case 'ru':
-        return 'Русский';
+        return l10n.russianLanguage;
       case 'ar':
         return 'العربية';
       case 'zh':
         return '中文';
+      case 'de':
+        return 'Deutsch';
+      case 'it':
+        return 'Italiano';
+      case 'pt':
+        return 'Português';
       default:
-        return 'Русский';
+        return l10n.russianLanguage;
     }
   }
 }

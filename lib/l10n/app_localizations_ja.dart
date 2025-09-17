@@ -930,4 +930,44 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get xaneoBenefitsMonthlySuccess => '月間 XB サブスクリプションが有効化されました！';
+
+  @override
+  String get favoritesChat => 'お気に入り';
+
+  @override
+  String get favoritesChatDescription => '重要なメッセージとファイル';
+
+  @override
+  String contentInDevelopmentMessage(String title) {
+    return '\"$title\" のコンテンツは開発中です...';
+  }
+
+  @override
+  String get russianLanguage => 'ロシア語';
+
+  @override
+  String chatWelcomeMessage(String chatName) {
+    return 'こんにちは！これは \"$chatName\" チャットです 🎉';
+  }
+
+  @override
+  String get formattingExample1 => 'ここでは **太字** と *斜体* と __下線__ テキストが使えます！';
+
+  @override
+  String get formattingExample2 => 'また ~~取り消し線~~ と `コード` も使えます 💻';
+
+  @override
+  String get greetingTrigger => 'こんにちは';
+
+  @override
+  String get greetingResponse => 'こんにちは！元気ですか？';
+
+  @override
+  String get fileSendingNotImplemented => 'ファイル送信はまだ実装されていません';
+
+  @override
+  String get wasOnlineRecently => '最近オンラインでした';
+
+  @override
+  String get messageHint => 'メッセージ';
 }

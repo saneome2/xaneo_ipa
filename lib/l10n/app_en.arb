@@ -531,5 +531,63 @@
   "xaneoBenefitsMonthlySuccess": "Monthly XB subscription activated!",
   "@xaneoBenefitsMonthlySuccess": {
     "description": "Monthly subscription success message"
+  },
+  "chatWelcomeMessage": "Hello! This is \"{chatName}\" chat 🎉",
+  "@chatWelcomeMessage": {
+    "description": "Welcome message in chat",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "Here you can use **bold** and *italic* and __underlined__ text!",
+  "@formattingExample1": {
+    "description": "Text formatting example 1"
+  },
+  "formattingExample2": "And also ~~strikethrough~~ and `code` 💻",
+  "@formattingExample2": {
+    "description": "Text formatting example 2"
+  },
+  "greetingTrigger": "hello",
+  "@greetingTrigger": {
+    "description": "Trigger for greeting response"
+  },
+  "greetingResponse": "Hello! How are you?",
+  "@greetingResponse": {
+    "description": "Response to greeting"
+  },
+  "fileSendingNotImplemented": "File sending is not implemented yet",
+  "@fileSendingNotImplemented": {
+    "description": "Message about unimplemented file sending"
+  },
+  "wasOnlineRecently": "was online recently",
+  "@wasOnlineRecently": {
+    "description": "Status was online recently"
+  },
+  "messageHint": "Message",
+  "@messageHint": {
+    "description": "Hint for message input field"
+  },
+  "favoritesChat": "Favorites",
+  "@favoritesChat": {
+    "description": "Favorites chat name"
+  },
+  "favoritesChatDescription": "Important messages and files",
+  "@favoritesChatDescription": {
+    "description": "Favorites chat description"
+  },
+  "contentInDevelopmentMessage": "Content for \"{title}\" is under development...",
+  "@contentInDevelopmentMessage": {
+    "description": "Content in development message",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "Russian",
+  "@russianLanguage": {
+    "description": "Russian language name"
   }
 }

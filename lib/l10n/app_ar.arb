@@ -520,5 +520,63 @@
   "xaneoBenefitsMonthlySuccess": "تم تفعيل الاشتراك الشهري XB!",
   "@xaneoBenefitsMonthlySuccess": {
     "description": "رسالة نجاح الاشتراك الشهري"
+  },
+  "chatWelcomeMessage": "مرحبا! هذه دردشة \"{chatName}\" 🎉",
+  "@chatWelcomeMessage": {
+    "description": "رسالة ترحيب في الدردشة",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "هنا يمكنك استخدام نص **عريض** و *مائل* و __مسطر__!",
+  "@formattingExample1": {
+    "description": "مثال تنسيق النص 1"
+  },
+  "formattingExample2": "وأيضاً ~~مشطوب~~ و `كود` 💻",
+  "@formattingExample2": {
+    "description": "مثال تنسيق النص 2"
+  },
+  "greetingTrigger": "مرحبا",
+  "@greetingTrigger": {
+    "description": "مشغل للرد على التحية"
+  },
+  "greetingResponse": "مرحبا! كيف الحال؟",
+  "@greetingResponse": {
+    "description": "الرد على التحية"
+  },
+  "fileSendingNotImplemented": "إرسال الملفات غير مطبق بعد",
+  "@fileSendingNotImplemented": {
+    "description": "رسالة حول إرسال الملفات غير المطبق"
+  },
+  "wasOnlineRecently": "كان متصلاً مؤخراً",
+  "@wasOnlineRecently": {
+    "description": "حالة كان متصلاً مؤخراً"
+  },
+  "messageHint": "رسالة",
+  "@messageHint": {
+    "description": "تلميح لحقل إدخال الرسالة"
+  },
+  "favoritesChat": "المفضلة",
+  "@favoritesChat": {
+    "description": "اسم دردشة المفضلة"
+  },
+  "favoritesChatDescription": "الرسائل والملفات المهمة",
+  "@favoritesChatDescription": {
+    "description": "وصف دردشة المفضلة"
+  },
+  "contentInDevelopmentMessage": "المحتوى لـ \"{title}\" قيد التطوير...",
+  "@contentInDevelopmentMessage": {
+    "description": "رسالة المحتوى قيد التطوير",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "الروسية",
+  "@russianLanguage": {
+    "description": "اسم اللغة الروسية"
   }
 }

@@ -519,5 +519,63 @@
   "xaneoBenefitsMonthlySuccess": "月間 XB サブスクリプションが有効化されました！",
   "@xaneoBenefitsMonthlySuccess": {
     "description": "月間サブスクリプション成功メッセージ"
+  },
+  "chatWelcomeMessage": "こんにちは！これは \"{chatName}\" チャットです 🎉",
+  "@chatWelcomeMessage": {
+    "description": "チャットでの歓迎メッセージ",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "ここでは **太字** と *斜体* と __下線__ テキストが使えます！",
+  "@formattingExample1": {
+    "description": "テキスト書式例 1"
+  },
+  "formattingExample2": "また ~~取り消し線~~ と `コード` も使えます 💻",
+  "@formattingExample2": {
+    "description": "テキスト書式例 2"
+  },
+  "greetingTrigger": "こんにちは",
+  "@greetingTrigger": {
+    "description": "挨拶応答のトリガー"
+  },
+  "greetingResponse": "こんにちは！元気ですか？",
+  "@greetingResponse": {
+    "description": "挨拶への応答"
+  },
+  "fileSendingNotImplemented": "ファイル送信はまだ実装されていません",
+  "@fileSendingNotImplemented": {
+    "description": "未実装のファイル送信に関するメッセージ"
+  },
+  "wasOnlineRecently": "最近オンラインでした",
+  "@wasOnlineRecently": {
+    "description": "最近オンラインだったステータス"
+  },
+  "messageHint": "メッセージ",
+  "@messageHint": {
+    "description": "メッセージ入力フィールドのヒント"
+  },
+  "favoritesChat": "お気に入り",
+  "@favoritesChat": {
+    "description": "お気に入りチャット名"
+  },
+  "favoritesChatDescription": "重要なメッセージとファイル",
+  "@favoritesChatDescription": {
+    "description": "お気に入りチャットの説明"
+  },
+  "contentInDevelopmentMessage": "\"{title}\" のコンテンツは開発中です...",
+  "@contentInDevelopmentMessage": {
+    "description": "開発中コンテンツメッセージ",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "ロシア語",
+  "@russianLanguage": {
+    "description": "ロシア語の名前"
   }
 }

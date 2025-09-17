@@ -928,4 +928,45 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get xaneoBenefitsMonthlySuccess => '월간 XB 구독이 활성화되었습니다!';
+
+  @override
+  String get favoritesChat => '즐겨찾기';
+
+  @override
+  String get favoritesChatDescription => '중요한 메시지와 파일';
+
+  @override
+  String contentInDevelopmentMessage(String title) {
+    return '\"$title\" 콘텐츠는 개발 중입니다...';
+  }
+
+  @override
+  String get russianLanguage => '러시아어';
+
+  @override
+  String chatWelcomeMessage(String chatName) {
+    return '안녕하세요! 이것은 \"$chatName\" 채팅입니다 🎉';
+  }
+
+  @override
+  String get formattingExample1 =>
+      '여기서 **굵은** 글자와 *기울임* 글자, __밑줄__ 텍스트를 사용할 수 있습니다!';
+
+  @override
+  String get formattingExample2 => '또한 ~~취소선~~과 `코드` 텍스트도 사용할 수 있습니다 💻';
+
+  @override
+  String get greetingTrigger => '안녕하세요';
+
+  @override
+  String get greetingResponse => '안녕하세요! 어떻게 지내세요?';
+
+  @override
+  String get fileSendingNotImplemented => '파일 전송이 아직 구현되지 않았습니다';
+
+  @override
+  String get wasOnlineRecently => '최근에 온라인이었습니다';
+
+  @override
+  String get messageHint => '메시지';
 }

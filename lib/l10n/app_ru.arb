@@ -1257,5 +1257,63 @@
   "xaneoBenefitsMonthlySuccess": "Оформлена ежемесячная подписка XB!",
   "@xaneoBenefitsMonthlySuccess": {
     "description": "Сообщение об успешном оформлении ежемесячной подписки"
+  },
+  "favoritesChat": "Избранное",
+  "@favoritesChat": {
+    "description": "Название избранного чата"
+  },
+  "favoritesChatDescription": "Важные сообщения и файлы",
+  "@favoritesChatDescription": {
+    "description": "Описание избранного чата"
+  },
+  "contentInDevelopmentMessage": "Контент для \"{title}\" находится в разработке...",
+  "@contentInDevelopmentMessage": {
+    "description": "Сообщение о контенте в разработке",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "Русский",
+  "@russianLanguage": {
+    "description": "Название русского языка"
+  },
+  "chatWelcomeMessage": "Привет! Это чат \"{chatName}\" 🎉",
+  "@chatWelcomeMessage": {
+    "description": "Приветственное сообщение в чате",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "Здесь можно использовать **жирный** и *курсив* и __подчёркнутый__ текст!",
+  "@formattingExample1": {
+    "description": "Пример форматирования текста 1"
+  },
+  "formattingExample2": "А также ~~зачёркнутый~~ и `код` 💻",
+  "@formattingExample2": {
+    "description": "Пример форматирования текста 2"
+  },
+  "greetingTrigger": "привет",
+  "@greetingTrigger": {
+    "description": "Триггер для приветственного ответа"
+  },
+  "greetingResponse": "Привет! Как дела?",
+  "@greetingResponse": {
+    "description": "Ответ на приветствие"
+  },
+  "fileSendingNotImplemented": "Отправка файлов пока не реализована",
+  "@fileSendingNotImplemented": {
+    "description": "Сообщение о нереализованной отправке файлов"
+  },
+  "wasOnlineRecently": "был(а) недавно",
+  "@wasOnlineRecently": {
+    "description": "Статус был онлайн недавно"
+  },
+  "messageHint": "Сообщение",
+  "@messageHint": {
+    "description": "Подсказка для поля ввода сообщения"
   }
 }

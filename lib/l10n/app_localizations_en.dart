@@ -963,4 +963,45 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get xaneoBenefitsMonthlySuccess =>
       'Monthly XB subscription activated!';
+
+  @override
+  String get favoritesChat => 'Favorites';
+
+  @override
+  String get favoritesChatDescription => 'Important messages and files';
+
+  @override
+  String contentInDevelopmentMessage(String title) {
+    return 'Content for \"$title\" is under development...';
+  }
+
+  @override
+  String get russianLanguage => 'Russian';
+
+  @override
+  String chatWelcomeMessage(String chatName) {
+    return 'Hello! This is \"$chatName\" chat 🎉';
+  }
+
+  @override
+  String get formattingExample1 =>
+      'Here you can use **bold** and *italic* and __underlined__ text!';
+
+  @override
+  String get formattingExample2 => 'And also ~~strikethrough~~ and `code` 💻';
+
+  @override
+  String get greetingTrigger => 'hello';
+
+  @override
+  String get greetingResponse => 'Hello! How are you?';
+
+  @override
+  String get fileSendingNotImplemented => 'File sending is not implemented yet';
+
+  @override
+  String get wasOnlineRecently => 'was online recently';
+
+  @override
+  String get messageHint => 'Message';
 }

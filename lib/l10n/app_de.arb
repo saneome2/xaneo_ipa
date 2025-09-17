@@ -1,0 +1,1276 @@
+{
+  "@@locale": "de",
+  "appTitle": "XaneoMobile",
+  "@appTitle": {
+    "description": "Anwendungsname"
+  },
+  "welcomeTitle": "Willkommen bei Xaneo",
+  "@welcomeTitle": {
+    "description": "Begrüßungstitel"
+  },
+  "welcomeDescription": "Xaneo - jetzt auch als mobile App! Xaneo war noch nie so bequem und schnell.",
+  "@welcomeDescription": {
+    "description": "Begrüßungsbeschreibung"
+  },
+  "getStartedButton": "Ich bin schon interessiert",
+  "@getStartedButton": {
+    "description": "Start-Button"
+  },
+  "connectingToServer": "Verbindung zum Server...",
+  "@connectingToServer": {
+    "description": "Serververbindungs-Nachricht"
+  },
+  "version": "Version: {version}",
+  "@version": {
+    "description": "Versionsanzeige",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "httpError": "Fehler: HTTP {code}",
+  "@httpError": {
+    "description": "HTTP-Fehler",
+    "placeholders": {
+      "code": {
+        "type": "int"
+      }
+    }
+  },
+  "connectionError": "Verbindungsfehler: {error}",
+  "@connectionError": {
+    "description": "Verbindungsfehler",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "updateAvailable": "Update verfügbar!",
+  "@updateAvailable": {
+    "description": "Update-Nachricht"
+  },
+  "updateDialogTitle": "Update verfügbar!",
+  "@updateDialogTitle": {
+    "description": "Update-Dialog-Titel"
+  },
+  "updateDialogMessage": "Ihre Version ist {currentVersion}, die neue ist {latestVersion}",
+  "@updateDialogMessage": {
+    "description": "Versionsnachricht im Update-Dialog",
+    "placeholders": {
+      "currentVersion": {
+        "type": "String"
+      },
+      "latestVersion": {
+        "type": "String"
+      }
+    }
+  },
+  "updateDialogDescription": "Sie können über Google Play, RuStore oder die offizielle Xaneo-Website aktualisieren.",
+  "@updateDialogDescription": {
+    "description": "Update-Quellen-Beschreibung"
+  },
+  "updateButton": "Aktualisieren",
+  "@updateButton": {
+    "description": "Update-Button"
+  },
+  "cancelButton": "Abbrechen",
+  "@cancelButton": {
+    "description": "Abbrechen-Button"
+  },
+  "selectUpdateSource": "Wählen Sie die Update-Quelle:",
+  "@selectUpdateSource": {
+    "description": "Update-Quellen-Auswahl-Titel"
+  },
+  "settings": "Einstellungen",
+  "@settings": {
+    "description": "Einstellungen"
+  },
+  "about": "Über die App",
+  "@about": {
+    "description": "Über die App"
+  },
+  "help": "Hilfe",
+  "@help": {
+    "description": "Hilfe"
+  },
+  "notifications": "Benachrichtigungen",
+  "@notifications": {
+    "description": "Benachrichtigungen"
+  },
+  "notificationsDescription": "Benachrichtigungen über neue Funktionen erhalten",
+  "@notificationsDescription": {
+    "description": "Benachrichtigungs-Einstellungsbeschreibung"
+  },
+  "darkTheme": "Dunkles Thema",
+  "@darkTheme": {
+    "description": "Dunkles Thema"
+  },
+  "darkThemeDescription": "Dunkles Erscheinungsbild verwenden",
+  "@darkThemeDescription": {
+    "description": "Dunkles Thema Beschreibung"
+  },
+  "fontSize": "Schriftgröße: {size}",
+  "@fontSize": {
+    "description": "Schriftgröße",
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "appVersion": "App-Version",
+  "@appVersion": {
+    "description": "App-Version"
+  },
+  "messengerDemoMode": "Messenger-Demo-Modus",
+  "@messengerDemoMode": {
+    "description": "Messenger-Demo-Modus Option in Einstellungen"
+  },
+  "language": "Sprache",
+  "@language": {
+    "description": "Oberflächensprache"
+  },
+  "languageDescription": "Wählen Sie die Oberflächensprache",
+  "@languageDescription": {
+    "description": "Spracheinstellungsbeschreibung"
+  },
+  "welcomeMessage": "Großartig! Willkommen!",
+  "@welcomeMessage": {
+    "description": "Willkommensnachricht beim Button-Klick"
+  },
+  "privacyTitle": "Alle Ihre Daten sind sicher",
+  "@privacyTitle": {
+    "description": "Datenschutz-Bildschirm-Titel"
+  },
+  "privacyDescription": "Alle Nachrichten in XaneoConnect sind durch Ende-zu-Ende-Verschlüsselung geschützt. Xaneo kennt zu keinem Zeitpunkt deren Inhalt.",
+  "@privacyDescription": {
+    "description": "Datenschutzbeschreibung"
+  },
+  "continueButton": "Lassen Sie uns fortfahren",
+  "@continueButton": {
+    "description": "Fortfahren-Button"
+  },
+  "dataStorageTitle": "Alle Xaneo-Datenzentren befinden sich in Russland",
+  "@dataStorageTitle": {
+    "description": "Datenspeicher-Bildschirm-Titel"
+  },
+  "dataStorageDescription": "Ihre Daten verlassen niemals das Land und werden in sicheren Datenzentren gespeichert.",
+  "@dataStorageDescription": {
+    "description": "Datenspeicherbeschreibung"
+  },
+  "finishButton": "Fertigstellen",
+  "@finishButton": {
+    "description": "Fertigstellen-Button"
+  },
+  "setupCompleted": "Einrichtung abgeschlossen!",
+  "@setupCompleted": {
+    "description": "Einrichtungsabschluss-Nachricht"
+  },
+  "loginFormTitle": "Lassen Sie uns anmelden",
+  "@loginFormTitle": {
+    "description": "Anmeldeformular-Titel"
+  },
+  "registerFormTitle": "Lassen Sie uns beginnen",
+  "@registerFormTitle": {
+    "description": "Registrierungsformular-Titel"
+  },
+  "registerNameSubtitle": "Wie heißen Sie?",
+  "@registerNameSubtitle": {
+    "description": "Untertitel für Namenseingabe bei Registrierung"
+  },
+  "nameFieldHint": "Ihr Name",
+  "@nameFieldHint": {
+    "description": "Hinweis für Namenseingabefeld"
+  },
+  "nextButton": "Weiter",
+  "@nextButton": {
+    "description": "Button für nächsten Registrierungsschritt"
+  },
+  "skipButton": "Überspringen",
+  "@skipButton": {
+    "description": "Button zum Überspringen des aktuellen Schritts"
+  },
+  "registerBirthdateSubtitle": "Wann sind Sie geboren?",
+  "@registerBirthdateSubtitle": {
+    "description": "Untertitel für Geburtsdatums-Auswahl bei Registrierung"
+  },
+  "selectDate": "Datum auswählen",
+  "@selectDate": {
+    "description": "Datumsauswahl-Button"
+  },
+  "ageRestrictionsLink": "Was sind die Altersbeschränkungen?",
+  "@ageRestrictionsLink": {
+    "description": "Link zu Altersbeschränkungen"
+  },
+  "ageRestrictionsTitle": "Registrierung ab 14 Jahren",
+  "@ageRestrictionsTitle": {
+    "description": "Altersbeschränkungen-Titel"
+  },
+  "ageRestrictionsDescription": "Sie können sich bei unserem Service registrieren, wenn Sie 14 Jahre oder älter sind",
+  "@ageRestrictionsDescription": {
+    "description": "Altersbeschränkungen-Beschreibung"
+  },
+  "gotIt": "Verstanden",
+  "@gotIt": {
+    "description": "Verstanden-Button"
+  },
+  "registerNicknameSubtitle": "Wählen Sie einen Spitznamen",
+  "@registerNicknameSubtitle": {
+    "description": "Untertitel für Spitznamenauswahl"
+  },
+  "nicknameFieldHint": "Ihr Spitzname",
+  "@nicknameFieldHint": {
+    "description": "Hinweis für Spitznameneingabefeld"
+  },
+  "nicknameHelpLink": "Können Sie sich keinen Spitznamen ausdenken?",
+  "@nicknameHelpLink": {
+    "description": "Link zur Spitznamen-Hilfe"
+  },
+  "registerEmailSubtitle": "Geben Sie Ihre E-Mail ein",
+  "@registerEmailSubtitle": {
+    "description": "Untertitel für E-Mail-Eingabe"
+  },
+  "emailFieldHint": "Ihre E-Mail",
+  "@emailFieldHint": {
+    "description": "Hinweis für E-Mail-Eingabefeld"
+  },
+  "supportedEmailProvidersLink": "Welche E-Mail-Anbieter werden unterstützt?",
+  "@supportedEmailProvidersLink": {
+    "description": "Link zu unterstützten E-Mail-Anbietern"
+  },
+  "supportedEmailProvidersTitle": "Unterstützte E-Mail-Anbieter",
+  "@supportedEmailProvidersTitle": {
+    "description": "Titel der unterstützten E-Mail-Anbieter"
+  },
+  "supportedEmailProvidersDescription": "Gmail, Outlook, Yandex, Mail.ru und andere beliebte E-Mail-Dienste werden unterstützt.",
+  "@supportedEmailProvidersDescription": {
+    "description": "Beschreibung der unterstützten E-Mail-Anbieter"
+  },
+  "emailFormatError": "Ungültiges E-Mail-Adressformat",
+  "@emailFormatError": {
+    "description": "E-Mail-Format-Fehler"
+  },
+  "emailUnsupportedError": "Dieser E-Mail-Dienst wird nicht unterstützt",
+  "@emailUnsupportedError": {
+    "description": "Nicht unterstützter E-Mail-Dienst-Fehler"
+  },
+  "checkingEmail": "E-Mail wird überprüft...",
+  "@checkingEmail": {
+    "description": "E-Mail-Überprüfungs-Nachricht"
+  },
+  "emailAvailable": "E-Mail ist verfügbar",
+  "@emailAvailable": {
+    "description": "E-Mail-verfügbar-Nachricht"
+  },
+  "emailTakenError": "Diese E-Mail ist bereits vergeben",
+  "@emailTakenError": {
+    "description": "E-Mail-bereits-vergeben-Fehler"
+  },
+  "emailServerError": "E-Mail-Überprüfungsfehler. Bitte versuchen Sie es später erneut",
+  "@emailServerError": {
+    "description": "E-Mail-Server-Fehler"
+  },
+  "verifyEmailTitle": "Bestätigen Sie Ihre E-Mail",
+  "@verifyEmailTitle": {
+    "description": "E-Mail-Bestätigungs-Titel"
+  },
+  "verifyEmailDescription": "Wir haben einen 6-stelligen Code an Ihre E-Mail gesendet. Geben Sie ihn ein, um zu bestätigen.",
+  "@verifyEmailDescription": {
+    "description": "E-Mail-Bestätigungs-Beschreibung"
+  },
+  "verificationCodeHint": "Bestätigungscode",
+  "@verificationCodeHint": {
+    "description": "Hinweis für Bestätigungscode-Eingabe"
+  },
+  "verifyButton": "Bestätigen",
+  "@verifyButton": {
+    "description": "Bestätigen-Button"
+  },
+  "registerPasswordSubtitle": "Erstellen Sie ein Passwort",
+  "@registerPasswordSubtitle": {
+    "description": "Untertitel für Passwort-Erstellung"
+  },
+  "registerPasswordFieldHint": "Passwort eingeben",
+  "@registerPasswordFieldHint": {
+    "description": "Hinweis für Passwort-Eingabefeld"
+  },
+  "passwordInvalidCharsError": "Passwort darf nur lateinische Buchstaben, Zahlen und Satzzeichen enthalten",
+  "@passwordInvalidCharsError": {
+    "description": "Passwort ungültige Zeichen Fehler"
+  },
+  "passwordWeakError": "Passwort ist zu schwach. Verwenden Sie Buchstaben, Zahlen und Sonderzeichen",
+  "@passwordWeakError": {
+    "description": "Schwaches Passwort Fehler"
+  },
+  "passwordMediumWarning": "Mittelstarkes Passwort. Stärkung empfohlen",
+  "@passwordMediumWarning": {
+    "description": "Mittelstarkes Passwort Warnung"
+  },
+  "passwordStrongSuccess": "Starkes Passwort",
+  "@passwordStrongSuccess": {
+    "description": "Starkes Passwort Erfolg"
+  },
+  "nicknameGeneratorTitle": "Ihr Spitzname wird automatisch generiert",
+  "@nicknameGeneratorTitle": {
+    "description": "Spitznamen-Generator Titel"
+  },
+  "nicknameGeneratorDescription": "Sie können Ihren Spitznamen jederzeit ändern",
+  "@nicknameGeneratorDescription": {
+    "description": "Spitznamen-Generator Beschreibung"
+  },
+  "closeButton": "Schließen",
+  "@closeButton": {
+    "description": "Schließen-Button"
+  },
+  "loginFieldHint": "Anmeldung",
+  "@loginFieldHint": {
+    "description": "Anmeldung Feld Hinweis"
+  },
+  "passwordFieldHint": "Passwort",
+  "@passwordFieldHint": {
+    "description": "Passwort Feld Hinweis"
+  },
+  "loginButton": "Anmelden",
+  "@loginButton": {
+    "description": "Anmelden Button"
+  },
+  "fillAllFields": "Füllen Sie alle Felder aus",
+  "@fillAllFields": {
+    "description": "Alle Felder ausfüllen Nachricht"
+  },
+  "loggingIn": "Anmeldung...",
+  "@loggingIn": {
+    "description": "Anmeldung läuft Nachricht"
+  },
+  "welcomeUser": "Willkommen, {username}!",
+  "@welcomeUser": {
+    "description": "Benutzer Willkommen Nachricht",
+    "placeholders": {
+      "username": {
+        "type": "String"
+      }
+    }
+  },
+  "invalidCredentials": "Ungültige Anmeldedaten. Überprüfen Sie Ihren Benutzernamen und Passwort.",
+  "@invalidCredentials": {
+    "description": "Ungültige Anmeldedaten Fehler"
+  },
+  "serverError": "Serverfehler. Bitte versuchen Sie es später erneut.",
+  "@serverError": {
+    "description": "Serverfehler Nachricht"
+  },
+  "connectionErrorLogin": "Verbindungsfehler. Überprüfen Sie Ihre Internetverbindung.",
+  "@connectionErrorLogin": {
+    "description": "Verbindungsfehler bei Anmeldung"
+  },
+  "noAccount": "Kein Konto?",
+  "@noAccount": {
+    "description": "Kein Konto Link"
+  },
+  "forgotPassword": "Passwort vergessen?",
+  "@forgotPassword": {
+    "description": "Passwort vergessen Link"
+  },
+  "forgotPasswordDescription": "Geben Sie Ihren Spitznamen ein und wir senden Ihnen einen Link zum Zugriff auf Ihr Konto per E-Mail.",
+  "@forgotPasswordDescription": {
+    "description": "Passwort vergessen Beschreibung"
+  },
+  "sendLinkButton": "Link senden",
+  "@sendLinkButton": {
+    "description": "Link senden Button"
+  },
+  "checkEmailTitle": "Überprüfen Sie Ihre E-Mail",
+  "@checkEmailTitle": {
+    "description": "E-Mail überprüfen Titel"
+  },
+  "checkEmailDescription": "Bitte überprüfen Sie Ihren Posteingang {email} und folgen Sie dem Link, um auf Ihr Konto zuzugreifen.",
+  "@checkEmailDescription": {
+    "description": "E-Mail überprüfen Beschreibung",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "forgotPasswordCodeDescription": "Geben Sie den Zugangscode ein, der an die mit Ihrem Konto verknüpfte E-Mail gesendet wurde",
+  "@forgotPasswordCodeDescription": {
+    "description": "Passwort vergessen Code Beschreibung"
+  },
+  "alreadyHaveAccount": "Haben Sie bereits ein Konto?",
+  "@alreadyHaveAccount": {
+    "description": "Bereits Konto Link"
+  },
+  "registrationUnavailable": "Registrierung ist derzeit nicht verfügbar",
+  "@registrationUnavailable": {
+    "description": "Registrierung nicht verfügbar Nachricht"
+  },
+  "passwordRecoveryUnavailable": "Passwortwiederherstellung ist derzeit nicht verfügbar",
+  "@passwordRecoveryUnavailable": {
+    "description": "Passwortwiederherstellung nicht verfügbar Nachricht"
+  },
+  "nicknameMinLengthError": "Spitzname muss mindestens fünf Zeichen lang sein",
+  "@nicknameMinLengthError": {
+    "description": "Spitzname Mindestlänge Fehler"
+  },
+  "nicknameLatinOnlyError": "Spitzname darf nur lateinische Buchstaben, Zahlen, Punkte und Unterstriche enthalten",
+  "@nicknameLatinOnlyError": {
+    "description": "Spitzname nur lateinisch Fehler"
+  },
+  "nicknameStartError": "Spitzname darf nicht mit Unterstrich, Zahl oder Punkt beginnen",
+  "@nicknameStartError": {
+    "description": "Spitzname Start Fehler"
+  },
+  "nicknameEndError": "Spitzname darf nicht mit Unterstrich oder Punkt enden",
+  "@nicknameEndError": {
+    "description": "Spitzname Ende Fehler"
+  },
+  "checkingNickname": "Spitzname wird überprüft...",
+  "@checkingNickname": {
+    "description": "Nachricht beim Überprüfen des Spitznamens"
+  },
+  "nicknameAvailable": "Spitzname ist verfügbar",
+  "@nicknameAvailable": {
+    "description": "Spitzname verfügbar Nachricht"
+  },
+  "nicknameTakenError": "Dieser Spitzname ist bereits vergeben",
+  "@nicknameTakenError": {
+    "description": "Spitzname bereits vergeben Fehler"
+  },
+  "nicknameServerError": "Serverfehler bei der Spitzname-Überprüfung",
+  "@nicknameServerError": {
+    "description": "Serverfehler bei Spitzname-Überprüfung"
+  },
+  "nicknameMaxLengthError": "Spitzname darf maximal 30 Zeichen lang sein",
+  "@nicknameMaxLengthError": {
+    "description": "Maximale Länge des Spitznamens Fehler"
+  },
+  "nameEmptyError": "Name darf nicht leer sein",
+  "@nameEmptyError": {
+    "description": "Name leer Fehler"
+  },
+  "confirmPasswordTitle": "Passwort bestätigen",
+  "@confirmPasswordTitle": {
+    "description": "Titel für Passwortbestätigung"
+  },
+  "confirmPasswordDescription": "Bitte geben Sie Ihr Passwort erneut ein, um fortzufahren",
+  "@confirmPasswordDescription": {
+    "description": "Beschreibung für Passwortbestätigung"
+  },
+  "confirmPasswordFieldHint": "Passwort erneut eingeben",
+  "@confirmPasswordFieldHint": {
+    "description": "Hinweis für Passwortbestätigung Feld"
+  },
+  "passwordMismatchError": "Passwörter stimmen nicht überein",
+  "@passwordMismatchError": {
+    "description": "Passwort stimmt nicht überein Fehler"
+  },
+  "confirmButton": "Bestätigen",
+  "@confirmButton": {
+    "description": "Bestätigen Button"
+  },
+  "registerAvatarSubtitle": "Fügen Sie ein Profilbild hinzu",
+  "@registerAvatarSubtitle": {
+    "description": "Untertitel für Avatar-Registrierung"
+  },
+  "addAvatarHint": "Tippen Sie, um ein Bild auszuwählen",
+  "@addAvatarHint": {
+    "description": "Hinweis zum Hinzufügen eines Avatars"
+  },
+  "avatarTapToSelect": "Tippen Sie, um auszuwählen",
+  "@avatarTapToSelect": {
+    "description": "Avatar antippen zum Auswählen"
+  },
+  "photoPermissionTitle": "Zugriff auf Fotos",
+  "@photoPermissionTitle": {
+    "description": "Titel für Foto-Berechtigung"
+  },
+  "photoPermissionDescription": "Wir benötigen Zugriff auf Ihre Fotos, um ein Profilbild auszuwählen",
+  "@photoPermissionDescription": {
+    "description": "Beschreibung für Foto-Berechtigung"
+  },
+  "allowAccessButton": "Zugriff erlauben",
+  "@allowAccessButton": {
+    "description": "Zugriff erlauben Button"
+  },
+  "notNowButton": "Nicht jetzt",
+  "@notNowButton": {
+    "description": "Nicht jetzt Button"
+  },
+  "avatarCropperTitle": "Bild zuschneiden",
+  "@avatarCropperTitle": {
+    "description": "Titel für Avatar-Cropper"
+  },
+  "doneButton": "Fertig",
+  "@doneButton": {
+    "description": "Fertig Button"
+  },
+  "cropInstructions": "Ziehen Sie, um den Bildausschnitt zu ändern",
+  "@cropInstructions": {
+    "description": "Anweisungen für das Zuschneiden"
+  },
+  "changeAvatar": "Avatar ändern",
+  "@changeAvatar": {
+    "description": "Avatar ändern Button"
+  },
+  "profilePreviewTitle": "Profilvorschau",
+  "@profilePreviewTitle": {
+    "description": "Titel für Profilvorschau"
+  },
+  "goodMorning": "Guten Morgen",
+  "@goodMorning": {
+    "description": "Guten Morgen Begrüßung"
+  },
+  "goodDay": "Guten Tag",
+  "@goodDay": {
+    "description": "Guten Tag Begrüßung"
+  },
+  "goodEvening": "Guten Abend",
+  "@goodEvening": {
+    "description": "Guten Abend Begrüßung"
+  },
+  "goodNight": "Gute Nacht",
+  "@goodNight": {
+    "description": "Gute Nacht Begrüßung"
+  },
+  "backButton": "Zurück",
+  "@backButton": {
+    "description": "Zurück Button"
+  },
+  "editName": "Name bearbeiten",
+  "@editName": {
+    "description": "Name bearbeiten Button"
+  },
+  "editNickname": "Spitzname bearbeiten",
+  "@editNickname": {
+    "description": "Spitzname bearbeiten Button"
+  },
+  "editPhoto": "Foto bearbeiten",
+  "@editPhoto": {
+    "description": "Foto bearbeiten Button"
+  },
+  "saveButton": "Speichern",
+  "@saveButton": {
+    "description": "Speichern Button"
+  },
+  "deleteButton": "Löschen",
+  "@deleteButton": {
+    "description": "Löschen Button"
+  },
+  "deletePhoto": "Foto löschen",
+  "@deletePhoto": {
+    "description": "Foto löschen Button"
+  },
+  "selectFromGallery": "Aus Galerie auswählen",
+  "@selectFromGallery": {
+    "description": "Aus Galerie auswählen Button"
+  },
+  "enterNameHint": "Namen eingeben",
+  "@enterNameHint": {
+    "description": "Hinweis für Namenseingabe"
+  },
+  "enterNicknameHint": "Spitzname eingeben",
+  "@enterNicknameHint": {
+    "description": "Hinweis für Spitzname-Eingabe"
+  },
+  "termsAndConditionsTitle": "Nutzungsbedingungen",
+  "@termsAndConditionsTitle": {
+    "description": "Titel für Nutzungsbedingungen"
+  },
+  "termsOfUse": "Nutzungsbedingungen",
+  "@termsOfUse": {
+    "description": "Nutzungsbedingungen Link"
+  },
+  "userAgreement": "Benutzervereinbarung",
+  "@userAgreement": {
+    "description": "Benutzervereinbarung Link"
+  },
+  "acceptTermsText": "Ich akzeptiere die Nutzungsbedingungen",
+  "@acceptTermsText": {
+    "description": "Text für Akzeptieren der Bedingungen"
+  },
+  "acceptButton": "Akzeptieren",
+  "@acceptButton": {
+    "description": "Akzeptieren Button"
+  },
+  "declineButton": "Ablehnen",
+  "@declineButton": {
+    "description": "Ablehnen Button"
+  },
+  "verificationCodeSent": "Verifizierungscode wurde gesendet",
+  "@verificationCodeSent": {
+    "description": "Verifizierungscode gesendet Nachricht"
+  },
+  "codeDeliveryError": "Fehler beim Senden des Codes",
+  "@codeDeliveryError": {
+    "description": "Code Zustellung Fehler"
+  },
+  "serverErrorCodeDelivery": "Serverfehler beim Senden des Codes",
+  "@serverErrorCodeDelivery": {
+    "description": "Serverfehler bei Code-Zustellung"
+  },
+  "connectionErrorCodeDelivery": "Verbindungsfehler beim Senden des Codes",
+  "@connectionErrorCodeDelivery": {
+    "description": "Verbindungsfehler bei Code-Zustellung"
+  },
+  "emailVerificationSuccess": "E-Mail erfolgreich verifiziert",
+  "@emailVerificationSuccess": {
+    "description": "E-Mail Verifizierung erfolgreich"
+  },
+  "invalidVerificationCode": "Ungültiger Verifizierungscode",
+  "@invalidVerificationCode": {
+    "description": "Ungültiger Verifizierungscode Fehler"
+  },
+  "emailNotFound": "E-Mail-Adresse nicht gefunden",
+  "@emailNotFound": {
+    "description": "E-Mail nicht gefunden Fehler"
+  },
+  "verificationCodeExpired": "Verifizierungscode ist abgelaufen",
+  "@verificationCodeExpired": {
+    "description": "Verifizierungscode abgelaufen Fehler"
+  },
+  "serverErrorCodeVerification": "Serverfehler bei Code-Verifizierung",
+  "@serverErrorCodeVerification": {
+    "description": "Serverfehler bei Code-Verifizierung"
+  },
+  "connectionErrorCodeVerification": "Verbindungsfehler bei Code-Verifizierung",
+  "@connectionErrorCodeVerification": {
+    "description": "Verbindungsfehler bei Code-Verifizierung"
+  },
+  "permissionDeniedSettings": "Berechtigung verweigert. Gehen Sie zu den Einstellungen.",
+  "@permissionDeniedSettings": {
+    "description": "Berechtigung verweigert Einstellungen"
+  },
+  "avatarCropped": "Avatar zugeschnitten",
+  "@avatarCropped": {
+    "description": "Avatar zugeschnitten Nachricht"
+  },
+  "imageSelectionError": "Fehler bei der Bildauswahl",
+  "@imageSelectionError": {
+    "description": "Bildauswahl Fehler"
+  },
+  "permissionDeniedOpenSettings": "Berechtigung verweigert. Einstellungen öffnen?",
+  "@permissionDeniedOpenSettings": {
+    "description": "Berechtigung verweigert öffne Einstellungen"
+  },
+  "photoPermissionError": "Foto-Berechtigung Fehler",
+  "@photoPermissionError": {
+    "description": "Foto-Berechtigung Fehler"
+  },
+  "registrationCompleted": "Registrierung abgeschlossen",
+  "@registrationCompleted": {
+    "description": "Registrierung abgeschlossen Nachricht"
+  },
+  "officialXaneoWebsite": "Offizielle Xaneo-Website",
+  "@officialXaneoWebsite": {
+    "description": "Offizielle Xaneo-Website Link"
+  },
+  "twoFactorAuthMessage": "Zwei-Faktor-Authentifizierung ist aktiviert",
+  "@twoFactorAuthMessage": {
+    "description": "Zwei-Faktor-Auth Nachricht"
+  },
+  "selectLanguage": "Sprache auswählen",
+  "@selectLanguage": {
+    "description": "Sprache auswählen Button"
+  },
+  "messengerDemo": "Messenger Demo",
+  "@messengerDemo": {
+    "description": "Messenger Demo Titel"
+  },
+  "messenger": "Messenger",
+  "@messenger": {
+    "description": "Messenger Titel"
+  },
+  "messengerDescription": "Sichere und schnelle Nachrichten",
+  "@messengerDescription": {
+    "description": "Messenger Beschreibung"
+  },
+  "profileDemo": "Profil Demo",
+  "@profileDemo": {
+    "description": "Profil Demo Titel"
+  },
+  "profile": "Profil",
+  "@profile": {
+    "description": "Profil Titel"
+  },
+  "personalInfo": "Persönliche Informationen",
+  "@personalInfo": {
+    "description": "Persönliche Informationen Titel"
+  },
+  "name": "Name",
+  "@name": {
+    "description": "Name Feld"
+  },
+  "nameHint": "Geben Sie Ihren Namen ein",
+  "@nameHint": {
+    "description": "Name Hinweis"
+  },
+  "birthDate": "Geburtsdatum",
+  "@birthDate": {
+    "description": "Geburtsdatum Feld"
+  },
+  "nickname": "Spitzname",
+  "@nickname": {
+    "description": "Spitzname Feld"
+  },
+  "nicknameHint": "Geben Sie Ihren Spitznamen ein",
+  "@nicknameHint": {
+    "description": "Spitzname Hinweis"
+  },
+  "phone": "Telefon",
+  "@phone": {
+    "description": "Telefon Feld"
+  },
+  "phoneHint": "Geben Sie Ihre Telefonnummer ein",
+  "@phoneHint": {
+    "description": "Telefon Hinweis"
+  },
+  "settingsSection": "Einstellungen",
+  "@settingsSection": {
+    "description": "Einstellungen Abschnitt"
+  },
+  "chatSettings": "Chat-Einstellungen",
+  "@chatSettings": {
+    "description": "Chat-Einstellungen Titel"
+  },
+  "chatSettingsDescription": "Passen Sie Ihr Chat-Erlebnis an",
+  "@chatSettingsDescription": {
+    "description": "Chat-Einstellungen Beschreibung"
+  },
+  "privacySettings": "Datenschutz-Einstellungen",
+  "@privacySettings": {
+    "description": "Datenschutz-Einstellungen Titel"
+  },
+  "privacySettingsDescription": "Kontrollieren Sie Ihre Privatsphäre",
+  "@privacySettingsDescription": {
+    "description": "Datenschutz-Einstellungen Beschreibung"
+  },
+  "securitySettings": "Sicherheits-Einstellungen",
+  "@securitySettings": {
+    "description": "Sicherheits-Einstellungen Titel"
+  },
+  "securityAuthentication": "Authentifizierung",
+  "@securityAuthentication": {
+    "description": "Sicherheits-Authentifizierung"
+  },
+  "securityChangePassword": "Passwort ändern",
+  "@securityChangePassword": {
+    "description": "Passwort ändern Option"
+  },
+  "securityTwoFactorAuth": "Zwei-Faktor-Authentifizierung",
+  "@securityTwoFactorAuth": {
+    "description": "Zwei-Faktor-Auth Option"
+  },
+  "twoFactorEnabled": "Zwei-Faktor-Authentifizierung aktiviert",
+  "@twoFactorEnabled": {
+    "description": "Zwei-Faktor aktiviert Status"
+  },
+  "twoFactorDisabled": "Zwei-Faktor-Authentifizierung deaktiviert",
+  "@twoFactorDisabled": {
+    "description": "Zwei-Faktor deaktiviert Status"
+  },
+  "securityChangeEmail": "E-Mail ändern",
+  "@securityChangeEmail": {
+    "description": "E-Mail ändern Option"
+  },
+  "securityPasscode": "Passcode",
+  "@securityPasscode": {
+    "description": "Passcode Option"
+  },
+  "securitySettingsDescription": "Schützen Sie Ihr Konto",
+  "@securitySettingsDescription": {
+    "description": "Sicherheits-Einstellungen Beschreibung"
+  },
+  "passwordEmptyError": "Passwort darf nicht leer sein",
+  "@passwordEmptyError": {
+    "description": "Passwort leer Fehler"
+  },
+  "passwordTooShortError": "Passwort muss mindestens 8 Zeichen lang sein",
+  "@passwordTooShortError": {
+    "description": "Passwort zu kurz Fehler"
+  },
+  "passwordEnterCurrentHint": "Aktuelles Passwort eingeben",
+  "@passwordEnterCurrentHint": {
+    "description": "Aktuelles Passwort Hinweis"
+  },
+  "passwordCurrentHint": "Aktuelles Passwort",
+  "@passwordCurrentHint": {
+    "description": "Aktuelles Passwort Feld"
+  },
+  "passwordConfirmNewHint": "Neues Passwort bestätigen",
+  "@passwordConfirmNewHint": {
+    "description": "Neues Passwort bestätigen Hinweis"
+  },
+  "passwordDontMatchError": "Passwörter stimmen nicht überein",
+  "@passwordDontMatchError": {
+    "description": "Passwörter stimmen nicht überein Fehler"
+  },
+  "passwordNewTitle": "Neues Passwort",
+  "@passwordNewTitle": {
+    "description": "Neues Passwort Titel"
+  },
+  "passwordNewHint": "Neues Passwort eingeben",
+  "@passwordNewHint": {
+    "description": "Neues Passwort Hinweis"
+  },
+  "passwordConfirmHint": "Passwort bestätigen",
+  "@passwordConfirmHint": {
+    "description": "Passwort bestätigen Hinweis"
+  },
+  "passwordChangedSuccess": "Passwort erfolgreich geändert",
+  "@passwordChangedSuccess": {
+    "description": "Passwort geändert Erfolg"
+  },
+  "passwordNextButton": "Weiter",
+  "@passwordNextButton": {
+    "description": "Passwort Weiter Button"
+  },
+  "passwordSaveButton": "Speichern",
+  "@passwordSaveButton": {
+    "description": "Passwort Speichern Button"
+  },
+  "powerSettings": "Power-Einstellungen",
+  "@powerSettings": {
+    "description": "Power-Einstellungen Titel"
+  },
+  "powerSettingsDescription": "Erweiterte Einstellungen",
+  "@powerSettingsDescription": {
+    "description": "Power-Einstellungen Beschreibung"
+  },
+  "languageSelect": "Sprache wählen",
+  "@languageSelect": {
+    "description": "Sprache wählen Option"
+  },
+  "cancel": "Abbrechen",
+  "@cancel": {
+    "description": "Abbrechen Button"
+  },
+  "ready": "Bereit",
+  "@ready": {
+    "description": "Bereit Button"
+  },
+  "contentInDevelopment": "Inhalt in Entwicklung",
+  "@contentInDevelopment": {
+    "description": "Inhalt in Entwicklung Nachricht"
+  },
+  "sessions": "Sitzungen",
+  "@sessions": {
+    "description": "Sitzungen Titel"
+  },
+  "support": "Support",
+  "@support": {
+    "description": "Support Titel"
+  },
+  "xaneoBenefits": "Xaneo Vorteile",
+  "@xaneoBenefits": {
+    "description": "Xaneo Vorteile Titel"
+  },
+  "messengerFeatures": "Messenger-Funktionen",
+  "@messengerFeatures": {
+    "description": "Messenger-Funktionen Titel"
+  },
+  "secureEncryption": "Sichere Verschlüsselung",
+  "@secureEncryption": {
+    "description": "Sichere Verschlüsselung Feature"
+  },
+  "instantDelivery": "Sofortige Zustellung",
+  "@instantDelivery": {
+    "description": "Sofortige Zustellung Feature"
+  },
+  "deviceSync": "Geräte-Synchronisation",
+  "@deviceSync": {
+    "description": "Geräte-Synchronisation Feature"
+  },
+  "mediaSupport": "Medien-Unterstützung",
+  "@mediaSupport": {
+    "description": "Medien-Unterstützung Feature"
+  },
+  "sessionsContent": "Verwalten Sie Ihre aktiven Sitzungen",
+  "@sessionsContent": {
+    "description": "Sitzungen Inhalt Beschreibung"
+  },
+  "activeDevices": "Aktive Geräte",
+  "@activeDevices": {
+    "description": "Aktive Geräte Titel"
+  },
+  "currentDevice": "Aktuelles Gerät",
+  "@currentDevice": {
+    "description": "Aktuelles Gerät Label"
+  },
+  "terminateSession": "Sitzung beenden",
+  "@terminateSession": {
+    "description": "Sitzung beenden Button"
+  },
+  "terminateAllOtherSessions": "Alle anderen Sitzungen beenden",
+  "@terminateAllOtherSessions": {
+    "description": "Alle anderen Sitzungen beenden Button"
+  },
+  "sessionLocation": "Standort",
+  "@sessionLocation": {
+    "description": "Sitzung Standort Label"
+  },
+  "sessionLastActive": "Zuletzt aktiv",
+  "@sessionLastActive": {
+    "description": "Sitzung zuletzt aktiv Label"
+  },
+  "sessionBrowser": "Browser",
+  "@sessionBrowser": {
+    "description": "Sitzung Browser Label"
+  },
+  "sessionPlatform": "Plattform",
+  "@sessionPlatform": {
+    "description": "Sitzung Plattform Label"
+  },
+  "confirmTerminateSession": "Sind Sie sicher, dass Sie diese Sitzung beenden möchten?",
+  "@confirmTerminateSession": {
+    "description": "Sitzung beenden Bestätigung"
+  },
+  "confirmTerminateAllSessions": "Sind Sie sicher, dass Sie alle anderen Sitzungen beenden möchten?",
+  "@confirmTerminateAllSessions": {
+    "description": "Alle Sitzungen beenden Bestätigung"
+  },
+  "sessionIPAddress": "IP-Adresse",
+  "@sessionIPAddress": {
+    "description": "Sitzung IP-Adresse Label"
+  },
+  "supportContent": "Kontaktieren Sie unser Support-Team",
+  "@supportContent": {
+    "description": "Support Inhalt Beschreibung"
+  },
+  "contactSupport": "Support kontaktieren",
+  "@contactSupport": {
+    "description": "Support kontaktieren Button"
+  },
+  "xaneoBenefitsContent": "Entdecken Sie die Vorteile von Xaneo",
+  "@xaneoBenefitsContent": {
+    "description": "Xaneo Vorteile Inhalt Beschreibung"
+  },
+  "more": "Mehr",
+  "@more": {
+    "description": "Mehr Button"
+  },
+  "chatPreview": "Chat-Vorschau",
+  "@chatPreview": {
+    "description": "Chat-Vorschau Titel"
+  },
+  "textSize": "Textgröße",
+  "@textSize": {
+    "description": "Textgröße Einstellung"
+  },
+  "textSizeValue": "{size}%",
+  "@textSizeValue": {
+    "description": "Textgröße Wert",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "textExample": "Beispieltext",
+  "@textExample": {
+    "description": "Text Beispiel"
+  },
+  "useDarkTheme": "Dunkles Thema verwenden",
+  "@useDarkTheme": {
+    "description": "Dunkles Thema Einstellung"
+  },
+  "chatWallpapers": "Chat-Hintergründe",
+  "@chatWallpapers": {
+    "description": "Chat-Hintergründe Einstellung"
+  },
+  "messageColors": "Nachrichtenfarben",
+  "@messageColors": {
+    "description": "Nachrichtenfarben Einstellung"
+  },
+  "myMessages": "Meine Nachrichten",
+  "@myMessages": {
+    "description": "Meine Nachrichten Label"
+  },
+  "receivedMessages": "Erhaltene Nachrichten",
+  "@receivedMessages": {
+    "description": "Erhaltene Nachrichten Label"
+  },
+  "messageEmojis": "Nachrichten-Emojis",
+  "@messageEmojis": {
+    "description": "Nachrichten-Emojis Einstellung"
+  },
+  "selectedEmoji": "Ausgewähltes Emoji",
+  "@selectedEmoji": {
+    "description": "Ausgewähltes Emoji Label"
+  },
+  "chooseWallpaper": "Hintergrund auswählen",
+  "@chooseWallpaper": {
+    "description": "Hintergrund auswählen Button"
+  },
+  "demoMessage1": "Hallo! Wie geht es dir?",
+  "@demoMessage1": {
+    "description": "Demo Nachricht 1"
+  },
+  "demoMessage2": "Mir geht es gut, danke! Und dir?",
+  "@demoMessage2": {
+    "description": "Demo Nachricht 2"
+  },
+  "demoMessage3": "Auch gut! Schön dich zu sehen.",
+  "@demoMessage3": {
+    "description": "Demo Nachricht 3"
+  },
+  "demoDateSeparator": "Heute",
+  "@demoDateSeparator": {
+    "description": "Demo Datums-Trenner"
+  },
+  "onlineStatus": "Online",
+  "@onlineStatus": {
+    "description": "Online Status"
+  },
+  "chatTheme": "Chat-Thema",
+  "@chatTheme": {
+    "description": "Chat-Thema Einstellung"
+  },
+  "privacySettingsTitle": "Datenschutz-Einstellungen",
+  "@privacySettingsTitle": {
+    "description": "Datenschutz-Einstellungen Titel"
+  },
+  "privacyCommunications": "Kommunikation",
+  "@privacyCommunications": {
+    "description": "Datenschutz Kommunikation Titel"
+  },
+  "privacyProfileVisibility": "Profilsichtbarkeit",
+  "@privacyProfileVisibility": {
+    "description": "Profilsichtbarkeit Titel"
+  },
+  "privacyWhoCanMessage": "Wer kann mir schreiben",
+  "@privacyWhoCanMessage": {
+    "description": "Wer kann schreiben Einstellung"
+  },
+  "privacyWhoCanRecordVoice": "Wer kann Sprachnachrichten aufnehmen",
+  "@privacyWhoCanRecordVoice": {
+    "description": "Wer kann Sprachnachrichten aufnehmen Einstellung"
+  },
+  "privacyWhoCanCall": "Wer kann mich anrufen",
+  "@privacyWhoCanCall": {
+    "description": "Wer kann anrufen Einstellung"
+  },
+  "privacyWhoCanSendVideo": "Wer kann mir Videos senden",
+  "@privacyWhoCanSendVideo": {
+    "description": "Wer kann Videos senden Einstellung"
+  },
+  "privacyWhoCanSendLinks": "Wer kann mir Links senden",
+  "@privacyWhoCanSendLinks": {
+    "description": "Wer kann Links senden Einstellung"
+  },
+  "privacyWhoCanInvite": "Wer kann mich einladen",
+  "@privacyWhoCanInvite": {
+    "description": "Wer kann einladen Einstellung"
+  },
+  "privacyWhoSeesNickname": "Wer sieht meinen Spitznamen",
+  "@privacyWhoSeesNickname": {
+    "description": "Wer sieht Spitznamen Einstellung"
+  },
+  "privacyWhoSeesAvatar": "Wer sieht mein Avatar",
+  "@privacyWhoSeesAvatar": {
+    "description": "Wer sieht Avatar Einstellung"
+  },
+  "privacyWhoSeesBirthday": "Wer sieht mein Geburtsdatum",
+  "@privacyWhoSeesBirthday": {
+    "description": "Wer sieht Geburtsdatum Einstellung"
+  },
+  "privacyWhoSeesOnlineTime": "Wer sieht meine Online-Zeit",
+  "@privacyWhoSeesOnlineTime": {
+    "description": "Wer sieht Online-Zeit Einstellung"
+  },
+  "privacyAll": "Alle",
+  "@privacyAll": {
+    "description": "Alle Option"
+  },
+  "privacyContacts": "Kontakte",
+  "@privacyContacts": {
+    "description": "Kontakte Option"
+  },
+  "privacyNobody": "Niemand",
+  "@privacyNobody": {
+    "description": "Niemand Option"
+  },
+  "passwordWeak": "Schwach",
+  "@passwordWeak": {
+    "description": "Passwort Stärke: Schwach"
+  },
+  "passwordMedium": "Mittel",
+  "@passwordMedium": {
+    "description": "Passwort Stärke: Mittel"
+  },
+  "passwordStrong": "Stark",
+  "@passwordStrong": {
+    "description": "Passwort Stärke: Stark"
+  },
+  "twoFactorEnableDescription": "Zwei-Faktor-Authentifizierung hinzufügen für zusätzliche Sicherheit",
+  "@twoFactorEnableDescription": {
+    "description": "Zwei-Faktor aktivieren Beschreibung"
+  },
+  "twoFactorDisableDescription": "Zwei-Faktor-Authentifizierung deaktivieren",
+  "@twoFactorDisableDescription": {
+    "description": "Zwei-Faktor deaktivieren Beschreibung"
+  },
+  "changeEmailVerificationDescription": "Sie erhalten einen Verifizierungscode an Ihre neue E-Mail-Adresse",
+  "@changeEmailVerificationDescription": {
+    "description": "E-Mail ändern Verifizierung Beschreibung"
+  },
+  "newEmailTitle": "Neue E-Mail-Adresse",
+  "@newEmailTitle": {
+    "description": "Neue E-Mail Titel"
+  },
+  "newEmailDescription": "Geben Sie Ihre neue E-Mail-Adresse ein",
+  "@newEmailDescription": {
+    "description": "Neue E-Mail Beschreibung"
+  },
+  "changeEmailButton": "E-Mail ändern",
+  "@changeEmailButton": {
+    "description": "E-Mail ändern Button"
+  },
+  "verifyNewEmailTitle": "Neue E-Mail verifizieren",
+  "@verifyNewEmailTitle": {
+    "description": "Neue E-Mail verifizieren Titel"
+  },
+  "verifyNewEmailDescription": "Geben Sie den Verifizierungscode ein, der an Ihre neue E-Mail gesendet wurde",
+  "@verifyNewEmailDescription": {
+    "description": "Neue E-Mail verifizieren Beschreibung"
+  },
+  "verifyNewEmailButton": "E-Mail verifizieren",
+  "@verifyNewEmailButton": {
+    "description": "E-Mail verifizieren Button"
+  },
+  "passcodeVerificationTitle": "Passcode-Verifizierung",
+  "@passcodeVerificationTitle": {
+    "description": "Passcode-Verifizierung Titel"
+  },
+  "passcodeVerificationDescription": "Geben Sie Ihren Passcode ein, um fortzufahren",
+  "@passcodeVerificationDescription": {
+    "description": "Passcode-Verifizierung Beschreibung"
+  },
+  "passcodeVerificationButton": "Passcode verifizieren",
+  "@passcodeVerificationButton": {
+    "description": "Passcode verifizieren Button"
+  },
+  "setPasscodeTitle": "Passcode festlegen",
+  "@setPasscodeTitle": {
+    "description": "Passcode festlegen Titel"
+  },
+  "setPasscodeDescription": "Erstellen Sie einen 4-stelligen Passcode für zusätzliche Sicherheit",
+  "@setPasscodeDescription": {
+    "description": "Passcode festlegen Beschreibung"
+  },
+  "passcodeHint": "Passcode eingeben",
+  "@passcodeHint": {
+    "description": "Passcode Hinweis"
+  },
+  "setPasscodeButton": "Passcode festlegen",
+  "@setPasscodeButton": {
+    "description": "Passcode festlegen Button"
+  },
+  "xaneoBenefitsModalTitle": "Xaneo Premium Vorteile",
+  "@xaneoBenefitsModalTitle": {
+    "description": "Xaneo Vorteile Modal Titel"
+  },
+  "xaneoBenefitsModalDescription": "Schalten Sie Premium-Funktionen frei und unterstützen Sie die Entwicklung",
+  "@xaneoBenefitsModalDescription": {
+    "description": "Xaneo Vorteile Modal Beschreibung"
+  },
+  "xaneoBenefitsSelectPlan": "Wählen Sie Ihren Plan",
+  "@xaneoBenefitsSelectPlan": {
+    "description": "Plan auswählen Titel"
+  },
+  "xaneoBenefitsYearlyPlan": "Jahresplan",
+  "@xaneoBenefitsYearlyPlan": {
+    "description": "Jahresplan Titel"
+  },
+  "xaneoBenefitsMonthlyPlan": "Monatsplan",
+  "@xaneoBenefitsMonthlyPlan": {
+    "description": "Monatsplan Titel"
+  },
+  "xaneoBenefitsYearlyPrice": "49,99 € / Jahr",
+  "@xaneoBenefitsYearlyPrice": {
+    "description": "Jahresplan Preis"
+  },
+  "xaneoBenefitsMonthlyPrice": "4,99 € / Monat",
+  "@xaneoBenefitsMonthlyPrice": {
+    "description": "Monatsplan Preis"
+  },
+  "xaneoBenefitsSavings": "Sparen Sie 17%",
+  "@xaneoBenefitsSavings": {
+    "description": "Ersparnis Text"
+  },
+  "xaneoBenefitsSubscribeButton": "Abonnieren",
+  "@xaneoBenefitsSubscribeButton": {
+    "description": "Abonnieren Button"
+  },
+  "xaneoBenefitsCloseButton": "Schließen",
+  "@xaneoBenefitsCloseButton": {
+    "description": "Schließen Button"
+  },
+  "xaneoBenefitsYearlySuccess": "Jahresabonnement XB erfolgreich abgeschlossen!",
+  "@xaneoBenefitsYearlySuccess": {
+    "description": "Jahresabonnement Erfolg Nachricht"
+  },
+  "xaneoBenefitsMonthlySuccess": "Monatsabonnement XB erfolgreich abgeschlossen!",
+  "@xaneoBenefitsMonthlySuccess": {
+    "description": "Monatsabonnement Erfolg Nachricht"
+  },
+  "favoritesChat": "Favoriten",
+  "@favoritesChat": {
+    "description": "Favoriten Chat Name"
+  },
+  "favoritesChatDescription": "Wichtige Nachrichten und Dateien",
+  "@favoritesChatDescription": {
+    "description": "Favoriten Chat Beschreibung"
+  },
+  "contentInDevelopmentMessage": "Inhalt für \"{title}\" wird entwickelt...",
+  "@contentInDevelopmentMessage": {
+    "description": "Inhalt in Entwicklung Nachricht",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "Russisch",
+  "@russianLanguage": {
+    "description": "Russische Sprache Name"
+  },
+  "chatWelcomeMessage": "Hallo! Dies ist der Chat \"{chatName}\" 🎉",
+  "@chatWelcomeMessage": {
+    "description": "Chat Willkommensnachricht",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "Hier können Sie **fett**, *kursiv* und __unterstrichen__ Text verwenden!",
+  "@formattingExample1": {
+    "description": "Textformatierungsbeispiel 1"
+  },
+  "formattingExample2": "Sowie ~~durchgestrichen~~ und `Code` 💻",
+  "@formattingExample2": {
+    "description": "Textformatierungsbeispiel 2"
+  },
+  "greetingTrigger": "hallo",
+  "@greetingTrigger": {
+    "description": "Begrüßung Trigger"
+  },
+  "greetingResponse": "Hallo! Wie geht's?",
+  "@greetingResponse": {
+    "description": "Begrüßungsantwort"
+  },
+  "fileSendingNotImplemented": "Datei senden ist noch nicht implementiert",
+  "@fileSendingNotImplemented": {
+    "description": "Datei senden nicht implementiert Nachricht"
+  },
+  "wasOnlineRecently": "war kürzlich online",
+  "@wasOnlineRecently": {
+    "description": "Kürzlich online Status"
+  },
+  "messageHint": "Nachricht",
+  "@messageHint": {
+    "description": "Nachricht Eingabeaufforderung"
+  }
+}

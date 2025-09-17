@@ -519,5 +519,63 @@
   "xaneoBenefitsMonthlySuccess": "월간 XB 구독이 활성화되었습니다!",
   "@xaneoBenefitsMonthlySuccess": {
     "description": "월간 구독 성공 메시지"
+  },
+  "chatWelcomeMessage": "안녕하세요! 이것은 \"{chatName}\" 채팅입니다 🎉",
+  "@chatWelcomeMessage": {
+    "description": "채팅에서의 환영 메시지",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "여기서 **굵은** 글자와 *기울임* 글자, __밑줄__ 텍스트를 사용할 수 있습니다!",
+  "@formattingExample1": {
+    "description": "텍스트 서식 예시 1"
+  },
+  "formattingExample2": "또한 ~~취소선~~과 `코드` 텍스트도 사용할 수 있습니다 💻",
+  "@formattingExample2": {
+    "description": "텍스트 서식 예시 2"
+  },
+  "greetingTrigger": "안녕하세요",
+  "@greetingTrigger": {
+    "description": "인사 응답 트리거"
+  },
+  "greetingResponse": "안녕하세요! 어떻게 지내세요?",
+  "@greetingResponse": {
+    "description": "인사에 대한 응답"
+  },
+  "fileSendingNotImplemented": "파일 전송이 아직 구현되지 않았습니다",
+  "@fileSendingNotImplemented": {
+    "description": "구현되지 않은 파일 전송에 대한 메시지"
+  },
+  "wasOnlineRecently": "최근에 온라인이었습니다",
+  "@wasOnlineRecently": {
+    "description": "최근에 온라인이었던 상태"
+  },
+  "messageHint": "메시지",
+  "@messageHint": {
+    "description": "메시지 입력 필드 힌트"
+  },
+  "favoritesChat": "즐겨찾기",
+  "@favoritesChat": {
+    "description": "즐겨찾기 채팅 이름"
+  },
+  "favoritesChatDescription": "중요한 메시지와 파일",
+  "@favoritesChatDescription": {
+    "description": "즐겨찾기 채팅 설명"
+  },
+  "contentInDevelopmentMessage": "\"{title}\" 콘텐츠는 개발 중입니다...",
+  "@contentInDevelopmentMessage": {
+    "description": "개발 중 콘텐츠 메시지",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "러시아어",
+  "@russianLanguage": {
+    "description": "러시아어 이름"
   }
 }

@@ -7,7 +7,7 @@ import '../providers/theme_provider.dart';
 import '../widgets/wallpaper_templates.dart';
 import '../utils/text_parser.dart';
 import '../widgets/custom_emoji_picker.dart';
-import '../utils/apple_emoji_utils.dart';
+import '../l10n/app_localizations.dart';
 
 class ChatScreen extends StatefulWidget {
   final String? chatName;
@@ -27,9 +27,12 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
   final TextEditingController _messageController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
   final FocusNode _focusNode = FocusNode(); // FocusNode для отслеживания клавиатуры
-  late final List<Map<String, dynamic>> _messages;
+  final List<Map<String, dynamic>> _messages = [];
   bool _isVideoMode = true; // true = видео, false = голосовое
   bool _isEmojiPickerVisible = false; // Состояние показа пикера эмодзи
+  Map<String, dynamic>? _replyToMessage; // Сообщение, на которое отвечаем
+  String? _highlightedMessageId; // ID выделенного сообщения
+  int _messageIdCounter = 0; // Счетчик для генерации уникальных ID сообщений
   
   // Переменная для хранения исходного стиля status bar
   SystemUiOverlayStyle? _originalSystemUiOverlayStyle;
@@ -74,12 +77,26 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
       end: 1.0,
     ).animate(_messageAnimationController);
     
-    // Устанавливаем стиль status bar после того, как контекст станет доступен
+    // Добавляем слушатель для FocusNode чтобы скрывать emoji picker при открытии клавиатуры
+    _focusNode.addListener(() {
+      if (_focusNode.hasFocus && _isEmojiPickerVisible) {
+        setState(() {
+          _isEmojiPickerVisible = false;
+        });
+      }
+    });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    
+    // Устанавливаем стиль status bar
+    final chatSettings = Provider.of<ChatSettingsProvider>(context, listen: false);
+    final themeProvider = Provider.of<ThemeProvider>(context, listen: false);
+    
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
-        final chatSettings = Provider.of<ChatSettingsProvider>(context, listen: false);
-        final themeProvider = Provider.of<ThemeProvider>(context, listen: false);
-        
         // Сохраняем текущие настройки status bar на основе themeProvider
         _originalSystemUiOverlayStyle = SystemUiOverlayStyle(
           statusBarColor: Colors.transparent,
@@ -90,42 +107,6 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
         
         // Устанавливаем стиль status bar для чата
         _setSystemUiOverlayStyle(chatSettings.isDarkTheme);
-      }
-    });
-    
-    _messages = [
-      {
-        'text': 'Привет! Это чат "${widget.chatName ?? 'Избранное'}" 🎉',
-        'isMe': false,
-        'time': '14:30',
-        'avatar': widget.chatAvatar ?? '🔖',
-      },
-      {
-        'text': 'Здесь можно использовать **жирный** и *курсив* и __подчёркнутый__ текст!',
-        'isMe': false,
-        'time': '14:31',
-        'avatar': widget.chatAvatar ?? '🔖',
-      },
-      {
-        'text': 'А также ~~зачёркнутый~~ и `код` 💻',
-        'isMe': false,
-        'time': '14:32',
-        'avatar': widget.chatAvatar ?? '🔖',
-      },
-      {
-        'text': 'Apple эмодзи с ZWJ: ${AppleEmojiUtils.zjwEmojiExamples.take(3).join(' ')} �',
-        'isMe': false,
-        'time': '14:33',
-        'avatar': widget.chatAvatar ?? '🔖',
-      },
-    ];
-    
-    // Добавляем слушатель для FocusNode чтобы скрывать emoji picker при открытии клавиатуры
-    _focusNode.addListener(() {
-      if (_focusNode.hasFocus && _isEmojiPickerVisible) {
-        setState(() {
-          _isEmojiPickerVisible = false;
-        });
       }
     });
   }
@@ -237,39 +218,77 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
 </svg>''';
   }
 
+  // Функция для выбора сообщения для ответа
+  void _selectMessageToReply(Map<String, dynamic> message) {
+    setState(() {
+      _replyToMessage = message;
+    });
+    
+    // Фокусируемся на поле ввода
+    _focusNode.requestFocus();
+  }
+
+  // Функция для отмены ответа
+  void _cancelReply() {
+    setState(() {
+      _replyToMessage = null;
+    });
+  }
+
   void _sendMessage() async {
     if (_messageController.text.trim().isNotEmpty) {
       final messageText = _messageController.text.trim();
+      final currentTime = '${TimeOfDay.now().hour.toString().padLeft(2, '0')}:${TimeOfDay.now().minute.toString().padLeft(2, '0')}';
+      final replyTo = _replyToMessage; // Сохраняем ссылку на сообщение для ответа
       
-      // Сначала очищаем поле ввода
+      // Сначала очищаем поле ввода и отменяем ответ
       _messageController.clear();
+      setState(() {
+        _replyToMessage = null;
+      });
       
       // Сразу добавляем новое сообщение пользователя
       setState(() {
-        _messages.add({
+        final newMessage = {
+          'id': 'msg_${++_messageIdCounter}', // Уникальный ID сообщения
           'text': messageText,
           'isMe': true,
-          'time': TimeOfDay.now().format(context),
+          'time': currentTime,
           'avatar': '👤',
           'isNew': true, // Маркер для анимации последнего сообщения
-        });
+        };
+        
+        // Если это ответ на сообщение, добавляем информацию о нем
+        if (replyTo != null) {
+          newMessage['replyTo'] = {
+            'id': replyTo['id'], // ID оригинального сообщения
+            'text': replyTo['text'],
+            'isMe': replyTo['isMe'],
+            'avatar': replyTo['avatar'],
+          };
+        }
+        
+        _messages.add(newMessage);
       });
       
       // Запускаем анимацию появления для последнего сообщения
       await _messageAnimationController.forward();
       
-      // Проверяем, если пользователь написал "Привет", добавляем ответ от собеседника
-      if (messageText.trim().toLowerCase() == 'привет') {
+      // Проверяем, если пользователь написал локализованное приветствие, добавляем ответ от собеседника
+      final l10n = AppLocalizations.of(context);
+      if (messageText.trim().toLowerCase() == l10n.greetingTrigger.toLowerCase()) {
         await Future.delayed(const Duration(milliseconds: 500)); // Небольшая пауза
         
         // Сбрасываем анимацию перед новым сообщением
         _messageAnimationController.reset();
         
+        final responseTime = '${TimeOfDay.now().hour.toString().padLeft(2, '0')}:${TimeOfDay.now().minute.toString().padLeft(2, '0')}';
         setState(() {
           _messages.add({
-            'text': 'Привет! Как дела?',
+            'id': 'msg_${++_messageIdCounter}', // Уникальный ID сообщения
+            'text': l10n.greetingResponse,
             'isMe': false,
-            'time': TimeOfDay.now().format(context),
+            'time': responseTime,
             'avatar': widget.chatAvatar ?? '🔖',
             'isNew': true, // Маркер для анимации последнего сообщения
           });
@@ -307,6 +326,38 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
             duration: const Duration(milliseconds: 300),
             curve: Curves.easeOut,
           );
+        }
+      });
+    }
+  }
+
+  /// Функция для поиска и скролла к оригинальному сообщению
+  void _scrollToMessage(String messageId) {
+    final messageIndex = _messages.indexWhere((msg) => msg['id'] == messageId);
+    if (messageIndex != -1) {
+      // Выделяем сообщение
+      setState(() {
+        _highlightedMessageId = messageId;
+      });
+
+      // Вычисляем позицию для скролла (учитываем реверсивный порядок)
+      final reversedIndex = _messages.length - 1 - messageIndex;
+      final itemHeight = 80.0; // Примерная высота одного сообщения
+      final scrollPosition = reversedIndex * itemHeight;
+
+      // Скроллим к сообщению
+      _scrollController.animateTo(
+        scrollPosition,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
+      );
+
+      // Убираем выделение через 2 секунды
+      Future.delayed(const Duration(seconds: 2), () {
+        if (mounted) {
+          setState(() {
+            _highlightedMessageId = null;
+          });
         }
       });
     }
@@ -355,14 +406,16 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
   }
 
   void _showFilePicker() {
+    final l10n = AppLocalizations.of(context);
     // TODO: Реализовать функционал отправки файлов
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Отправка файлов пока не реализована')),
+      SnackBar(content: Text(l10n.fileSendingNotImplemented)),
     );
   }
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     final chatSettings = Provider.of<ChatSettingsProvider>(context);
     final availableWallpapers = WallpaperPresets.getAllWallpapers(chatSettings.isDarkTheme);
     final selectedWallpaper = chatSettings.selectedWallpaperIndex < availableWallpapers.length 
@@ -402,7 +455,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  widget.chatName ?? 'Избранное',
+                  widget.chatName ?? l10n.favoritesChat,
                   style: TextStyle(
                     color: chatSettings.isDarkTheme ? Colors.white : Colors.black,
                     fontFamily: 'Inter',
@@ -411,7 +464,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
                   ),
                 ),
                 Text(
-                  'был(а) недавно',
+                  l10n.wasOnlineRecently,
                   style: TextStyle(
                     color: chatSettings.isDarkTheme ? Colors.grey.shade400 : Colors.grey.shade600,
                     fontFamily: 'Inter',
@@ -460,18 +513,93 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
               ),
 
           // Поле ввода сообщения
-          Container(
-            padding: const EdgeInsets.all(0),
-            decoration: BoxDecoration(
-              color: chatSettings.isDarkTheme ? Colors.grey.shade900 : Colors.white,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
-                  blurRadius: 4,
-                  offset: const Offset(0, -2),
+          Column(
+            children: [
+              // Индикатор ответа
+              if (_replyToMessage != null) ...[
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  decoration: BoxDecoration(
+                    color: chatSettings.isDarkTheme ? Colors.grey.shade800 : Colors.grey.shade100,
+                    border: Border(
+                      left: BorderSide(
+                        color: _replyToMessage!['isMe'] ? chatSettings.messageBubbleColor : chatSettings.receivedBubbleColor,
+                        width: 3,
+                      ),
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: GestureDetector(
+                          onTap: () {
+                            if (_replyToMessage!.containsKey('id')) {
+                              _scrollToMessage(_replyToMessage!['id']);
+                            }
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.reply,
+                                    size: 16,
+                                    color: chatSettings.isDarkTheme ? Colors.grey.shade400 : Colors.grey.shade600,
+                                  ),
+                                  const SizedBox(width: 4),
+                                  Text(
+                                    'Избранное',
+                                    style: TextStyle(
+                                      color: _getReplyPreviewTextColor(_replyToMessage!['isMe'] ? chatSettings.messageBubbleColor : chatSettings.receivedBubbleColor),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                      fontFamily: 'Inter',
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 2),
+                              Text(
+                                _replyToMessage!['text'].length > 30 ? '${_replyToMessage!['text'].substring(0, 30)}...' : _replyToMessage!['text'],
+                                style: TextStyle(
+                                  color: _getReplyPreviewTextColor(_replyToMessage!['isMe'] ? chatSettings.messageBubbleColor : chatSettings.receivedBubbleColor).withOpacity(0.8),
+                                  fontSize: 13,
+                                  fontFamily: 'Inter',
+                                ),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: _cancelReply,
+                        child: Icon(
+                          Icons.close,
+                          size: 20,
+                          color: chatSettings.isDarkTheme ? Colors.grey.shade400 : Colors.grey.shade600,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
-            ),
+              
+              // Поле ввода
+              Container(
+                padding: const EdgeInsets.all(0),
+                decoration: BoxDecoration(
+                  color: chatSettings.isDarkTheme ? Colors.grey.shade900 : Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.1),
+                      blurRadius: 4,
+                      offset: const Offset(0, -2),
+                    ),
+                  ],
+                ),
             child: Stack(
               children: [
                 Container(
@@ -590,6 +718,8 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
               ],
             ),
           ),
+            ],
+          ),
 
           // Пикер эмодзи (показывается вместо клавиатуры)
           if (_isEmojiPickerVisible)
@@ -622,56 +752,78 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
         children: [
           // Пузырь сообщения
           Flexible(
-            child: Column(
-              crossAxisAlignment: isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start,
-              children: [
-                // Сам пузырь
-                Container(
-                  constraints: BoxConstraints(
-                    maxWidth: MediaQuery.of(context).size.width * 0.7,
+            child: GestureDetector(
+              onTap: () => _selectMessageToReply(message),
+              child: Column(
+                crossAxisAlignment: isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+                children: [
+                  // Если это ответ на сообщение, показываем оригинал
+                  if (message.containsKey('replyTo')) ...[
+                    _buildReplyPreview(message['replyTo'], isMe, isDarkMode, chatSettings),
+                    const SizedBox(height: 4),
+                  ],
+                  
+                  // Сам пузырь
+                  Container(
+                    constraints: BoxConstraints(
+                      maxWidth: MediaQuery.of(context).size.width * 0.7,
+                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: isMe
+                          ? chatSettings.messageBubbleColor
+                          : chatSettings.receivedBubbleColor,
+                      borderRadius: _getBorderRadius(isMe),
+                      // Добавляем выделение если это сообщение подсвечено
+                      border: _highlightedMessageId == message['id']
+                          ? Border.all(color: Colors.yellow, width: 2)
+                          : null,
+                      boxShadow: _highlightedMessageId == message['id']
+                          ? [
+                              BoxShadow(
+                                color: Colors.yellow.withOpacity(0.3),
+                                blurRadius: 8,
+                                spreadRadius: 2,
+                              ),
+                            ]
+                          : null,
+                    ),
+                    child: RichText(
+                      text: TextSpan(
+                        children: TextParser.parseTextWithEmojis(
+                          text: message['text'],
+                          textStyle: TextStyle(
+                            color: isMe
+                                ? Colors.white
+                                : (isDarkMode ? Colors.white : Colors.black),
+                            fontSize: chatSettings.fontSize,
+                            fontFamily: 'Inter',
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                  decoration: BoxDecoration(
-                    color: isMe
-                        ? chatSettings.messageBubbleColor
-                        : chatSettings.receivedBubbleColor,
-                    borderRadius: _getBorderRadius(isMe),
-                  ),
-                  child: RichText(
-                    text: TextSpan(
-                      children: TextParser.parseTextWithEmojis(
-                        text: message['text'],
-                        textStyle: TextStyle(
-                          color: isMe
-                              ? Colors.white
-                              : (isDarkMode ? Colors.white : Colors.black),
-                          fontSize: chatSettings.fontSize,
+                  
+                  // Время отправки
+                  Padding(
+                    padding: EdgeInsets.only(
+                      top: 2,
+                      left: isMe ? 0 : 12,
+                      right: isMe ? 12 : 0,
+                    ),
+                    child: RichText(
+                      text: TextSpan(
+                        text: message['time'],
+                        style: TextStyle(
+                          color: Colors.grey.shade500,
+                          fontSize: 11,
                           fontFamily: 'Inter',
                         ),
                       ),
                     ),
                   ),
-                ),
-
-                // Время отправки
-                Padding(
-                  padding: EdgeInsets.only(
-                    top: 2,
-                    left: isMe ? 0 : 12,
-                    right: isMe ? 12 : 0,
-                  ),
-                  child: RichText(
-                    text: TextSpan(
-                      text: message['time'],
-                      style: TextStyle(
-                        color: Colors.grey.shade500,
-                        fontSize: 11,
-                        fontFamily: 'Inter',
-                      ),
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],
@@ -700,6 +852,59 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
     return bubbleWidget;
   }
 
+  // Виджет для показа превью сообщения, на которое отвечаем
+  Widget _buildReplyPreview(Map<String, dynamic> replyTo, bool isMe, bool isDarkMode, ChatSettingsProvider chatSettings) {
+    return GestureDetector(
+      onTap: () {
+        if (replyTo.containsKey('id')) {
+          _scrollToMessage(replyTo['id']);
+        }
+      },
+      child: Container(
+        constraints: BoxConstraints(
+          maxWidth: MediaQuery.of(context).size.width * 0.6,
+        ),
+        padding: const EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          color: (isDarkMode ? Colors.grey.shade800 : Colors.grey.shade200).withOpacity(0.7),
+          borderRadius: BorderRadius.circular(8),
+          border: Border(
+            left: BorderSide(
+              color: replyTo['isMe'] ? chatSettings.messageBubbleColor : chatSettings.receivedBubbleColor,
+              width: 3,
+            ),
+          ),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Показываем "Избранное"
+            Text(
+              'Избранное',
+              style: TextStyle(
+                color: _getReplyPreviewTextColor(replyTo['isMe'] ? chatSettings.messageBubbleColor : chatSettings.receivedBubbleColor),
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                fontFamily: 'Inter',
+              ),
+            ),
+            const SizedBox(height: 2),
+            Text(
+              replyTo['text'].length > 50 ? '${replyTo['text'].substring(0, 50)}...' : replyTo['text'],
+              style: TextStyle(
+                color: _getReplyPreviewTextColor(replyTo['isMe'] ? chatSettings.messageBubbleColor : chatSettings.receivedBubbleColor).withOpacity(0.8),
+                fontSize: 13,
+                fontFamily: 'Inter',
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   BorderRadius _getBorderRadius(bool isMe) {
     if (isMe) {
       return const BorderRadius.only(
@@ -716,5 +921,15 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
         bottomRight: Radius.circular(16),
       );
     }
+  }
+
+  /// Определяет контрастный цвет текста для превью ответа
+  /// Если цвет пузыря темный - возвращает белый текст
+  /// Если цвет пузыря светлый - возвращает темный текст
+  Color _getReplyPreviewTextColor(Color bubbleColor) {
+    // Вычисляем яркость цвета (luminance)
+    // Если яркость < 0.5 - цвет темный, используем белый текст
+    // Если яркость >= 0.5 - цвет светлый, используем темный текст
+    return bubbleColor.computeLuminance() < 0.5 ? Colors.white : Colors.black87;
   }
 }

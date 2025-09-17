@@ -973,4 +973,46 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get xaneoBenefitsMonthlySuccess => 'Abonnement mensuel XB activé !';
+
+  @override
+  String get favoritesChat => 'Favoris';
+
+  @override
+  String get favoritesChatDescription => 'Messages et fichiers importants';
+
+  @override
+  String contentInDevelopmentMessage(String title) {
+    return 'Le contenu pour \"$title\" est en développement...';
+  }
+
+  @override
+  String get russianLanguage => 'Russe';
+
+  @override
+  String chatWelcomeMessage(String chatName) {
+    return 'Salut ! Ceci est le chat \"$chatName\" 🎉';
+  }
+
+  @override
+  String get formattingExample1 =>
+      'Ici vous pouvez utiliser du texte **gras** et *italique* et __souligné__ !';
+
+  @override
+  String get formattingExample2 => 'Et aussi ~~barré~~ et `code` 💻';
+
+  @override
+  String get greetingTrigger => 'salut';
+
+  @override
+  String get greetingResponse => 'Salut ! Comment ça va ?';
+
+  @override
+  String get fileSendingNotImplemented =>
+      'L\'envoi de fichiers n\'est pas encore implémenté';
+
+  @override
+  String get wasOnlineRecently => 'était en ligne récemment';
+
+  @override
+  String get messageHint => 'Message';
 }

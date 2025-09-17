@@ -1,0 +1,1276 @@
+{
+  "@@locale": "it",
+  "appTitle": "XaneoMobile",
+  "@appTitle": {
+    "description": "Nome dell'applicazione"
+  },
+  "welcomeTitle": "Benvenuto in Xaneo",
+  "@welcomeTitle": {
+    "description": "Titolo di benvenuto"
+  },
+  "welcomeDescription": "Xaneo - ora anche in app mobile! Xaneo non è mai stato così conveniente e veloce.",
+  "@welcomeDescription": {
+    "description": "Descrizione di benvenuto"
+  },
+  "getStartedButton": "Sono già interessato",
+  "@getStartedButton": {
+    "description": "Pulsante di avvio"
+  },
+  "connectingToServer": "Connessione al server...",
+  "@connectingToServer": {
+    "description": "Messaggio di connessione al server"
+  },
+  "version": "Versione: {version}",
+  "@version": {
+    "description": "Visualizzazione versione",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "httpError": "Errore: HTTP {code}",
+  "@httpError": {
+    "description": "Errore HTTP",
+    "placeholders": {
+      "code": {
+        "type": "int"
+      }
+    }
+  },
+  "connectionError": "Errore di connessione: {error}",
+  "@connectionError": {
+    "description": "Errore di connessione",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "updateAvailable": "Aggiornamento disponibile!",
+  "@updateAvailable": {
+    "description": "Messaggio di aggiornamento"
+  },
+  "updateDialogTitle": "Aggiornamento disponibile!",
+  "@updateDialogTitle": {
+    "description": "Titolo finestra di dialogo aggiornamento"
+  },
+  "updateDialogMessage": "La tua versione è {currentVersion}, quella nuova è {latestVersion}",
+  "@updateDialogMessage": {
+    "description": "Messaggio versioni nella finestra di dialogo aggiornamento",
+    "placeholders": {
+      "currentVersion": {
+        "type": "String"
+      },
+      "latestVersion": {
+        "type": "String"
+      }
+    }
+  },
+  "updateDialogDescription": "Puoi aggiornare tramite Google Play, RuStore o dal sito ufficiale Xaneo.",
+  "@updateDialogDescription": {
+    "description": "Descrizione fonti di aggiornamento"
+  },
+  "updateButton": "Aggiorna",
+  "@updateButton": {
+    "description": "Pulsante di aggiornamento"
+  },
+  "cancelButton": "Annulla",
+  "@cancelButton": {
+    "description": "Pulsante di annullamento"
+  },
+  "selectUpdateSource": "Seleziona fonte di aggiornamento:",
+  "@selectUpdateSource": {
+    "description": "Titolo selezione fonte di aggiornamento"
+  },
+  "settings": "Impostazioni",
+  "@settings": {
+    "description": "Impostazioni"
+  },
+  "about": "Informazioni",
+  "@about": {
+    "description": "Informazioni"
+  },
+  "help": "Aiuto",
+  "@help": {
+    "description": "Aiuto"
+  },
+  "notifications": "Notifiche",
+  "@notifications": {
+    "description": "Notifiche"
+  },
+  "notificationsDescription": "Ricevi notifiche sulle nuove funzionalità",
+  "@notificationsDescription": {
+    "description": "Descrizione impostazione notifiche"
+  },
+  "darkTheme": "Tema scuro",
+  "@darkTheme": {
+    "description": "Tema scuro"
+  },
+  "darkThemeDescription": "Usa aspetto scuro",
+  "@darkThemeDescription": {
+    "description": "Descrizione tema scuro"
+  },
+  "fontSize": "Dimensione font: {size}",
+  "@fontSize": {
+    "description": "Dimensione font",
+    "placeholders": {
+      "size": {
+        "type": "int"
+      }
+    }
+  },
+  "appVersion": "Versione app",
+  "@appVersion": {
+    "description": "Versione app"
+  },
+  "messengerDemoMode": "Modalità demo messenger",
+  "@messengerDemoMode": {
+    "description": "Opzione modalità demo messenger nelle impostazioni"
+  },
+  "language": "Lingua",
+  "@language": {
+    "description": "Lingua interfaccia"
+  },
+  "languageDescription": "Scegli lingua interfaccia",
+  "@languageDescription": {
+    "description": "Descrizione impostazione lingua"
+  },
+  "welcomeMessage": "Ottimo! Benvenuto!",
+  "@welcomeMessage": {
+    "description": "Messaggio di benvenuto al click del pulsante"
+  },
+  "privacyTitle": "Tutti i tuoi dati sono al sicuro",
+  "@privacyTitle": {
+    "description": "Titolo schermata privacy"
+  },
+  "privacyDescription": "Tutti i messaggi in XaneoConnect sono protetti da crittografia end-to-end. Xaneo non ne conosce mai il contenuto.",
+  "@privacyDescription": {
+    "description": "Descrizione privacy"
+  },
+  "continueButton": "Continuiamo",
+  "@continueButton": {
+    "description": "Pulsante continua"
+  },
+  "dataStorageTitle": "Tutti i data center Xaneo si trovano in Russia",
+  "@dataStorageTitle": {
+    "description": "Titolo schermata archiviazione dati"
+  },
+  "dataStorageDescription": "I tuoi dati non lasciano mai il paese e sono archiviati in data center sicuri.",
+  "@dataStorageDescription": {
+    "description": "Descrizione archiviazione dati"
+  },
+  "finishButton": "Fine",
+  "@finishButton": {
+    "description": "Pulsante fine"
+  },
+  "setupCompleted": "Configurazione completata!",
+  "@setupCompleted": {
+    "description": "Messaggio completamento configurazione"
+  },
+  "loginFormTitle": "Accediamo",
+  "@loginFormTitle": {
+    "description": "Titolo form di accesso"
+  },
+  "registerFormTitle": "Iniziamo",
+  "@registerFormTitle": {
+    "description": "Titolo form di registrazione"
+  },
+  "registerNameSubtitle": "Come ti chiami?",
+  "@registerNameSubtitle": {
+    "description": "Sottotitolo per inserimento nome in registrazione"
+  },
+  "nameFieldHint": "Il tuo nome",
+  "@nameFieldHint": {
+    "description": "Suggerimento per campo inserimento nome"
+  },
+  "nextButton": "Avanti",
+  "@nextButton": {
+    "description": "Pulsante per passaggio successivo registrazione"
+  },
+  "skipButton": "Salta",
+  "@skipButton": {
+    "description": "Pulsante per saltare passo corrente"
+  },
+  "registerBirthdateSubtitle": "Quando sei nato?",
+  "@registerBirthdateSubtitle": {
+    "description": "Sottotitolo per selezione data nascita in registrazione"
+  },
+  "selectDate": "Seleziona data",
+  "@selectDate": {
+    "description": "Pulsante selezione data"
+  },
+  "ageRestrictionsLink": "Quali sono le restrizioni di età?",
+  "@ageRestrictionsLink": {
+    "description": "Link alle restrizioni di età"
+  },
+  "ageRestrictionsTitle": "Registrazione dai 14 anni",
+  "@ageRestrictionsTitle": {
+    "description": "Titolo restrizioni di età"
+  },
+  "ageRestrictionsDescription": "Puoi registrarti al nostro servizio se hai 14 anni o più",
+  "@ageRestrictionsDescription": {
+    "description": "Descrizione restrizioni di età"
+  },
+  "gotIt": "Capito",
+  "@gotIt": {
+    "description": "Pulsante capito"
+  },
+  "registerNicknameSubtitle": "Scegli un nickname",
+  "@registerNicknameSubtitle": {
+    "description": "Sottotitolo per scelta nickname"
+  },
+  "nicknameFieldHint": "Il tuo nickname",
+  "@nicknameFieldHint": {
+    "description": "Suggerimento per campo inserimento nickname"
+  },
+  "nicknameHelpLink": "Non riesci a pensare a un nickname?",
+  "@nicknameHelpLink": {
+    "description": "Link aiuto nickname"
+  },
+  "registerEmailSubtitle": "Inserisci la tua email",
+  "@registerEmailSubtitle": {
+    "description": "Sottotitolo per inserimento email"
+  },
+  "emailFieldHint": "La tua email",
+  "@emailFieldHint": {
+    "description": "Suggerimento per campo inserimento email"
+  },
+  "supportedEmailProvidersLink": "Quali provider email sono supportati?",
+  "@supportedEmailProvidersLink": {
+    "description": "Link ai provider email supportati"
+  },
+  "supportedEmailProvidersTitle": "Provider Email Supportati",
+  "@supportedEmailProvidersTitle": {
+    "description": "Titolo provider email supportati"
+  },
+  "supportedEmailProvidersDescription": "Sono supportati Gmail, Outlook, Yandex, Mail.ru e altri servizi email popolari.",
+  "@supportedEmailProvidersDescription": {
+    "description": "Descrizione provider email supportati"
+  },
+  "emailFormatError": "Formato indirizzo email non valido",
+  "@emailFormatError": {
+    "description": "Errore formato email"
+  },
+  "emailUnsupportedError": "Questo servizio email non è supportato",
+  "@emailUnsupportedError": {
+    "description": "Errore servizio email non supportato"
+  },
+  "checkingEmail": "Controllo email...",
+  "@checkingEmail": {
+    "description": "Messaggio controllo email"
+  },
+  "emailAvailable": "Email disponibile",
+  "@emailAvailable": {
+    "description": "Messaggio email disponibile"
+  },
+  "emailTakenError": "Questa email è già utilizzata",
+  "@emailTakenError": {
+    "description": "Errore email già utilizzata"
+  },
+  "emailServerError": "Errore controllo email. Riprova più tardi",
+  "@emailServerError": {
+    "description": "Errore server email"
+  },
+  "verifyEmailTitle": "Verifica la tua email",
+  "@verifyEmailTitle": {
+    "description": "Titolo verifica email"
+  },
+  "verifyEmailDescription": "Abbiamo inviato un codice a 6 cifre alla tua email. Inseriscilo per confermare.",
+  "@verifyEmailDescription": {
+    "description": "Descrizione verifica email"
+  },
+  "verificationCodeHint": "Codice di verifica",
+  "@verificationCodeHint": {
+    "description": "Suggerimento per inserimento codice verifica"
+  },
+  "verifyButton": "Verifica",
+  "@verifyButton": {
+    "description": "Pulsante verifica"
+  },
+  "registerPasswordSubtitle": "Crea una password",
+  "@registerPasswordSubtitle": {
+    "description": "Sottotitolo per creazione password"
+  },
+  "registerPasswordFieldHint": "Inserisci password",
+  "@registerPasswordFieldHint": {
+    "description": "Suggerimento per campo inserimento password"
+  },
+  "passwordInvalidCharsError": "La password può contenere solo lettere latine, numeri e segni di punteggiatura",
+  "@passwordInvalidCharsError": {
+    "description": "Errore caratteri non validi password"
+  },
+  "passwordWeakError": "Password troppo debole. Usa lettere, numeri e caratteri speciali",
+  "@passwordWeakError": {
+    "description": "Errore password debole"
+  },
+  "passwordMediumWarning": "Password di forza media. Si consiglia di rafforzarla",
+  "@passwordMediumWarning": {
+    "description": "Avvertimento password media"
+  },
+  "passwordStrongSuccess": "Password forte",
+  "@passwordStrongSuccess": {
+    "description": "Successo password forte"
+  },
+  "nicknameGeneratorTitle": "Il tuo nickname sarà generato automaticamente",
+  "@nicknameGeneratorTitle": {
+    "description": "Titolo generatore nickname"
+  },
+  "nicknameGeneratorDescription": "Puoi cambiare il tuo nickname in qualsiasi momento",
+  "@nicknameGeneratorDescription": {
+    "description": "Descrizione generatore nickname"
+  },
+  "closeButton": "Chiudi",
+  "@closeButton": {
+    "description": "Pulsante chiudi"
+  },
+  "loginFieldHint": "Accesso",
+  "@loginFieldHint": {
+    "description": "Suggerimento campo accesso"
+  },
+  "passwordFieldHint": "Password",
+  "@passwordFieldHint": {
+    "description": "Suggerimento campo password"
+  },
+  "loginButton": "Accedi",
+  "@loginButton": {
+    "description": "Pulsante accedi"
+  },
+  "fillAllFields": "Compila tutti i campi",
+  "@fillAllFields": {
+    "description": "Messaggio compila tutti i campi"
+  },
+  "loggingIn": "Accesso in corso...",
+  "@loggingIn": {
+    "description": "Messaggio accesso in corso"
+  },
+  "welcomeUser": "Benvenuto, {username}!",
+  "@welcomeUser": {
+    "description": "Messaggio benvenuto utente",
+    "placeholders": {
+      "username": {
+        "type": "String"
+      }
+    }
+  },
+  "invalidCredentials": "Credenziali non valide. Controlla username e password.",
+  "@invalidCredentials": {
+    "description": "Errore credenziali non valide"
+  },
+  "serverError": "Errore del server. Riprova più tardi.",
+  "@serverError": {
+    "description": "Messaggio errore server"
+  },
+  "connectionErrorLogin": "Errore di connessione. Controlla la tua connessione internet.",
+  "@connectionErrorLogin": {
+    "description": "Errore connessione in accesso"
+  },
+  "noAccount": "Non hai un account?",
+  "@noAccount": {
+    "description": "Link non hai account"
+  },
+  "forgotPassword": "Password dimenticata?",
+  "@forgotPassword": {
+    "description": "Link password dimenticata"
+  },
+  "forgotPasswordDescription": "Inserisci il tuo nickname e ti invieremo un link per accedere al tuo account via email.",
+  "@forgotPasswordDescription": {
+    "description": "Descrizione password dimenticata"
+  },
+  "sendLinkButton": "Invia Link",
+  "@sendLinkButton": {
+    "description": "Pulsante invia link"
+  },
+  "checkEmailTitle": "Controlla la tua Email",
+  "@checkEmailTitle": {
+    "description": "Titolo controlla email"
+  },
+  "checkEmailDescription": "Controlla la tua casella di posta {email} e segui il link per accedere al tuo account.",
+  "@checkEmailDescription": {
+    "description": "Descrizione controlla email",
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "forgotPasswordCodeDescription": "Inserisci il codice di accesso inviato all'email associata al tuo account",
+  "@forgotPasswordCodeDescription": {
+    "description": "Descrizione codice password dimenticata"
+  },
+  "alreadyHaveAccount": "Hai già un account?",
+  "@alreadyHaveAccount": {
+    "description": "Link hai già account"
+  },
+  "registrationUnavailable": "La registrazione non è attualmente disponibile",
+  "@registrationUnavailable": {
+    "description": "Messaggio registrazione non disponibile"
+  },
+  "passwordRecoveryUnavailable": "Il recupero password non è attualmente disponibile",
+  "@passwordRecoveryUnavailable": {
+    "description": "Messaggio recupero password non disponibile"
+  },
+  "nicknameMinLengthError": "La lunghezza del nickname deve essere di almeno cinque caratteri",
+  "@nicknameMinLengthError": {
+    "description": "Errore lunghezza minima nickname"
+  },
+  "nicknameLatinOnlyError": "Il nickname può contenere solo lettere latine, numeri, punti e trattini bassi",
+  "@nicknameLatinOnlyError": {
+    "description": "Errore nickname solo latino"
+  },
+  "nicknameStartError": "Il nickname non può iniziare con trattino basso, numero o punto",
+  "@nicknameStartError": {
+    "description": "Errore inizio nickname"
+  },
+  "nicknameEndError": "Il nickname non può terminare con trattino basso o punto",
+  "@nicknameEndError": {
+    "description": "Errore fine nickname"
+  },
+  "checkingNickname": "Verifica nickname...",
+  "@checkingNickname": {
+    "description": "Messaggio durante verifica nickname"
+  },
+  "nicknameAvailable": "Nickname disponibile",
+  "@nicknameAvailable": {
+    "description": "Messaggio nickname disponibile"
+  },
+  "nicknameTakenError": "Questo nickname è già in uso",
+  "@nicknameTakenError": {
+    "description": "Errore nickname già preso"
+  },
+  "nicknameServerError": "Errore del server durante la verifica del nickname",
+  "@nicknameServerError": {
+    "description": "Errore server verifica nickname"
+  },
+  "nicknameMaxLengthError": "Il nickname può essere lungo al massimo 30 caratteri",
+  "@nicknameMaxLengthError": {
+    "description": "Errore lunghezza massima nickname"
+  },
+  "nameEmptyError": "Il nome non può essere vuoto",
+  "@nameEmptyError": {
+    "description": "Errore nome vuoto"
+  },
+  "confirmPasswordTitle": "Conferma password",
+  "@confirmPasswordTitle": {
+    "description": "Titolo conferma password"
+  },
+  "confirmPasswordDescription": "Inserisci nuovamente la tua password per continuare",
+  "@confirmPasswordDescription": {
+    "description": "Descrizione conferma password"
+  },
+  "confirmPasswordFieldHint": "Reinserisci password",
+  "@confirmPasswordFieldHint": {
+    "description": "Suggerimento campo conferma password"
+  },
+  "passwordMismatchError": "Le password non corrispondono",
+  "@passwordMismatchError": {
+    "description": "Errore password non corrispondenti"
+  },
+  "confirmButton": "Conferma",
+  "@confirmButton": {
+    "description": "Pulsante conferma"
+  },
+  "registerAvatarSubtitle": "Aggiungi una foto profilo",
+  "@registerAvatarSubtitle": {
+    "description": "Sottotitolo avatar registrazione"
+  },
+  "addAvatarHint": "Tocca per selezionare un'immagine",
+  "@addAvatarHint": {
+    "description": "Suggerimento aggiunta avatar"
+  },
+  "avatarTapToSelect": "Tocca per selezionare",
+  "@avatarTapToSelect": {
+    "description": "Avatar tocca per selezionare"
+  },
+  "photoPermissionTitle": "Accesso alle foto",
+  "@photoPermissionTitle": {
+    "description": "Titolo permesso foto"
+  },
+  "photoPermissionDescription": "Abbiamo bisogno dell'accesso alle tue foto per selezionare una foto profilo",
+  "@photoPermissionDescription": {
+    "description": "Descrizione permesso foto"
+  },
+  "allowAccessButton": "Consenti accesso",
+  "@allowAccessButton": {
+    "description": "Pulsante consenti accesso"
+  },
+  "notNowButton": "Non ora",
+  "@notNowButton": {
+    "description": "Pulsante non ora"
+  },
+  "avatarCropperTitle": "Ritaglia immagine",
+  "@avatarCropperTitle": {
+    "description": "Titolo ritagliatore avatar"
+  },
+  "doneButton": "Fatto",
+  "@doneButton": {
+    "description": "Pulsante fatto"
+  },
+  "cropInstructions": "Trascina per regolare l'area dell'immagine",
+  "@cropInstructions": {
+    "description": "Istruzioni ritaglio"
+  },
+  "changeAvatar": "Cambia avatar",
+  "@changeAvatar": {
+    "description": "Pulsante cambia avatar"
+  },
+  "profilePreviewTitle": "Anteprima profilo",
+  "@profilePreviewTitle": {
+    "description": "Titolo anteprima profilo"
+  },
+  "goodMorning": "Buongiorno",
+  "@goodMorning": {
+    "description": "Saluto buongiorno"
+  },
+  "goodDay": "Buongiorno",
+  "@goodDay": {
+    "description": "Saluto buongiorno"
+  },
+  "goodEvening": "Buonasera",
+  "@goodEvening": {
+    "description": "Saluto buonasera"
+  },
+  "goodNight": "Buonanotte",
+  "@goodNight": {
+    "description": "Saluto buonanotte"
+  },
+  "backButton": "Indietro",
+  "@backButton": {
+    "description": "Pulsante indietro"
+  },
+  "editName": "Modifica nome",
+  "@editName": {
+    "description": "Pulsante modifica nome"
+  },
+  "editNickname": "Modifica nickname",
+  "@editNickname": {
+    "description": "Pulsante modifica nickname"
+  },
+  "editPhoto": "Modifica foto",
+  "@editPhoto": {
+    "description": "Pulsante modifica foto"
+  },
+  "saveButton": "Salva",
+  "@saveButton": {
+    "description": "Pulsante salva"
+  },
+  "deleteButton": "Elimina",
+  "@deleteButton": {
+    "description": "Pulsante elimina"
+  },
+  "deletePhoto": "Elimina foto",
+  "@deletePhoto": {
+    "description": "Pulsante elimina foto"
+  },
+  "selectFromGallery": "Seleziona dalla galleria",
+  "@selectFromGallery": {
+    "description": "Pulsante seleziona dalla galleria"
+  },
+  "enterNameHint": "Inserisci nome",
+  "@enterNameHint": {
+    "description": "Suggerimento inserimento nome"
+  },
+  "enterNicknameHint": "Inserisci nickname",
+  "@enterNicknameHint": {
+    "description": "Suggerimento inserimento nickname"
+  },
+  "termsAndConditionsTitle": "Termini e condizioni",
+  "@termsAndConditionsTitle": {
+    "description": "Titolo termini e condizioni"
+  },
+  "termsOfUse": "Termini di utilizzo",
+  "@termsOfUse": {
+    "description": "Link termini di utilizzo"
+  },
+  "userAgreement": "Accordo utente",
+  "@userAgreement": {
+    "description": "Link accordo utente"
+  },
+  "acceptTermsText": "Accetto i termini e le condizioni",
+  "@acceptTermsText": {
+    "description": "Testo accetta termini"
+  },
+  "acceptButton": "Accetta",
+  "@acceptButton": {
+    "description": "Pulsante accetta"
+  },
+  "declineButton": "Rifiuta",
+  "@declineButton": {
+    "description": "Pulsante rifiuta"
+  },
+  "verificationCodeSent": "Codice di verifica inviato",
+  "@verificationCodeSent": {
+    "description": "Messaggio codice verifica inviato"
+  },
+  "codeDeliveryError": "Errore nell'invio del codice",
+  "@codeDeliveryError": {
+    "description": "Errore consegna codice"
+  },
+  "serverErrorCodeDelivery": "Errore del server nell'invio del codice",
+  "@serverErrorCodeDelivery": {
+    "description": "Errore server consegna codice"
+  },
+  "connectionErrorCodeDelivery": "Errore di connessione nell'invio del codice",
+  "@connectionErrorCodeDelivery": {
+    "description": "Errore connessione consegna codice"
+  },
+  "emailVerificationSuccess": "Email verificata con successo",
+  "@emailVerificationSuccess": {
+    "description": "Verifica email riuscita"
+  },
+  "invalidVerificationCode": "Codice di verifica non valido",
+  "@invalidVerificationCode": {
+    "description": "Errore codice verifica non valido"
+  },
+  "emailNotFound": "Indirizzo email non trovato",
+  "@emailNotFound": {
+    "description": "Errore email non trovata"
+  },
+  "verificationCodeExpired": "Codice di verifica scaduto",
+  "@verificationCodeExpired": {
+    "description": "Errore codice verifica scaduto"
+  },
+  "serverErrorCodeVerification": "Errore del server nella verifica del codice",
+  "@serverErrorCodeVerification": {
+    "description": "Errore server verifica codice"
+  },
+  "connectionErrorCodeVerification": "Errore di connessione nella verifica del codice",
+  "@connectionErrorCodeVerification": {
+    "description": "Errore connessione verifica codice"
+  },
+  "permissionDeniedSettings": "Permesso negato. Vai alle impostazioni.",
+  "@permissionDeniedSettings": {
+    "description": "Permesso negato vai impostazioni"
+  },
+  "avatarCropped": "Avatar ritagliato",
+  "@avatarCropped": {
+    "description": "Messaggio avatar ritagliato"
+  },
+  "imageSelectionError": "Errore nella selezione dell'immagine",
+  "@imageSelectionError": {
+    "description": "Errore selezione immagine"
+  },
+  "permissionDeniedOpenSettings": "Permesso negato. Aprire impostazioni?",
+  "@permissionDeniedOpenSettings": {
+    "description": "Permesso negato apri impostazioni"
+  },
+  "photoPermissionError": "Errore permesso foto",
+  "@photoPermissionError": {
+    "description": "Errore permesso foto"
+  },
+  "registrationCompleted": "Registrazione completata",
+  "@registrationCompleted": {
+    "description": "Messaggio registrazione completata"
+  },
+  "officialXaneoWebsite": "Sito web ufficiale Xaneo",
+  "@officialXaneoWebsite": {
+    "description": "Link sito web ufficiale Xaneo"
+  },
+  "twoFactorAuthMessage": "Autenticazione a due fattori abilitata",
+  "@twoFactorAuthMessage": {
+    "description": "Messaggio autenticazione due fattori"
+  },
+  "selectLanguage": "Seleziona lingua",
+  "@selectLanguage": {
+    "description": "Pulsante seleziona lingua"
+  },
+  "messengerDemo": "Demo Messenger",
+  "@messengerDemo": {
+    "description": "Titolo demo messenger"
+  },
+  "messenger": "Messenger",
+  "@messenger": {
+    "description": "Titolo messenger"
+  },
+  "messengerDescription": "Messaggi sicuri e veloci",
+  "@messengerDescription": {
+    "description": "Descrizione messenger"
+  },
+  "profileDemo": "Demo Profilo",
+  "@profileDemo": {
+    "description": "Titolo demo profilo"
+  },
+  "profile": "Profilo",
+  "@profile": {
+    "description": "Titolo profilo"
+  },
+  "personalInfo": "Informazioni personali",
+  "@personalInfo": {
+    "description": "Titolo informazioni personali"
+  },
+  "name": "Nome",
+  "@name": {
+    "description": "Campo nome"
+  },
+  "nameHint": "Inserisci il tuo nome",
+  "@nameHint": {
+    "description": "Suggerimento nome"
+  },
+  "birthDate": "Data di nascita",
+  "@birthDate": {
+    "description": "Campo data di nascita"
+  },
+  "nickname": "Nickname",
+  "@nickname": {
+    "description": "Campo nickname"
+  },
+  "nicknameHint": "Inserisci il tuo nickname",
+  "@nicknameHint": {
+    "description": "Suggerimento nickname"
+  },
+  "phone": "Telefono",
+  "@phone": {
+    "description": "Campo telefono"
+  },
+  "phoneHint": "Inserisci il tuo numero di telefono",
+  "@phoneHint": {
+    "description": "Suggerimento telefono"
+  },
+  "settingsSection": "Impostazioni",
+  "@settingsSection": {
+    "description": "Sezione impostazioni"
+  },
+  "chatSettings": "Impostazioni chat",
+  "@chatSettings": {
+    "description": "Titolo impostazioni chat"
+  },
+  "chatSettingsDescription": "Personalizza la tua esperienza di chat",
+  "@chatSettingsDescription": {
+    "description": "Descrizione impostazioni chat"
+  },
+  "privacySettings": "Impostazioni privacy",
+  "@privacySettings": {
+    "description": "Titolo impostazioni privacy"
+  },
+  "privacySettingsDescription": "Controlla la tua privacy",
+  "@privacySettingsDescription": {
+    "description": "Descrizione impostazioni privacy"
+  },
+  "securitySettings": "Impostazioni sicurezza",
+  "@securitySettings": {
+    "description": "Titolo impostazioni sicurezza"
+  },
+  "securityAuthentication": "Autenticazione",
+  "@securityAuthentication": {
+    "description": "Sicurezza autenticazione"
+  },
+  "securityChangePassword": "Cambia password",
+  "@securityChangePassword": {
+    "description": "Opzione cambia password"
+  },
+  "securityTwoFactorAuth": "Autenticazione a due fattori",
+  "@securityTwoFactorAuth": {
+    "description": "Opzione due fattori"
+  },
+  "twoFactorEnabled": "Autenticazione a due fattori abilitata",
+  "@twoFactorEnabled": {
+    "description": "Stato due fattori abilitato"
+  },
+  "twoFactorDisabled": "Autenticazione a due fattori disabilitata",
+  "@twoFactorDisabled": {
+    "description": "Stato due fattori disabilitato"
+  },
+  "securityChangeEmail": "Cambia email",
+  "@securityChangeEmail": {
+    "description": "Opzione cambia email"
+  },
+  "securityPasscode": "Passcode",
+  "@securityPasscode": {
+    "description": "Opzione passcode"
+  },
+  "securitySettingsDescription": "Proteggi il tuo account",
+  "@securitySettingsDescription": {
+    "description": "Descrizione impostazioni sicurezza"
+  },
+  "passwordEmptyError": "La password non può essere vuota",
+  "@passwordEmptyError": {
+    "description": "Errore password vuota"
+  },
+  "passwordTooShortError": "La password deve essere lunga almeno 8 caratteri",
+  "@passwordTooShortError": {
+    "description": "Errore password troppo corta"
+  },
+  "passwordEnterCurrentHint": "Inserisci password attuale",
+  "@passwordEnterCurrentHint": {
+    "description": "Suggerimento password attuale"
+  },
+  "passwordCurrentHint": "Password attuale",
+  "@passwordCurrentHint": {
+    "description": "Campo password attuale"
+  },
+  "passwordConfirmNewHint": "Conferma nuova password",
+  "@passwordConfirmNewHint": {
+    "description": "Suggerimento conferma nuova password"
+  },
+  "passwordDontMatchError": "Le password non corrispondono",
+  "@passwordDontMatchError": {
+    "description": "Errore password non corrispondenti"
+  },
+  "passwordNewTitle": "Nuova password",
+  "@passwordNewTitle": {
+    "description": "Titolo nuova password"
+  },
+  "passwordNewHint": "Inserisci nuova password",
+  "@passwordNewHint": {
+    "description": "Suggerimento nuova password"
+  },
+  "passwordConfirmHint": "Conferma password",
+  "@passwordConfirmHint": {
+    "description": "Suggerimento conferma password"
+  },
+  "passwordChangedSuccess": "Password cambiata con successo",
+  "@passwordChangedSuccess": {
+    "description": "Successo cambio password"
+  },
+  "passwordNextButton": "Avanti",
+  "@passwordNextButton": {
+    "description": "Pulsante password avanti"
+  },
+  "passwordSaveButton": "Salva",
+  "@passwordSaveButton": {
+    "description": "Pulsante password salva"
+  },
+  "powerSettings": "Impostazioni avanzate",
+  "@powerSettings": {
+    "description": "Titolo impostazioni avanzate"
+  },
+  "powerSettingsDescription": "Impostazioni avanzate",
+  "@powerSettingsDescription": {
+    "description": "Descrizione impostazioni avanzate"
+  },
+  "languageSelect": "Seleziona lingua",
+  "@languageSelect": {
+    "description": "Opzione seleziona lingua"
+  },
+  "cancel": "Annulla",
+  "@cancel": {
+    "description": "Pulsante annulla"
+  },
+  "ready": "Pronto",
+  "@ready": {
+    "description": "Pulsante pronto"
+  },
+  "contentInDevelopment": "Contenuto in sviluppo",
+  "@contentInDevelopment": {
+    "description": "Messaggio contenuto in sviluppo"
+  },
+  "sessions": "Sessioni",
+  "@sessions": {
+    "description": "Titolo sessioni"
+  },
+  "support": "Supporto",
+  "@support": {
+    "description": "Titolo supporto"
+  },
+  "xaneoBenefits": "Vantaggi Xaneo",
+  "@xaneoBenefits": {
+    "description": "Titolo vantaggi Xaneo"
+  },
+  "messengerFeatures": "Funzioni Messenger",
+  "@messengerFeatures": {
+    "description": "Titolo funzioni messenger"
+  },
+  "secureEncryption": "Crittografia sicura",
+  "@secureEncryption": {
+    "description": "Funzione crittografia sicura"
+  },
+  "instantDelivery": "Consegna istantanea",
+  "@instantDelivery": {
+    "description": "Funzione consegna istantanea"
+  },
+  "deviceSync": "Sincronizzazione dispositivi",
+  "@deviceSync": {
+    "description": "Funzione sincronizzazione dispositivi"
+  },
+  "mediaSupport": "Supporto multimediale",
+  "@mediaSupport": {
+    "description": "Funzione supporto multimediale"
+  },
+  "sessionsContent": "Gestisci le tue sessioni attive",
+  "@sessionsContent": {
+    "description": "Descrizione contenuto sessioni"
+  },
+  "activeDevices": "Dispositivi attivi",
+  "@activeDevices": {
+    "description": "Titolo dispositivi attivi"
+  },
+  "currentDevice": "Dispositivo corrente",
+  "@currentDevice": {
+    "description": "Etichetta dispositivo corrente"
+  },
+  "terminateSession": "Termina sessione",
+  "@terminateSession": {
+    "description": "Pulsante termina sessione"
+  },
+  "terminateAllOtherSessions": "Termina tutte le altre sessioni",
+  "@terminateAllOtherSessions": {
+    "description": "Pulsante termina tutte le altre sessioni"
+  },
+  "sessionLocation": "Posizione",
+  "@sessionLocation": {
+    "description": "Etichetta posizione sessione"
+  },
+  "sessionLastActive": "Ultima attività",
+  "@sessionLastActive": {
+    "description": "Etichetta ultima attività sessione"
+  },
+  "sessionBrowser": "Browser",
+  "@sessionBrowser": {
+    "description": "Etichetta browser sessione"
+  },
+  "sessionPlatform": "Piattaforma",
+  "@sessionPlatform": {
+    "description": "Etichetta piattaforma sessione"
+  },
+  "confirmTerminateSession": "Sei sicuro di voler terminare questa sessione?",
+  "@confirmTerminateSession": {
+    "description": "Conferma termina sessione"
+  },
+  "confirmTerminateAllSessions": "Sei sicuro di voler terminare tutte le altre sessioni?",
+  "@confirmTerminateAllSessions": {
+    "description": "Conferma termina tutte le sessioni"
+  },
+  "sessionIPAddress": "Indirizzo IP",
+  "@sessionIPAddress": {
+    "description": "Etichetta indirizzo IP sessione"
+  },
+  "supportContent": "Contatta il nostro team di supporto",
+  "@supportContent": {
+    "description": "Descrizione contenuto supporto"
+  },
+  "contactSupport": "Contatta supporto",
+  "@contactSupport": {
+    "description": "Pulsante contatta supporto"
+  },
+  "xaneoBenefitsContent": "Scopri i vantaggi di Xaneo",
+  "@xaneoBenefitsContent": {
+    "description": "Descrizione contenuto vantaggi Xaneo"
+  },
+  "more": "Altro",
+  "@more": {
+    "description": "Pulsante altro"
+  },
+  "chatPreview": "Anteprima chat",
+  "@chatPreview": {
+    "description": "Titolo anteprima chat"
+  },
+  "textSize": "Dimensione testo",
+  "@textSize": {
+    "description": "Impostazione dimensione testo"
+  },
+  "textSizeValue": "{size}%",
+  "@textSizeValue": {
+    "description": "Valore dimensione testo",
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "textExample": "Testo di esempio",
+  "@textExample": {
+    "description": "Esempio testo"
+  },
+  "useDarkTheme": "Usa tema scuro",
+  "@useDarkTheme": {
+    "description": "Impostazione tema scuro"
+  },
+  "chatWallpapers": "Sfondi chat",
+  "@chatWallpapers": {
+    "description": "Impostazione sfondi chat"
+  },
+  "messageColors": "Colori messaggi",
+  "@messageColors": {
+    "description": "Impostazione colori messaggi"
+  },
+  "myMessages": "I miei messaggi",
+  "@myMessages": {
+    "description": "Etichetta miei messaggi"
+  },
+  "receivedMessages": "Messaggi ricevuti",
+  "@receivedMessages": {
+    "description": "Etichetta messaggi ricevuti"
+  },
+  "messageEmojis": "Emoji messaggi",
+  "@messageEmojis": {
+    "description": "Impostazione emoji messaggi"
+  },
+  "selectedEmoji": "Emoji selezionato",
+  "@selectedEmoji": {
+    "description": "Etichetta emoji selezionato"
+  },
+  "chooseWallpaper": "Scegli sfondo",
+  "@chooseWallpaper": {
+    "description": "Pulsante scegli sfondo"
+  },
+  "demoMessage1": "Ciao! Come stai?",
+  "@demoMessage1": {
+    "description": "Messaggio demo 1"
+  },
+  "demoMessage2": "Sto bene, grazie! E tu?",
+  "@demoMessage2": {
+    "description": "Messaggio demo 2"
+  },
+  "demoMessage3": "Anche io! Bello vederti.",
+  "@demoMessage3": {
+    "description": "Messaggio demo 3"
+  },
+  "demoDateSeparator": "Oggi",
+  "@demoDateSeparator": {
+    "description": "Separatore data demo"
+  },
+  "onlineStatus": "Online",
+  "@onlineStatus": {
+    "description": "Stato online"
+  },
+  "chatTheme": "Tema chat",
+  "@chatTheme": {
+    "description": "Impostazione tema chat"
+  },
+  "privacySettingsTitle": "Impostazioni privacy",
+  "@privacySettingsTitle": {
+    "description": "Titolo impostazioni privacy"
+  },
+  "privacyCommunications": "Comunicazioni",
+  "@privacyCommunications": {
+    "description": "Titolo privacy comunicazioni"
+  },
+  "privacyProfileVisibility": "Visibilità profilo",
+  "@privacyProfileVisibility": {
+    "description": "Titolo visibilità profilo"
+  },
+  "privacyWhoCanMessage": "Chi può scrivermi",
+  "@privacyWhoCanMessage": {
+    "description": "Impostazione chi può scrivere"
+  },
+  "privacyWhoCanRecordVoice": "Chi può registrare messaggi vocali",
+  "@privacyWhoCanRecordVoice": {
+    "description": "Impostazione chi può registrare vocali"
+  },
+  "privacyWhoCanCall": "Chi può chiamarmi",
+  "@privacyWhoCanCall": {
+    "description": "Impostazione chi può chiamare"
+  },
+  "privacyWhoCanSendVideo": "Chi può inviarmi video",
+  "@privacyWhoCanSendVideo": {
+    "description": "Impostazione chi può inviare video"
+  },
+  "privacyWhoCanSendLinks": "Chi può inviarmi link",
+  "@privacyWhoCanSendLinks": {
+    "description": "Impostazione chi può inviare link"
+  },
+  "privacyWhoCanInvite": "Chi può invitarmi",
+  "@privacyWhoCanInvite": {
+    "description": "Impostazione chi può invitare"
+  },
+  "privacyWhoSeesNickname": "Chi vede il mio nickname",
+  "@privacyWhoSeesNickname": {
+    "description": "Impostazione chi vede nickname"
+  },
+  "privacyWhoSeesAvatar": "Chi vede il mio avatar",
+  "@privacyWhoSeesAvatar": {
+    "description": "Impostazione chi vede avatar"
+  },
+  "privacyWhoSeesBirthday": "Chi vede la mia data di nascita",
+  "@privacyWhoSeesBirthday": {
+    "description": "Impostazione chi vede data nascita"
+  },
+  "privacyWhoSeesOnlineTime": "Chi vede il mio orario online",
+  "@privacyWhoSeesOnlineTime": {
+    "description": "Impostazione chi vede orario online"
+  },
+  "privacyAll": "Tutti",
+  "@privacyAll": {
+    "description": "Opzione tutti"
+  },
+  "privacyContacts": "Contatti",
+  "@privacyContacts": {
+    "description": "Opzione contatti"
+  },
+  "privacyNobody": "Nessuno",
+  "@privacyNobody": {
+    "description": "Opzione nessuno"
+  },
+  "passwordWeak": "Debole",
+  "@passwordWeak": {
+    "description": "Forza password: Debole"
+  },
+  "passwordMedium": "Media",
+  "@passwordMedium": {
+    "description": "Forza password: Media"
+  },
+  "passwordStrong": "Forte",
+  "@passwordStrong": {
+    "description": "Forza password: Forte"
+  },
+  "twoFactorEnableDescription": "Aggiungi autenticazione a due fattori per maggiore sicurezza",
+  "@twoFactorEnableDescription": {
+    "description": "Descrizione abilita due fattori"
+  },
+  "twoFactorDisableDescription": "Disabilita autenticazione a due fattori",
+  "@twoFactorDisableDescription": {
+    "description": "Descrizione disabilita due fattori"
+  },
+  "changeEmailVerificationDescription": "Riceverai un codice di verifica alla tua nuova email",
+  "@changeEmailVerificationDescription": {
+    "description": "Descrizione verifica cambio email"
+  },
+  "newEmailTitle": "Nuovo indirizzo email",
+  "@newEmailTitle": {
+    "description": "Titolo nuovo email"
+  },
+  "newEmailDescription": "Inserisci il tuo nuovo indirizzo email",
+  "@newEmailDescription": {
+    "description": "Descrizione nuovo email"
+  },
+  "changeEmailButton": "Cambia email",
+  "@changeEmailButton": {
+    "description": "Pulsante cambia email"
+  },
+  "verifyNewEmailTitle": "Verifica nuova email",
+  "@verifyNewEmailTitle": {
+    "description": "Titolo verifica nuova email"
+  },
+  "verifyNewEmailDescription": "Inserisci il codice di verifica inviato alla tua nuova email",
+  "@verifyNewEmailDescription": {
+    "description": "Descrizione verifica nuova email"
+  },
+  "verifyNewEmailButton": "Verifica email",
+  "@verifyNewEmailButton": {
+    "description": "Pulsante verifica email"
+  },
+  "passcodeVerificationTitle": "Verifica passcode",
+  "@passcodeVerificationTitle": {
+    "description": "Titolo verifica passcode"
+  },
+  "passcodeVerificationDescription": "Inserisci il tuo passcode per continuare",
+  "@passcodeVerificationDescription": {
+    "description": "Descrizione verifica passcode"
+  },
+  "passcodeVerificationButton": "Verifica passcode",
+  "@passcodeVerificationButton": {
+    "description": "Pulsante verifica passcode"
+  },
+  "setPasscodeTitle": "Imposta passcode",
+  "@setPasscodeTitle": {
+    "description": "Titolo imposta passcode"
+  },
+  "setPasscodeDescription": "Crea un passcode a 4 cifre per maggiore sicurezza",
+  "@setPasscodeDescription": {
+    "description": "Descrizione imposta passcode"
+  },
+  "passcodeHint": "Inserisci passcode",
+  "@passcodeHint": {
+    "description": "Suggerimento passcode"
+  },
+  "setPasscodeButton": "Imposta passcode",
+  "@setPasscodeButton": {
+    "description": "Pulsante imposta passcode"
+  },
+  "xaneoBenefitsModalTitle": "Vantaggi Premium Xaneo",
+  "@xaneoBenefitsModalTitle": {
+    "description": "Titolo modal vantaggi Xaneo"
+  },
+  "xaneoBenefitsModalDescription": "Sblocca funzioni premium e supporta lo sviluppo",
+  "@xaneoBenefitsModalDescription": {
+    "description": "Descrizione modal vantaggi Xaneo"
+  },
+  "xaneoBenefitsSelectPlan": "Seleziona il tuo piano",
+  "@xaneoBenefitsSelectPlan": {
+    "description": "Titolo seleziona piano"
+  },
+  "xaneoBenefitsYearlyPlan": "Piano annuale",
+  "@xaneoBenefitsYearlyPlan": {
+    "description": "Titolo piano annuale"
+  },
+  "xaneoBenefitsMonthlyPlan": "Piano mensile",
+  "@xaneoBenefitsMonthlyPlan": {
+    "description": "Titolo piano mensile"
+  },
+  "xaneoBenefitsYearlyPrice": "49,99 € / anno",
+  "@xaneoBenefitsYearlyPrice": {
+    "description": "Prezzo piano annuale"
+  },
+  "xaneoBenefitsMonthlyPrice": "4,99 € / mese",
+  "@xaneoBenefitsMonthlyPrice": {
+    "description": "Prezzo piano mensile"
+  },
+  "xaneoBenefitsSavings": "Risparmia 17%",
+  "@xaneoBenefitsSavings": {
+    "description": "Testo risparmio"
+  },
+  "xaneoBenefitsSubscribeButton": "Abbonati",
+  "@xaneoBenefitsSubscribeButton": {
+    "description": "Pulsante abbonati"
+  },
+  "xaneoBenefitsCloseButton": "Chiudi",
+  "@xaneoBenefitsCloseButton": {
+    "description": "Pulsante chiudi"
+  },
+  "xaneoBenefitsYearlySuccess": "Abbonamento annuale XB completato con successo!",
+  "@xaneoBenefitsYearlySuccess": {
+    "description": "Messaggio successo abbonamento annuale"
+  },
+  "xaneoBenefitsMonthlySuccess": "Abbonamento mensile XB completato con successo!",
+  "@xaneoBenefitsMonthlySuccess": {
+    "description": "Messaggio successo abbonamento mensile"
+  },
+  "favoritesChat": "Preferiti",
+  "@favoritesChat": {
+    "description": "Nome chat preferiti"
+  },
+  "favoritesChatDescription": "Messaggi e file importanti",
+  "@favoritesChatDescription": {
+    "description": "Descrizione chat preferiti"
+  },
+  "contentInDevelopmentMessage": "Contenuto per \"{title}\" in sviluppo...",
+  "@contentInDevelopmentMessage": {
+    "description": "Messaggio contenuto in sviluppo",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "Russo",
+  "@russianLanguage": {
+    "description": "Nome lingua russa"
+  },
+  "chatWelcomeMessage": "Ciao! Questa è la chat \"{chatName}\" 🎉",
+  "@chatWelcomeMessage": {
+    "description": "Messaggio di benvenuto chat",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "Qui puoi usare **grassetto**, *corsivo* e __sottolineato__!",
+  "@formattingExample1": {
+    "description": "Esempio formattazione testo 1"
+  },
+  "formattingExample2": "Nonché ~~barrato~~ e `codice` 💻",
+  "@formattingExample2": {
+    "description": "Esempio formattazione testo 2"
+  },
+  "greetingTrigger": "ciao",
+  "@greetingTrigger": {
+    "description": "Trigger saluto"
+  },
+  "greetingResponse": "Ciao! Come stai?",
+  "@greetingResponse": {
+    "description": "Risposta saluto"
+  },
+  "fileSendingNotImplemented": "Invio file non ancora implementato",
+  "@fileSendingNotImplemented": {
+    "description": "Messaggio invio file non implementato"
+  },
+  "wasOnlineRecently": "era online di recente",
+  "@wasOnlineRecently": {
+    "description": "Stato era online recentemente"
+  },
+  "messageHint": "Messaggio",
+  "@messageHint": {
+    "description": "Suggerimento input messaggio"
+  }
+}

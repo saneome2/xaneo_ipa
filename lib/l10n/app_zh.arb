@@ -525,5 +525,63 @@
   "xaneoBenefitsMonthlySuccess": "月度 XB 订阅已激活！",
   "@xaneoBenefitsMonthlySuccess": {
     "description": "月度订阅成功消息"
+  },
+  "chatWelcomeMessage": "你好！这是 \"{chatName}\" 聊天 🎉",
+  "@chatWelcomeMessage": {
+    "description": "聊天中的欢迎消息",
+    "placeholders": {
+      "chatName": {
+        "type": "String"
+      }
+    }
+  },
+  "formattingExample1": "这里可以使用 **粗体** 和 *斜体* 以及 __下划线__ 文本！",
+  "@formattingExample1": {
+    "description": "文本格式示例 1"
+  },
+  "formattingExample2": "还有 ~~删除线~~ 和 `代码` 💻",
+  "@formattingExample2": {
+    "description": "文本格式示例 2"
+  },
+  "greetingTrigger": "你好",
+  "@greetingTrigger": {
+    "description": "问候响应触发器"
+  },
+  "greetingResponse": "你好！你好吗？",
+  "@greetingResponse": {
+    "description": "对问候的回应"
+  },
+  "fileSendingNotImplemented": "文件发送尚未实现",
+  "@fileSendingNotImplemented": {
+    "description": "关于未实现文件发送的消息"
+  },
+  "wasOnlineRecently": "最近在线",
+  "@wasOnlineRecently": {
+    "description": "最近在线状态"
+  },
+  "messageHint": "消息",
+  "@messageHint": {
+    "description": "消息输入字段提示"
+  },
+  "favoritesChat": "收藏夹",
+  "@favoritesChat": {
+    "description": "收藏夹聊天名称"
+  },
+  "favoritesChatDescription": "重要消息和文件",
+  "@favoritesChatDescription": {
+    "description": "收藏夹聊天描述"
+  },
+  "contentInDevelopmentMessage": "\"{title}\" 的内容正在开发中...",
+  "@contentInDevelopmentMessage": {
+    "description": "内容开发中消息",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "russianLanguage": "俄语",
+  "@russianLanguage": {
+    "description": "俄语名称"
   }
 }

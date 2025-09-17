@@ -3,4 +3,5 @@ template-arb-file: app_ru.arb
 output-localization-file: app_localizations.dart
 nullable-getter: false
 use-deferred-loading: false
-preferred-supported-locales: [ "ru" ]
+preferred-supported-locales: [ "ru", "de", "it", "pt" ]
+untranslated-messages-file: untranslated_messages.json

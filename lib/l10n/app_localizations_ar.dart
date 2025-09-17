@@ -960,4 +960,45 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get xaneoBenefitsMonthlySuccess => 'تم تفعيل الاشتراك الشهري XB!';
+
+  @override
+  String get favoritesChat => 'المفضلة';
+
+  @override
+  String get favoritesChatDescription => 'الرسائل والملفات المهمة';
+
+  @override
+  String contentInDevelopmentMessage(String title) {
+    return 'المحتوى لـ \"$title\" قيد التطوير...';
+  }
+
+  @override
+  String get russianLanguage => 'الروسية';
+
+  @override
+  String chatWelcomeMessage(String chatName) {
+    return 'مرحبا! هذه دردشة \"$chatName\" 🎉';
+  }
+
+  @override
+  String get formattingExample1 =>
+      'هنا يمكنك استخدام نص **عريض** و *مائل* و __مسطر__!';
+
+  @override
+  String get formattingExample2 => 'وأيضاً ~~مشطوب~~ و `كود` 💻';
+
+  @override
+  String get greetingTrigger => 'مرحبا';
+
+  @override
+  String get greetingResponse => 'مرحبا! كيف الحال؟';
+
+  @override
+  String get fileSendingNotImplemented => 'إرسال الملفات غير مطبق بعد';
+
+  @override
+  String get wasOnlineRecently => 'كان متصلاً مؤخراً';
+
+  @override
+  String get messageHint => 'رسالة';
 }

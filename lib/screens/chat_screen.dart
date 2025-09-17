@@ -629,6 +629,9 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
                     minLines: 1,
                     keyboardType: TextInputType.multiline,
                     textInputAction: TextInputAction.newline,
+                    contextMenuBuilder: (context, editableTextState) {
+                      return _buildFullyCustomContextMenu(context, editableTextState, chatSettings);
+                    },
                     onSubmitted: (_) => _sendMessage(),
                     onChanged: (text) {
                       setState(() {});
@@ -931,5 +934,215 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
     // Если яркость < 0.5 - цвет темный, используем белый текст
     // Если яркость >= 0.5 - цвет светлый, используем темный текст
     return bubbleColor.computeLuminance() < 0.5 ? Colors.white : Colors.black87;
+  }
+
+  /// Создает полностью кастомное контекстное меню без стоковых шаблонов
+  Widget _buildFullyCustomContextMenu(BuildContext context, EditableTextState editableTextState, ChatSettingsProvider chatSettings) {
+    final selection = editableTextState.textEditingValue.selection;
+    final hasSelection = !selection.isCollapsed;
+    final hasText = editableTextState.textEditingValue.text.isNotEmpty;
+    
+    // Вычисляем позицию курсора в TextField для правильного позиционирования меню
+    final textPosition = editableTextState.renderEditable.getLocalRectForCaret(
+      selection.isCollapsed ? selection.base : selection.extent,
+    );
+    
+    // Получаем глобальную позицию TextField через его RenderBox
+    final textFieldRenderBox = editableTextState.renderEditable;
+    final textFieldGlobalPosition = textFieldRenderBox.localToGlobal(Offset.zero);
+    
+    // Размещаем меню рядом с TextField (немного выше курсора)
+    final menuPosition = Offset(
+      20, // Отступ от левого края экрана
+      textFieldGlobalPosition.dy + textPosition.top - 200, // Чуть выше курсора в поле ввода
+    );
+
+    return Stack(
+      children: [
+        // Невидимый фон для закрытия меню при тапе
+        Positioned.fill(
+          child: GestureDetector(
+            onTap: () {
+              // Закрываем меню при тапе вне его
+            },
+            child: Container(color: Colors.transparent),
+          ),
+        ),
+        // Само меню
+        Positioned(
+          left: menuPosition.dx,
+          top: menuPosition.dy,
+          child: _buildVerticalMenuTower(hasSelection, hasText, editableTextState, chatSettings),
+        ),
+      ],
+    );
+  }
+
+  /// Создает вертикальную башенку элементов меню
+  Widget _buildVerticalMenuTower(
+    bool hasSelection, 
+    bool hasText, 
+    EditableTextState editableTextState,
+    ChatSettingsProvider chatSettings
+  ) {
+    final menuItems = <Widget>[];
+
+    if (hasSelection) {
+      menuItems.add(_buildTowerMenuItem(
+        icon: Icons.copy,
+        text: 'Копировать',
+        onPressed: () => _handleCopy(editableTextState),
+        chatSettings: chatSettings,
+        isFirst: true,
+      ));
+      
+      menuItems.add(_buildTowerMenuItem(
+        icon: Icons.cut,
+        text: 'Вырезать',
+        onPressed: () => _handleCut(editableTextState),
+        chatSettings: chatSettings,
+      ));
+    }
+
+    menuItems.add(_buildTowerMenuItem(
+      icon: Icons.paste,
+      text: 'Вставить',
+      onPressed: () => _handlePaste(editableTextState),
+      chatSettings: chatSettings,
+      isFirst: !hasSelection,
+    ));
+
+    if (hasText) {
+      menuItems.add(_buildTowerMenuItem(
+        icon: Icons.select_all,
+        text: 'Выбрать всё',
+        onPressed: () => _handleSelectAll(editableTextState),
+        chatSettings: chatSettings,
+        isLast: true,
+      ));
+    }
+
+    // Помечаем последний элемент как last если еще не помечен
+    if (menuItems.isNotEmpty && !hasText) {
+      final lastIndex = menuItems.length - 1;
+      // Создаем новый последний элемент с флагом isLast: true
+      if (lastIndex == menuItems.length - 1 && menuItems.length > 1) {
+        menuItems[lastIndex] = _buildTowerMenuItem(
+          icon: Icons.paste,
+          text: 'Вставить',
+          onPressed: () => _handlePaste(editableTextState),
+          chatSettings: chatSettings,
+          isLast: true,
+        );
+      } else if (menuItems.length == 1) {
+        menuItems[0] = _buildTowerMenuItem(
+          icon: Icons.paste,
+          text: 'Вставить',
+          onPressed: () => _handlePaste(editableTextState),
+          chatSettings: chatSettings,
+          isFirst: true,
+          isLast: true,
+        );
+      }
+    }
+
+    return Material(
+      color: Colors.transparent,
+      elevation: 12,
+      borderRadius: BorderRadius.circular(14),
+      child: Container(
+        width: 140,
+        decoration: BoxDecoration(
+          color: chatSettings.isDarkTheme ? const Color(0xFF2C2C2E) : Colors.white,
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(
+            color: chatSettings.isDarkTheme 
+                ? Colors.grey.shade700 
+                : Colors.grey.shade300,
+            width: 0.5,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.15),
+              blurRadius: 12,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: menuItems,
+        ),
+      ),
+    );
+  }
+
+  /// Создает элемент вертикальной башенки меню
+  Widget _buildTowerMenuItem({
+    required IconData icon,
+    required String text,
+    required VoidCallback onPressed,
+    required ChatSettingsProvider chatSettings,
+    bool isFirst = false,
+    bool isLast = false,
+  }) {
+    return InkWell(
+      onTap: onPressed,
+      borderRadius: BorderRadius.vertical(
+        top: isFirst ? const Radius.circular(14) : Radius.zero,
+        bottom: isLast ? const Radius.circular(14) : Radius.zero,
+      ),
+      child: Container(
+        height: 46,
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        decoration: BoxDecoration(
+          border: !isLast ? Border(
+            bottom: BorderSide(
+              color: chatSettings.isDarkTheme 
+                  ? Colors.grey.shade700 
+                  : Colors.grey.shade300,
+              width: 0.5,
+            ),
+          ) : null,
+        ),
+        child: Row(
+          children: [
+            Icon(
+              icon,
+              size: 18,
+              color: chatSettings.isDarkTheme ? Colors.white70 : Colors.black87,
+            ),
+            const SizedBox(width: 12),
+            Text(
+              text,
+              style: TextStyle(
+                color: chatSettings.isDarkTheme ? Colors.white : Colors.black87,
+                fontFamily: 'Inter',
+                fontSize: 15,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Обработчики кастомных действий меню
+  void _handleCopy(EditableTextState editableTextState) {
+    editableTextState.copySelection(SelectionChangedCause.toolbar);
+  }
+
+  void _handleCut(EditableTextState editableTextState) {
+    editableTextState.cutSelection(SelectionChangedCause.toolbar);
+  }
+
+  void _handlePaste(EditableTextState editableTextState) {
+    editableTextState.pasteText(SelectionChangedCause.toolbar);
+  }
+
+  void _handleSelectAll(EditableTextState editableTextState) {
+    editableTextState.selectAll(SelectionChangedCause.toolbar);
   }
 }

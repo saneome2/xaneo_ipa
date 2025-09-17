@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'apple_emoji_utils.dart';
+import 'emoji_utils.dart';
 
 class TextParser {
   // Полная поддержка всех Unicode эмодзи включая ZWJ последовательности
@@ -87,7 +87,7 @@ class TextParser {
         // Добавляем эмодзи с Apple шрифтом или fallback для проблемных ZWJ
         spans.add(TextSpan(
           text: char,
-          style: AppleEmojiUtils.getEmojiStyleWithFallback(
+          style: EmojiUtils.getEmojiStyleWithFallback(
             emoji: char,
             baseStyle: textStyle,
             fontSize: (textStyle.fontSize ?? 14) * 1.1,
@@ -134,7 +134,7 @@ class TextParser {
 
   /// Упрощенная проверка эмодзи по Unicode кодам
   static bool _isEmojiByRange(int codePoint) {
-    return AppleEmojiUtils.isEmoji(codePoint);
+    return EmojiUtils.isEmoji(codePoint);
   }
 
   /// Простой парсинг с базовым регексом (fallback)
@@ -168,7 +168,7 @@ class TextParser {
       final emoji = text.substring(match.start, match.end);
       spans.add(TextSpan(
         text: emoji,
-        style: AppleEmojiUtils.getEmojiStyleWithFallback(
+        style: EmojiUtils.getEmojiStyleWithFallback(
           emoji: emoji,
           baseStyle: textStyle,
           fontSize: (textStyle.fontSize ?? 14) * 1.1,

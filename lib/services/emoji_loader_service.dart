@@ -1,16 +1,16 @@
 import 'package:flutter/services.dart';
 
-/// Сервис для оптимизированной загрузки Apple Emoji шрифтов
+/// Сервис для оптимизированной загрузки кастомных Emoji шрифтов
 class EmojiLoaderService {
   static bool _isInitialized = false;
   static Uint8List? _cachedFontData;
   
-  /// Предзагружает Apple Emoji шрифт в память
-  static Future<void> preloadAppleEmojiFont() async {
+  /// Предзагружает кастомный Emoji шрифт в память
+  static Future<void> preloadCustomEmojiFont() async {
     if (_isInitialized) return;
     
     try {
-      // Загружаем шрифт Apple Emoji в память
+      // Загружаем кастомный шрифт эмодзи в память
       final ByteData fontData = await rootBundle.load('assets/fonts/appleemojis.ttf');
       _cachedFontData = fontData.buffer.asUint8List();
       
@@ -18,9 +18,9 @@ class EmojiLoaderService {
       await _registerFont();
       
       _isInitialized = true;
-      print('✅ Apple Emoji шрифт успешно предзагружен');
+      print('✅ Кастомный Emoji шрифт успешно предзагружен');
     } catch (e) {
-      print('❌ Ошибка загрузки Apple Emoji шрифта: $e');
+      print('❌ Ошибка загрузки кастомного Emoji шрифта: $e');
     }
   }
   
@@ -30,11 +30,11 @@ class EmojiLoaderService {
     
     try {
       // Создаем FontLoader для оптимизации
-      final fontLoader = FontLoader('AppleEmojis');
+      final fontLoader = FontLoader('CustomEmojis');
       fontLoader.addFont(Future.value(_cachedFontData!.buffer.asByteData()));
       await fontLoader.load();
       
-      print('📝 Apple Emoji шрифт зарегистрирован в FontLoader');
+      print('📝 Кастомный Emoji шрифт зарегистрирован в FontLoader');
     } catch (e) {
       print('❌ Ошибка регистрации шрифта: $e');
     }
@@ -50,7 +50,7 @@ class EmojiLoaderService {
   static void dispose() {
     _cachedFontData = null;
     _isInitialized = false;
-    print('🗑️ Apple Emoji шрифт выгружен из памяти');
+    print('🗑️ Кастомный Emoji шрифт выгружен из памяти');
   }
   
   /// Получает информацию о состоянии загрузки шрифта

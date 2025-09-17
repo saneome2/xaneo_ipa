@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
 import '../utils/emoji_smileys.dart';
-import '../utils/apple_emoji_utils.dart';
+import '../utils/emoji_utils.dart';
 
 /// Кастомный пикер смайликов (только эмоции)
 class CustomSmileyPicker extends StatefulWidget {
@@ -111,7 +111,7 @@ class _CustomSmileyPickerState extends State<CustomSmileyPicker> {
         child: Center(
           child: Text(
             emoji,
-            style: AppleEmojiUtils.getAppleEmojiStyle(
+            style: EmojiUtils.getEmojiTextStyle(
               fontSize: 24,
             ),
           ),

@@ -17,7 +17,7 @@ class UniversalTextField extends StatefulWidget {
   final ValueChanged<String>? onChanged;
   final EdgeInsets? contentPadding;
   final bool enableFormatting;
-  final bool enableAppleEmojis;
+  final bool enableCustomEmojis;
 
   const UniversalTextField({
     super.key,
@@ -32,7 +32,7 @@ class UniversalTextField extends StatefulWidget {
     this.onChanged,
     this.contentPadding,
     this.enableFormatting = true,
-    this.enableAppleEmojis = true,
+    this.enableCustomEmojis = true,
   });
 
   @override
@@ -152,7 +152,7 @@ class _UniversalTextFieldState extends State<UniversalTextField> {
 
   /// Парсит текст с эмодзи (с поддержкой Apple эмодзи если включено)
   List<InlineSpan> _parseTextWithEmojis(String text, TextStyle style) {
-    if (!widget.enableAppleEmojis) {
+    if (!widget.enableCustomEmojis) {
       return [TextSpan(text: text, style: style)];
     }
 

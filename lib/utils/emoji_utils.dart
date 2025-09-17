@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_emoji/flutter_emoji.dart';
 
-/// Утилитарный класс для работы с iOS-эмодзи с оптимизацией загрузки
+/// Утилитарный класс для работы с эмодзи с оптимизацией загрузки
 class EmojiUtils {
   static final EmojiParser _parser = EmojiParser();
   
@@ -40,14 +40,14 @@ class EmojiUtils {
     for (final size in baseSizes) {
       final key = 'size_$size';
       _styleCache[key] = TextStyle(
-        fontFamily: 'AppleEmojis',
+        fontFamily: 'CustomEmojis',
         fontSize: size,
         height: 1.0,
       );
     }
   }
 
-  /// Получить iOS-стиль эмодзи по имени с кэшированием
+  /// Получить эмодзи по имени с кэшированием
   static String getEmoji(String name) {
     // Проверяем кэш
     if (_emojiCache.containsKey(name)) {
@@ -67,7 +67,7 @@ class EmojiUtils {
     }
   }
 
-  /// Получить TextStyle для отображения эмодзи с Apple шрифтом (оптимизированная версия)
+  /// Получить TextStyle для отображения эмодзи с кастомным шрифтом (оптимизированная версия)
   static TextStyle getEmojiTextStyle({
     double fontSize = 16.0,
     Color? color,
@@ -82,7 +82,7 @@ class EmojiUtils {
     
     // Создаем новый стиль
     final style = TextStyle(
-      fontFamily: 'AppleEmojis',
+      fontFamily: 'CustomEmojis',
       fontSize: fontSize,
       color: color,
       height: 1.0, // Чтобы эмодзи не имели лишнего пространства
@@ -96,7 +96,7 @@ class EmojiUtils {
     return style;
   }
 
-  /// Получить эмодзи с iOS-стилем для часто используемых (оптимизированная версия)
+  /// Получить часто используемые эмодзи (оптимизированная версия)
   static String getCommonEmoji(String type) {
     // Сначала проверяем предзагруженные эмодзи
     final lowerType = type.toLowerCase();
@@ -219,8 +219,8 @@ class EmojiUtils {
     return _cacheEmoji('default_random', '🎉');
   }
 
-  /// Преобразовать текст с эмодзи в iOS-стиль (оптимизированная версия)
-  static String convertToIOSStyle(String text) {
+  /// Преобразовать текст с эмодзи в кастомный стиль (оптимизированная версия)
+  static String convertToCustomStyle(String text) {
     // Используем кэшированные замены для часто используемых комбинаций
     const Map<String, String> replacements = {
       '😀': '😊',  // Более мягкая улыбка
@@ -298,5 +298,45 @@ class EmojiUtils {
       'emoji_cache_size': _emojiCache.length,
       'style_cache_size': _styleCache.length,
     };
+  }
+
+  /// Получить стиль эмодзи с fallback для проблемных символов
+  static TextStyle getEmojiStyleWithFallback({
+    required String emoji,
+    required TextStyle baseStyle,
+    double? fontSize,
+  }) {
+    return baseStyle.copyWith(
+      fontFamily: 'CustomEmojis',
+      fontFamilyFallback: const [
+        'Apple Color Emoji',
+        'Segoe UI Emoji', 
+        'Noto Color Emoji',
+        'Twemoji Mozilla',
+        'Android Emoji',
+        'EmojiOne Color',
+      ],
+      fontSize: fontSize ?? (baseStyle.fontSize ?? 14) * 1.1,
+    );
+  }
+
+  /// Проверяет, является ли символ эмодзи по Unicode кодовой точке
+  static bool isEmoji(int codePoint) {
+    return (codePoint >= 0x1F600 && codePoint <= 0x1F64F) ||  // эмоции
+           (codePoint >= 0x1F300 && codePoint <= 0x1F5FF) ||  // символы и пиктограммы
+           (codePoint >= 0x1F680 && codePoint <= 0x1F6FF) ||  // транспорт
+           (codePoint >= 0x1F700 && codePoint <= 0x1F77F) ||  // алхимические символы
+           (codePoint >= 0x1F780 && codePoint <= 0x1F7FF) ||  // геометрические фигуры
+           (codePoint >= 0x1F800 && codePoint <= 0x1F8FF) ||  // дополнительные стрелки
+           (codePoint >= 0x1F900 && codePoint <= 0x1F9FF) ||  // дополнительные символы
+           (codePoint >= 0x1FA00 && codePoint <= 0x1FA6F) ||  // шахматы
+           (codePoint >= 0x1FA70 && codePoint <= 0x1FAFF) ||  // расширенные символы
+           (codePoint >= 0x2600 && codePoint <= 0x26FF) ||    // разные символы
+           (codePoint >= 0x2700 && codePoint <= 0x27BF) ||    // дингбаты
+           (codePoint >= 0x1F1E6 && codePoint <= 0x1F1FF) ||  // региональные индикаторы
+           (codePoint >= 0x1F3FB && codePoint <= 0x1F3FF) ||  // модификаторы тона кожи
+           (codePoint == 0x200D) ||                           // Zero Width Joiner
+           (codePoint == 0xFE0F) ||                           // Variation Selector-16
+           (codePoint == 0x20E3);                             // Combining Enclosing Keycap
   }
 }

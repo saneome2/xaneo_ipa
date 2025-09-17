@@ -134,9 +134,9 @@ flutter:
       fonts:
         - asset: assets/fonts/Inter_18pt-Bold.ttf
           weight: 700
-    - family: AppleEmojis
+    - family: CustomEmojis
       fonts:
-        - asset: assets/fonts/appleemojis.ttf
+        - asset: assets/fonts/custom_emojis.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

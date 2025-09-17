@@ -35,8 +35,8 @@ void main() async {
   // Инициализируем и предзагружаем эмодзи для оптимизации производительности
   EmojiUtils.preloadEmojis();
   
-  // Предзагружаем Apple Emoji шрифт
-  await EmojiLoaderService.preloadAppleEmojiFont();
+  // Предзагружаем кастомный Emoji шрифт
+  await EmojiLoaderService.preloadCustomEmojiFont();
   
   // Инициализируем настройки чата
   final chatSettingsProvider = ChatSettingsProvider();
@@ -125,7 +125,7 @@ class MyApp extends StatelessWidget {
             ).copyWith(
               bodyMedium: themeProvider.themeData.textTheme.bodyMedium?.copyWith(
                 fontFamilyFallback: const [
-                  'AppleEmojis',
+                  'CustomEmojis',
                   'Apple Color Emoji',
                   'Segoe UI Emoji',
                   'Noto Color Emoji',

@@ -14,6 +14,7 @@ import 'security_settings_screen.dart';
 import 'energy_saving_screen.dart';
 import 'sessions_screen.dart';
 import 'chat_screen.dart';
+import 'formatting_test_screen.dart';
 
 enum SettingsType {
   profileInfo,
@@ -80,6 +81,15 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
       'unread': 0,
       'avatar': '🔖',
       'online': false,
+    },
+    {
+      'name': 'Тест форматирования',
+      'lastMessage': 'Тестируем жирный, курсив и т.д.',
+      'time': '15:00',
+      'unread': 1,
+      'avatar': '🎨',
+      'online': true,
+      'isTestChat': true, // Специальный флаг для тестового чата
     },
   ];
 
@@ -496,29 +506,53 @@ class _MessengerDemoScreenState extends State<MessengerDemoScreen>
     
     return GestureDetector(
       onTap: () {
-        // Переход к экрану чата с анимацией как у экрана безопасности
-        Navigator.of(context).push(
-          PageRouteBuilder(
-            pageBuilder: (context, animation, secondaryAnimation) => ChatScreen(
-              chatName: chat['name'],
-              chatAvatar: chat['avatar'],
+        // Проверяем, является ли это тестовым чатом для форматирования
+        if (chat['isTestChat'] == true) {
+          // Переход к тестовому экрану форматирования
+          Navigator.of(context).push(
+            PageRouteBuilder(
+              pageBuilder: (context, animation, secondaryAnimation) => const FormattingTestScreen(),
+              transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                const begin = Offset(1.0, 0.0);
+                const end = Offset.zero;
+                const curve = Curves.ease;
+
+                var tween = Tween(begin: begin, end: end).chain(
+                  CurveTween(curve: curve),
+                );
+
+                return SlideTransition(
+                  position: animation.drive(tween),
+                  child: child,
+                );
+              },
             ),
-            transitionsBuilder: (context, animation, secondaryAnimation, child) {
-              const begin = Offset(1.0, 0.0);
-              const end = Offset.zero;
-              const curve = Curves.ease;
+          );
+        } else {
+          // Переход к обычному экрану чата с анимацией
+          Navigator.of(context).push(
+            PageRouteBuilder(
+              pageBuilder: (context, animation, secondaryAnimation) => ChatScreen(
+                chatName: chat['name'],
+                chatAvatar: chat['avatar'],
+              ),
+              transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                const begin = Offset(1.0, 0.0);
+                const end = Offset.zero;
+                const curve = Curves.ease;
 
-              var tween = Tween(begin: begin, end: end).chain(
-                CurveTween(curve: curve),
-              );
+                var tween = Tween(begin: begin, end: end).chain(
+                  CurveTween(curve: curve),
+                );
 
-              return SlideTransition(
-                position: animation.drive(tween),
-                child: child,
-              );
-            },
-          ),
-        );
+                return SlideTransition(
+                  position: animation.drive(tween),
+                  child: child,
+                );
+              },
+            ),
+          );
+        }
       },
       child: Container(
         margin: const EdgeInsets.only(bottom: 8),

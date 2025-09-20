@@ -11,7 +11,7 @@ class EmojiLoaderService {
     
     try {
       // Загружаем кастомный шрифт эмодзи в память
-      final ByteData fontData = await rootBundle.load('assets/fonts/appleemojis.ttf');
+      final ByteData fontData = await rootBundle.load('assets/fonts/custom_emojis.ttf');
       _cachedFontData = fontData.buffer.asUint8List();
       
       // Регистрируем шрифт для системы
